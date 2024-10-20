@@ -16,7 +16,7 @@ var searchData=
   ['refeltype_13',['RefElType',['../namespacelf_1_1base.html#a2c68b938de56a5b67e3075dbcab4cb21',1,'lf::base']]],
   ['reference_20assembly_14',['Quick Reference - Assembly',['../quick_reference_assembly.html',1,'']]],
   ['reference_20boundary_20conditions_15',['Quick Reference - Boundary Conditions',['../quick_reference_bc.html',1,'']]],
-  ['reference_20dofs_16',['Quick Reference - DOFs',['../quick_reference_dofs.html',1,'']]],
+  ['reference_20degrees_20of_20freedom_20dof_20handlers_20and_20indexing_16',['Quick Reference - Degrees of Freedom (DOF) Handlers and Indexing',['../quick_reference_dofs.html',1,'']]],
   ['reference_20enitiy_20matrix_20providers_17',['Quick Reference - Enitiy Matrix Providers',['../quick_reference_emp.html',1,'']]],
   ['reference_20finite_20element_20spaces_18',['Quick Reference - Finite Element Spaces',['../quick_reference_fe_space.html',1,'']]],
   ['reference_20geometry_19',['Quick Reference - Geometry',['../quick_reference_geometry.html',1,'']]],

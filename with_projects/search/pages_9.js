@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['manufactured_20solution_0',['Manufactured Solution',['../md__2____w_2lehrfempp_2lehrfempp_2projects_2ipdg__stokes_2examples_2manufactured__solution_2_r_e_a_d_m_e.html',1,'']]],
-  ['matrix_20providers_1',['Quick Reference - Enitiy Matrix Providers',['../quick_reference_emp.html',1,'']]],
-  ['mesh_2',['Quick Reference - Mesh',['../quick_reference_mesh.html',1,'']]],
-  ['methods_20for_20the_20convection_20diffusion_20problem_3',['DPG Methods for the Convection-Diffusion Problem',['../md__2____w_2lehrfempp_2lehrfempp_2projects_2dpg_2_r_e_a_d_m_e.html',1,'']]],
-  ['modules_4',['Modules',['../modules_.html',1,'']]]
+  ['lehrfem_0',['LehrFEM',['../eigen_stacktrace_warning.html',1,'Eigen included before LehrFEM++'],['../index.html',1,'Welcome to LehrFEM++']]],
+  ['lehrfem_20project_1',['LehrFEM++ project',['../md__2____w_2lehrfempp_2lehrfempp_2projects_2_r_e_a_d_m_e.html',1,'']]],
+  ['lid_20driven_20cavity_2',['Lid Driven Cavity',['../md__2____w_2lehrfempp_2lehrfempp_2projects_2ipdg__stokes_2examples_2lid__driven__cavity_2_r_e_a_d_m_e.html',1,'']]],
+  ['loggers_20and_20debug_20output_3',['Loggers and Debug output',['../loggers.html',1,'']]],
+  ['logging_4',['Quick Reference - Logging',['../quick_reference_logging.html',1,'']]]
 ];

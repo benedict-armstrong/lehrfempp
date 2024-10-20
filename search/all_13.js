@@ -71,7 +71,7 @@ var searchData=
   ['program_68',['3. Write a program',['../getting_started.html#autotoc_md165',1,'']]],
   ['project_69',['2. Create a new CMake project',['../getting_started.html#autotoc_md164',1,'']]],
   ['prolongate_70',['prolongate',['../namespacelf_1_1fe.html#ab09b05477e759599857904e6a989f27d',1,'lf::fe']]],
-  ['providers_71',['Quick Reference - Enitiy Matrix Providers',['../quick_reference_emp.html',1,'']]],
+  ['providers_71',['Providers',['../quick_reference_emp.html#autotoc_md185',1,'Entity Matrix Providers'],['../quick_reference_emp.html#autotoc_md186',1,'Entity Vector Providers'],['../quick_reference_emp.html',1,'Quick Reference - Enitiy Matrix Providers']]],
   ['provides_5fgetmesh_72',['provides_getMesh',['../classlf_1_1refinement_1_1_mesh_function_transfer.html#aee4167d343e8e14267dc6b4079dd9424',1,'lf::refinement::MeshFunctionTransfer']]],
   ['pyramid13_73',['PYRAMID13',['../structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950aaea66d7a4d53540fe6cfb9a79045e346',1,'lf::io::GMshFileV2::PYRAMID13'],['../structlf_1_1io_1_1_g_msh_file_v4.html#a1b92a753467eb9cc1a3c6c44c64d1691aaea66d7a4d53540fe6cfb9a79045e346',1,'lf::io::GMshFileV4::PYRAMID13']]],
   ['pyramid14_74',['PYRAMID14',['../structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950aa372e1de0329d61b0001504d0af01f88',1,'lf::io::GMshFileV2::PYRAMID14'],['../structlf_1_1io_1_1_g_msh_file_v4.html#a1b92a753467eb9cc1a3c6c44c64d1691aa372e1de0329d61b0001504d0af01f88',1,'lf::io::GMshFileV4::PYRAMID14']]],

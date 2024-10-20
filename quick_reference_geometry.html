@@ -125,16 +125,16 @@ $(function(){initNavTree('quick_reference_geometry.html',''); initResizable(); }
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md178">Geometry Interface</a><ul><li class="level2"><a href="#autotoc_md179">Utility Functions</a></li>
+<ul><li class="level1"><a href="#geometry_interface">Geometry Interface</a><ul><li class="level2"><a href="#geometry_utility">Utility Functions</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md180">Geometry Methodss</a></li>
-<li class="level1"><a href="#autotoc_md181">Transformations and Mappings</a></li>
+<li class="level1"><a href="#geometry_methods">Geometry Methods</a></li>
+<li class="level1"><a href="#transformations">Transformations and Mappings</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2____w_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__geometry"></a></p>
 <p>LehrFEM++ provides an Interface for geometry data: <a class="el" href="classlf_1_1geometry_1_1_geometry.html" title="Interface class for shape information on a mesh cell in the spirit of parametric finite element metho...">lf::geometry::Geometry</a>. Geometry data is stored as a mapping from the reference element (unit triangle, square) to the physical element. Details and mathematical background can be found in the <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> section 2.8.</p>
-<h1><a class="anchor" id="autotoc_md178"></a>
+<h1><a class="anchor" id="geometry_interface"></a>
 Geometry Interface</h1>
 <p>To get the geometry of an entity :</p>
 <div class="fragment"><div class="line"><span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_class" href="classlf_1_1mesh_1_1_entity.html">lf::mesh::Entity</a>* entity : mesh.Entities(codim)) {</div>
@@ -142,7 +142,7 @@ Geometry Interface</h1>
 <div class="line">    <span class="keyword">auto</span> geometry = entity-&gt;Geometry();</div>
 <div class="line">}</div>
 <div class="ttc" id="aclasslf_1_1mesh_1_1_entity_html"><div class="ttname"><a href="classlf_1_1mesh_1_1_entity.html">lf::mesh::Entity</a></div><div class="ttdoc">Interface class representing a topological entity in a cellular complex</div><div class="ttdef"><b>Definition</b> <a href="entity_8h_source.html#l00042">entity.h:42</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md179"></a>
+</div><!-- fragment --><h2><a class="anchor" id="geometry_utility"></a>
 Utility Functions</h2>
 <p>A number of convenience functions are provided by the Geometry class.</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> geometry = entity-&gt;Geometry();</div>
@@ -170,8 +170,8 @@ Utility Functions</h2>
 <div class="line"><span class="keywordtype">bool</span> is_not_deg = <a class="code hl_function" href="namespacelf_1_1geometry.html#a21fa46c20ae3f54739fa238442afc5dd">lf::geometry::assertNonDegenerateTriangle</a>(corners);</div>
 <div class="ttc" id="anamespacelf_1_1geometry_html_a21fa46c20ae3f54739fa238442afc5dd"><div class="ttname"><a href="namespacelf_1_1geometry.html#a21fa46c20ae3f54739fa238442afc5dd">lf::geometry::assertNonDegenerateTriangle</a></div><div class="ttdeci">bool assertNonDegenerateTriangle(const Eigen::Matrix&lt; double, Eigen::Dynamic, 3 &gt; &amp;coords, double tol)</div><div class="ttdoc">Asserting non-degenerate shape of a flat triangle.</div><div class="ttdef"><b>Definition</b> <a href="tria__o1_8cc_source.html#l00010">tria_o1.cc:10</a></div></div>
 <div class="ttc" id="anamespacelf_1_1geometry_html_a4f03abce279f48a0f82eb1b9f4b8715f"><div class="ttname"><a href="namespacelf_1_1geometry.html#a4f03abce279f48a0f82eb1b9f4b8715f">lf::geometry::assertNonDegenerateQuad</a></div><div class="ttdeci">bool assertNonDegenerateQuad(const Eigen::Matrix&lt; double, Eigen::Dynamic, 4 &gt; &amp;coords, double tol)</div><div class="ttdoc">Asserting a non-degenerate bilinear quadrilateral.</div><div class="ttdef"><b>Definition</b> <a href="quad__o1_8cc_source.html#l00012">quad_o1.cc:12</a></div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md180"></a>
-Geometry Methodss</h1>
+</div><!-- fragment --><h1><a class="anchor" id="geometry_methods"></a>
+Geometry Methods</h1>
 <p>Objects implementing the <a class="el" href="classlf_1_1geometry_1_1_geometry.html" title="Interface class for shape information on a mesh cell in the spirit of parametric finite element metho...">lf::geometry::Geometry</a> interface provide the following methods:</p>
 <div class="fragment"><div class="line"><span class="comment">// Dimension of the local coordinate system</span></div>
 <div class="line"><span class="keyword">auto</span> dim_local = geometry-&gt;DimLocal(); </div>
@@ -184,7 +184,7 @@ Geometry Methodss</h1>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Check if mapping is affine</span></div>
 <div class="line"><span class="keywordtype">bool</span> is_affine = geometry-&gt;IsAffine();</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md181"></a>
+</div><!-- fragment --><h1><a class="anchor" id="transformations"></a>
 Transformations and Mappings</h1>
 <p>This part is discussed in detail in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> section 2.8. The <a class="el" href="classlf_1_1geometry_1_1_geometry.html" title="Interface class for shape information on a mesh cell in the spirit of parametric finite element metho...">lf::geometry::Geometry</a> class provides the following methods to compute and use the underlying mappings:</p>
 <div class="fragment"><div class="line"><span class="comment">// A number of point in the reference element</span></div>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['lehrfem_0',['LehrFEM',['../eigen_stacktrace_warning.html',1,'Eigen included before LehrFEM++'],['../index.html',1,'Welcome to LehrFEM++']]],
-  ['loggers_20and_20debug_20output_1',['Loggers and Debug output',['../loggers.html',1,'']]],
-  ['logging_2',['Quick Reference - Logging',['../quick_reference_logging.html',1,'']]]
+  ['included_20before_20lehrfem_0',['Eigen included before LehrFEM++',['../eigen_stacktrace_warning.html',1,'']]],
+  ['indexing_1',['Quick Reference - Degrees of Freedom (DOF) Handlers and Indexing',['../quick_reference_dofs.html',1,'']]]
 ];

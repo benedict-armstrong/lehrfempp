@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['the_20convection_20diffusion_20problem_0',['DPG Methods for the Convection-Diffusion Problem',['../md__2____w_2lehrfempp_2lehrfempp_2projects_2dpg_2_r_e_a_d_m_e.html',1,'']]],
-  ['the_20stokes_20problem_1',['Divergence Conforming Discontinuous Galerkin FEM for the Stokes Problem',['../md__2____w_2lehrfempp_2lehrfempp_2projects_2ipdg__stokes_2_r_e_a_d_m_e.html',1,'']]],
-  ['to_20lehrfem_2',['Welcome to LehrFEM++',['../index.html',1,'']]]
+  ['setup_0',['Editor Setup',['../editor_setup.html',1,'']]],
+  ['solution_1',['Manufactured Solution',['../md__2____w_2lehrfempp_2lehrfempp_2projects_2ipdg__stokes_2examples_2manufactured__solution_2_r_e_a_d_m_e.html',1,'']]],
+  ['spaces_2',['Quick Reference - Finite Element Spaces',['../quick_reference_fe_space.html',1,'']]],
+  ['started_3',['Getting Started',['../getting_started.html',1,'']]],
+  ['step_4',['Step',['../md__2____w_2lehrfempp_2lehrfempp_2projects_2ipdg__stokes_2examples_2step_2_r_e_a_d_m_e.html',1,'']]],
+  ['stokes_20problem_5',['Divergence Conforming Discontinuous Galerkin FEM for the Stokes Problem',['../md__2____w_2lehrfempp_2lehrfempp_2projects_2ipdg__stokes_2_r_e_a_d_m_e.html',1,'']]]
 ];

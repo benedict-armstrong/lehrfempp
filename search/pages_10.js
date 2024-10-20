@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['welcome_20to_20lehrfem_0',['Welcome to LehrFEM++',['../index.html',1,'']]]
+  ['to_20lehrfem_0',['Welcome to LehrFEM++',['../index.html',1,'']]]
 ];
