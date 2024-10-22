@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['geometry_0',['Quick Reference - Geometry',['../quick_reference_geometry.html',1,'']]],
-  ['getting_20started_1',['Getting Started',['../getting_started.html',1,'']]]
+  ['welcome_20to_20lehrfem_2b_2b_1720',['Welcome to LehrFEM++',['../index.html',1,'']]]
 ];

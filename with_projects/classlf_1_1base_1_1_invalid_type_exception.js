@@ -5,7 +5,7 @@ var classlf_1_1base_1_1_invalid_type_exception =
     [ "InvalidTypeException", "classlf_1_1base_1_1_invalid_type_exception.html#a5b01732291b708fe2bc0bad552853585", null ],
     [ "InvalidTypeException", "classlf_1_1base_1_1_invalid_type_exception.html#ad63b1ac6107775f49e44d0bb54483bb2", null ],
     [ "~InvalidTypeException", "classlf_1_1base_1_1_invalid_type_exception.html#a7e4946d2bb75e72a7287db09205caee0", null ],
-    [ "operator=", "classlf_1_1base_1_1_invalid_type_exception.html#a867a2ea5aee142993fefeca97c67efb8", null ],
-    [ "operator=", "classlf_1_1base_1_1_invalid_type_exception.html#a642368d090cf1205a46b2b4d0e039582", null ],
+    [ "operator=", "classlf_1_1base_1_1_invalid_type_exception.html#af1918bfda3cb2f392f8da2981d416950", null ],
+    [ "operator=", "classlf_1_1base_1_1_invalid_type_exception.html#a37e01e6a9d3db755753ad4ff1da65bf3", null ],
     [ "what_", "classlf_1_1base_1_1_invalid_type_exception.html#a7a72ae77de7ddd2527143111d1ca03dd", null ]
 ];

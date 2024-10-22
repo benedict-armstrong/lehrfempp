@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handlers_20and_20indexing_0',['Quick Reference - Degrees of Freedom (DOF) Handlers and Indexing',['../quick_reference_dofs.html',1,'']]]
+  ['poiseuille_2074',['Poiseuille',['../md__home_runner_work_lehrfempp_lehrfempp_projects_ipdg_stokes_examples_poiseuille__r_e_a_d_m_e.html',1,'']]]
 ];

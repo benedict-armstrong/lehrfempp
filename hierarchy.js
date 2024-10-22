@@ -13,22 +13,22 @@ var hierarchy =
     [ "lf::io::GMshFileV2::Element", "structlf_1_1io_1_1_g_msh_file_v2_1_1_element.html", null ],
     [ "lf::io::GMshFileV4::ElementBlock", "structlf_1_1io_1_1_g_msh_file_v4_1_1_element_block.html", null ],
     [ "lf::io::GMshFileV4::Elements", "structlf_1_1io_1_1_g_msh_file_v4_1_1_elements.html", null ],
-    [ "lf::io::GMshFileV4::Entity", "structlf_1_1io_1_1_g_msh_file_v4_1_1_entity.html", null ],
     [ "lf::mesh::Entity", "classlf_1_1mesh_1_1_entity.html", [
       [ "lf::mesh::hybrid2d::Point", "classlf_1_1mesh_1_1hybrid2d_1_1_point.html", null ],
       [ "lf::mesh::hybrid2d::Quadrilateral", "classlf_1_1mesh_1_1hybrid2d_1_1_quadrilateral.html", null ],
       [ "lf::mesh::hybrid2d::Segment", "classlf_1_1mesh_1_1hybrid2d_1_1_segment.html", null ],
       [ "lf::mesh::hybrid2d::Triangle", "classlf_1_1mesh_1_1hybrid2d_1_1_triangle.html", null ]
     ] ],
+    [ "lf::io::GMshFileV4::Entity", "structlf_1_1io_1_1_g_msh_file_v4_1_1_entity.html", null ],
     [ "lf::refinement::EntityCenterPositionSelector< POSPRED >", "classlf_1_1refinement_1_1_entity_center_position_selector.html", null ],
     [ "lf::assemble::EntityMatrixProviderAT< SCALAR >", "structlf_1_1assemble_1_1_entity_matrix_provider_a_t.html", null ],
     [ "lf::assemble::EntityVectorProviderAT< SCALAR >", "structlf_1_1assemble_1_1_entity_vector_provider_a_t.html", null ],
-    [ "std::exception", null, [
+    [ "exception", null, [
       [ "lf::base::InvalidTypeException", "classlf_1_1base_1_1_invalid_type_exception.html", null ],
       [ "lf::base::LfException", "classlf_1_1base_1_1_lf_exception.html", null ]
     ] ],
     [ "lf::io::VtkFile::FieldDataArray< T >", "classlf_1_1io_1_1_vtk_file_1_1_field_data_array.html", null ],
-    [ "spdlog::formatter", null, [
+    [ "formatter", null, [
       [ "lf::base::LineFeedFormatter", "classlf_1_1base_1_1_line_feed_formatter.html", null ]
     ] ],
     [ "lf::geometry::Geometry", "classlf_1_1geometry_1_1_geometry.html", [
@@ -52,18 +52,19 @@ var hierarchy =
     [ "lf::base::LehrFemInfo", "classlf_1_1base_1_1_lehr_fem_info.html", null ],
     [ "lf::uscalfe::LinearFELaplaceElementMatrix", "classlf_1_1uscalfe_1_1_linear_f_e_laplace_element_matrix.html", null ],
     [ "lf::uscalfe::LinearFELocalLoadVector< SCALAR, FUNCTOR >", "classlf_1_1uscalfe_1_1_linear_f_e_local_load_vector.html", null ],
-    [ "lf::fe::MassEdgeMatrixProvider< SCALAR, COEFF, EDGESELECTOR >", "classlf_1_1fe_1_1_mass_edge_matrix_provider.html", null ],
     [ "lf::uscalfe::MassEdgeMatrixProvider< SCALAR, COEFF, EDGESELECTOR >", "classlf_1_1uscalfe_1_1_mass_edge_matrix_provider.html", null ],
+    [ "lf::fe::MassEdgeMatrixProvider< SCALAR, COEFF, EDGESELECTOR >", "classlf_1_1fe_1_1_mass_edge_matrix_provider.html", null ],
     [ "lf::fe::MassElementMatrixProvider< SCALAR, REACTION_COEFF >", "classlf_1_1fe_1_1_mass_element_matrix_provider.html", null ],
     [ "lf::mesh::Mesh", "classlf_1_1mesh_1_1_mesh.html", [
       [ "lf::mesh::hybrid2d::Mesh", "classlf_1_1mesh_1_1hybrid2d_1_1_mesh.html", null ]
     ] ],
     [ "lf::mesh::utils::MeshDataSet< T >", "classlf_1_1mesh_1_1utils_1_1_mesh_data_set.html", [
-      [ "lf::mesh::utils::AllCodimMeshDataSet< std::variant< std::monostate, lf::fe::FePoint< SCALAR >, lf::fe::FeHierarchicSegment< SCALAR >, lf::fe::FeHierarchicTria< SCALAR >, lf::fe::FeHierarchicQuad< SCALAR > > >", "classlf_1_1mesh_1_1utils_1_1_all_codim_mesh_data_set.html", null ],
       [ "lf::mesh::utils::AllCodimMeshDataSet< T >", "classlf_1_1mesh_1_1utils_1_1_all_codim_mesh_data_set.html", null ],
       [ "lf::mesh::utils::CodimMeshDataSet< T >", "classlf_1_1mesh_1_1utils_1_1_codim_mesh_data_set.html", null ]
     ] ],
-    [ "lf::mesh::utils::MeshDataSet< std::variant< std::monostate, lf::fe::FePoint< SCALAR >, lf::fe::FeHierarchicSegment< SCALAR >, lf::fe::FeHierarchicTria< SCALAR >, lf::fe::FeHierarchicQuad< SCALAR > > >", "classlf_1_1mesh_1_1utils_1_1_mesh_data_set.html", null ],
+    [ "lf::mesh::utils::MeshDataSet< std::variant< std::monostate, lf::fe::FePoint< SCALAR >, lf::fe::FeHierarchicSegment< SCALAR >, lf::fe::FeHierarchicTria< SCALAR >, lf::fe::FeHierarchicQuad< SCALAR > > >", "classlf_1_1mesh_1_1utils_1_1_mesh_data_set.html", [
+      [ "lf::mesh::utils::AllCodimMeshDataSet< std::variant< std::monostate, lf::fe::FePoint< SCALAR >, lf::fe::FeHierarchicSegment< SCALAR >, lf::fe::FeHierarchicTria< SCALAR >, lf::fe::FeHierarchicQuad< SCALAR > > >", "classlf_1_1mesh_1_1utils_1_1_all_codim_mesh_data_set.html", null ]
+    ] ],
     [ "lf::mesh::MeshFactory", "classlf_1_1mesh_1_1_mesh_factory.html", [
       [ "lf::mesh::hybrid2d::MeshFactory", "classlf_1_1mesh_1_1hybrid2d_1_1_mesh_factory.html", null ]
     ] ],
@@ -129,9 +130,9 @@ var hierarchy =
       [ "lf::fe::test_utils::ComplexScalarReferenceFiniteElement< SCALAR >", "classlf_1_1fe_1_1test__utils_1_1_complex_scalar_reference_finite_element.html", null ]
     ] ],
     [ "lf::mesh::utils::StructuredMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_structured_mesh_builder.html", [
+      [ "lf::mesh::utils::TorusMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_torus_mesh_builder.html", null ],
       [ "lf::mesh::utils::TPQuadMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_t_p_quad_mesh_builder.html", null ],
-      [ "lf::mesh::utils::TPTriagMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_t_p_triag_mesh_builder.html", null ],
-      [ "lf::mesh::utils::TorusMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_torus_mesh_builder.html", null ]
+      [ "lf::mesh::utils::TPTriagMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_t_p_triag_mesh_builder.html", null ]
     ] ],
     [ "lf::base::Timer", "classlf_1_1base_1_1_timer.html", null ],
     [ "lf::io::VtkFile::UnstructuredGrid", "classlf_1_1io_1_1_vtk_file_1_1_unstructured_grid.html", null ],

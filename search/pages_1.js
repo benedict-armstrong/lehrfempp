@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['before_20lehrfem_0',['Eigen included before LehrFEM++',['../eigen_stacktrace_warning.html',1,'']]],
-  ['boundary_20conditions_1',['Quick Reference - Boundary Conditions',['../quick_reference_bc.html',1,'']]]
+  ['editor_20setup_1707',['Editor Setup',['../editor_setup.html',1,'']]],
+  ['eigen_20included_20before_20lehrfem_2b_2b_1708',['Eigen included before LehrFEM++',['../eigen_stacktrace_warning.html',1,'']]]
 ];
