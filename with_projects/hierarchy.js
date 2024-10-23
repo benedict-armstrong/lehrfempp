@@ -17,22 +17,22 @@ var hierarchy =
     [ "lf::io::GMshFileV2::Element", "structlf_1_1io_1_1_g_msh_file_v2_1_1_element.html", null ],
     [ "lf::io::GMshFileV4::ElementBlock", "structlf_1_1io_1_1_g_msh_file_v4_1_1_element_block.html", null ],
     [ "lf::io::GMshFileV4::Elements", "structlf_1_1io_1_1_g_msh_file_v4_1_1_elements.html", null ],
+    [ "lf::io::GMshFileV4::Entity", "structlf_1_1io_1_1_g_msh_file_v4_1_1_entity.html", null ],
     [ "lf::mesh::Entity", "classlf_1_1mesh_1_1_entity.html", [
       [ "lf::mesh::hybrid2d::Point", "classlf_1_1mesh_1_1hybrid2d_1_1_point.html", null ],
       [ "lf::mesh::hybrid2d::Quadrilateral", "classlf_1_1mesh_1_1hybrid2d_1_1_quadrilateral.html", null ],
       [ "lf::mesh::hybrid2d::Segment", "classlf_1_1mesh_1_1hybrid2d_1_1_segment.html", null ],
       [ "lf::mesh::hybrid2d::Triangle", "classlf_1_1mesh_1_1hybrid2d_1_1_triangle.html", null ]
     ] ],
-    [ "lf::io::GMshFileV4::Entity", "structlf_1_1io_1_1_g_msh_file_v4_1_1_entity.html", null ],
     [ "lf::refinement::EntityCenterPositionSelector< POSPRED >", "classlf_1_1refinement_1_1_entity_center_position_selector.html", null ],
     [ "lf::assemble::EntityMatrixProviderAT< SCALAR >", "structlf_1_1assemble_1_1_entity_matrix_provider_a_t.html", null ],
     [ "lf::assemble::EntityVectorProviderAT< SCALAR >", "structlf_1_1assemble_1_1_entity_vector_provider_a_t.html", null ],
-    [ "exception", null, [
+    [ "std::exception", null, [
       [ "lf::base::InvalidTypeException", "classlf_1_1base_1_1_invalid_type_exception.html", null ],
       [ "lf::base::LfException", "classlf_1_1base_1_1_lf_exception.html", null ]
     ] ],
     [ "lf::io::VtkFile::FieldDataArray< T >", "classlf_1_1io_1_1_vtk_file_1_1_field_data_array.html", null ],
-    [ "formatter", null, [
+    [ "spdlog::formatter", null, [
       [ "lf::base::LineFeedFormatter", "classlf_1_1base_1_1_line_feed_formatter.html", null ]
     ] ],
     [ "lf::geometry::Geometry", "classlf_1_1geometry_1_1_geometry.html", [
@@ -56,8 +56,8 @@ var hierarchy =
     [ "lf::base::LehrFemInfo", "classlf_1_1base_1_1_lehr_fem_info.html", null ],
     [ "lf::uscalfe::LinearFELaplaceElementMatrix", "classlf_1_1uscalfe_1_1_linear_f_e_laplace_element_matrix.html", null ],
     [ "lf::uscalfe::LinearFELocalLoadVector< SCALAR, FUNCTOR >", "classlf_1_1uscalfe_1_1_linear_f_e_local_load_vector.html", null ],
-    [ "lf::uscalfe::MassEdgeMatrixProvider< SCALAR, COEFF, EDGESELECTOR >", "classlf_1_1uscalfe_1_1_mass_edge_matrix_provider.html", null ],
     [ "lf::fe::MassEdgeMatrixProvider< SCALAR, COEFF, EDGESELECTOR >", "classlf_1_1fe_1_1_mass_edge_matrix_provider.html", null ],
+    [ "lf::uscalfe::MassEdgeMatrixProvider< SCALAR, COEFF, EDGESELECTOR >", "classlf_1_1uscalfe_1_1_mass_edge_matrix_provider.html", null ],
     [ "lf::fe::MassElementMatrixProvider< SCALAR, REACTION_COEFF >", "classlf_1_1fe_1_1_mass_element_matrix_provider.html", null ],
     [ "lf::mesh::Mesh", "classlf_1_1mesh_1_1_mesh.html", [
       [ "lf::mesh::hybrid2d::Mesh", "classlf_1_1mesh_1_1hybrid2d_1_1_mesh.html", null ]
@@ -126,8 +126,8 @@ var hierarchy =
     ] ],
     [ "lf::fe::ScalarLoadEdgeVectorProvider< SCALAR, FUNCTOR, EDGESELECTOR >", "classlf_1_1fe_1_1_scalar_load_edge_vector_provider.html", null ],
     [ "lf::uscalfe::ScalarLoadEdgeVectorProvider< SCALAR, FUNCTOR, EDGESELECTOR >", "classlf_1_1uscalfe_1_1_scalar_load_edge_vector_provider.html", null ],
-    [ "lf::uscalfe::ScalarLoadElementVectorProvider< SCALAR, MESH_FUNCTION >", "classlf_1_1uscalfe_1_1_scalar_load_element_vector_provider.html", null ],
     [ "lf::fe::ScalarLoadElementVectorProvider< SCALAR, MESH_FUNCTION >", "classlf_1_1fe_1_1_scalar_load_element_vector_provider.html", null ],
+    [ "lf::uscalfe::ScalarLoadElementVectorProvider< SCALAR, MESH_FUNCTION >", "classlf_1_1uscalfe_1_1_scalar_load_element_vector_provider.html", null ],
     [ "lf::fe::ScalarReferenceFiniteElement< SCALAR >", "classlf_1_1fe_1_1_scalar_reference_finite_element.html", [
       [ "lf::fe::FeHierarchicQuad< SCALAR >", "classlf_1_1fe_1_1_fe_hierarchic_quad.html", null ],
       [ "lf::fe::FeHierarchicSegment< SCALAR >", "classlf_1_1fe_1_1_fe_hierarchic_segment.html", null ],
@@ -154,9 +154,9 @@ var hierarchy =
     ] ],
     [ "FisherKPP::StrangSplit", "class_fisher_k_p_p_1_1_strang_split.html", null ],
     [ "lf::mesh::utils::StructuredMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_structured_mesh_builder.html", [
-      [ "lf::mesh::utils::TorusMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_torus_mesh_builder.html", null ],
       [ "lf::mesh::utils::TPQuadMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_t_p_quad_mesh_builder.html", null ],
-      [ "lf::mesh::utils::TPTriagMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_t_p_triag_mesh_builder.html", null ]
+      [ "lf::mesh::utils::TPTriagMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_t_p_triag_mesh_builder.html", null ],
+      [ "lf::mesh::utils::TorusMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_torus_mesh_builder.html", null ]
     ] ],
     [ "projects::dpg::SubElementMatrixProvider< SCALAR >", "classprojects_1_1dpg_1_1_sub_element_matrix_provider.html", [
       [ "projects::dpg::ConvectionElementMatrixProvider< SCALAR, CONVECTION_COEFF_1, CONVECTION_COEFF_2 >", "classprojects_1_1dpg_1_1_convection_element_matrix_provider.html", null ],

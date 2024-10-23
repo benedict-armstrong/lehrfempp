@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hierarchicscalarfespace_849',['HierarchicScalarFESpace',['../classlf_1_1fe_1_1_hierarchic_scalar_f_e_space.html',1,'lf::fe']]],
-  ['hybrid2drefinementpattern_850',['Hybrid2DRefinementPattern',['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html',1,'lf::refinement']]]
+  ['hierarchicscalarfespace_0',['HierarchicScalarFESpace',['../classlf_1_1fe_1_1_hierarchic_scalar_f_e_space.html',1,'lf::fe']]],
+  ['hybrid2drefinementpattern_1',['Hybrid2DRefinementPattern',['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html',1,'lf::refinement']]]
 ];

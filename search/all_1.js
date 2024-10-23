@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['b_5f_28',['b_',['../classlf_1_1mesh_1_1utils_1_1_mesh_function_binary.html#a7730bb5cfe21ad2b725be41419c99a1b',1,'lf::mesh::utils::MeshFunctionBinary']]],
-  ['beta_5f_29',['beta_',['../classlf_1_1geometry_1_1_quad_o2.html#a23e238b566a4f0e63be3c48f1adba322',1,'lf::geometry::QuadO2::beta_()'],['../classlf_1_1geometry_1_1_segment_o2.html#a408847e81f8255e610086146eb1b8988',1,'lf::geometry::SegmentO2::beta_()'],['../classlf_1_1geometry_1_1_tria_o2.html#a1d43e0566d823def507d8b5a5b249c29',1,'lf::geometry::TriaO2::beta_()']]],
-  ['beta_5fsquared_5f_30',['beta_squared_',['../classlf_1_1geometry_1_1_segment_o2.html#a65983bd40e2b0c4ce66da9f9be7df769',1,'lf::geometry::SegmentO2']]],
-  ['binary_31',['BINARY',['../classlf_1_1io_1_1_vtk_file.html#a909c7a1b174a8df764950f75ca1b0c59a98ad0e8750ae10ad556ed7a62affb452',1,'lf::io::VtkFile']]],
-  ['bottom_5fleft_5fcorner_5f_32',['bottom_left_corner_',['../classlf_1_1mesh_1_1utils_1_1_structured_mesh_builder.html#a1c9ed85ddb01a8c40318a26b39814814',1,'lf::mesh::utils::StructuredMeshBuilder']]],
-  ['bounding_5fentities_33',['bounding_entities',['../structlf_1_1io_1_1_g_msh_file_v4_1_1_entity.html#afff684fa2efd694313ecfc1cbcf6c53c',1,'lf::io::GMshFileV4::Entity::bounding_entities()'],['../structlf_1_1io_1_1_g_msh_file_v4_1_1_partitioned_entity.html#ad9d11269b1f379e48b5d7f12a36d9c12',1,'lf::io::GMshFileV4::PartitionedEntity::bounding_entities()']]],
-  ['build_34',['Build',['../classlf_1_1mesh_1_1hybrid2d_1_1_mesh_factory.html#a7c0eb20b76fc0796fb7fe9acbd8bf965',1,'lf::mesh::hybrid2d::MeshFactory::Build()'],['../classlf_1_1mesh_1_1_mesh_factory.html#a1aca9d8378841d8c46d3db3b05284c00',1,'lf::mesh::MeshFactory::Build()'],['../classlf_1_1mesh_1_1utils_1_1_structured_mesh_builder.html#a6f437ee63562f3edfcdf223833a33d88',1,'lf::mesh::utils::StructuredMeshBuilder::Build()'],['../classlf_1_1mesh_1_1utils_1_1_torus_mesh_builder.html#a8649351ac47f29e4c9cf1242978f563f',1,'lf::mesh::utils::TorusMeshBuilder::Build()'],['../classlf_1_1mesh_1_1utils_1_1_t_p_quad_mesh_builder.html#aad0340593f88094bf744da16caacfc1c',1,'lf::mesh::utils::TPQuadMeshBuilder::Build()'],['../classlf_1_1mesh_1_1utils_1_1_t_p_triag_mesh_builder.html#a2b72ed259ae0acadcee051275eb30a20',1,'lf::mesh::utils::TPTriagMeshBuilder::Build()']]]
+  ['1_0',['Case of a segment entity (dimension 1)',['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html#autotoc_md133',1,'']]],
+  ['1_20check_20prerequisites_1',['1. Check Prerequisites',['../getting_started.html#autotoc_md163',1,'']]],
+  ['1_20fix_20the_20include_20order_2',['1. Fix the include order',['../eigen_stacktrace_warning.html#autotoc_md159',1,'']]],
+  ['1_20if_20you_20compile_20lehrfem_20directly_3',['2.1. If you compile LehrFEM++ directly',['../eigen_stacktrace_warning.html#autotoc_md161',1,'']]],
+  ['1_20tt_20printinfo_20tt_20methods_4',['Case 1) &lt;tt&gt;PrintInfo()&lt;/tt&gt; methods',['../loggers.html#autotoc_md171',1,'']]],
+  ['1d_20node_20coordinates_5',['Node numbering with (1D) node coordinates',['../classlf_1_1base_1_1_ref_el.html#autotoc_md40',1,'']]]
 ];

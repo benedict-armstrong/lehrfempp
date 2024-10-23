@@ -1,24 +1,26 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
@@ -35,8 +37,8 @@ var NAVTREE =
       [ "Assembly", "quick_reference_assembly.html", null ],
       [ "Boundary Conditions", "quick_reference_bc.html", null ]
     ] ],
-    [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", "namespaces" ],
+    [ "Concepts", "concepts.html", "concepts" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -47,7 +49,7 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ]
   ] ]
@@ -56,13 +58,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classlf_1_1fe_1_1_fe_hierarchic_segment.html#a866c2ceda91f8ef81b5c9f5f71662b8e",
-"classlf_1_1geometry_1_1_quad_o2.html#a3ffd9be370c0c57e4384549b443719fc",
-"classlf_1_1mesh_1_1_mesh.html#aaef005d6110c523cd570335035d2e555",
-"classlf_1_1quad_1_1_quad_rule.html#a19bd22ca0d9d8f00e23bbf59b7fd754b",
-"classlf_1_1uscalfe_1_1_fe_space_lagrange_o1.html",
-"group__lftypes.html#gac58fc4acec7ea9201d11874365d7075b",
-"structlf_1_1io_1_1_g_msh_file_v4_1_1_physical_name.html"
+"classlf_1_1base_1_1_invalid_type_exception.html#a6d4c1c86e1725e332589cdce135f0732",
+"classlf_1_1fe_1_1_fe_hierarchic_segment.html#aab444301ee788f40d061ee9358fd819c",
+"classlf_1_1fe_1_1test__utils_1_1_complex_scalar_reference_finite_element.html#a443fe3626fd27e55c38dc444a77ff6ea",
+"classlf_1_1geometry_1_1_segment_o2.html#a4b0b57829c7b914f5783fafb1b2924ee",
+"classlf_1_1io_1_1_vtk_writer.html#a0642a447d1433f8408776a1bf743fa1c",
+"classlf_1_1mesh_1_1hybrid2d_1_1_mesh_factory.html#a5f6fd5de822c0c1cf27d6a69f2b58fc7",
+"classlf_1_1mesh_1_1utils_1_1_codim_mesh_data_set.html#aaa7d0283f28da975f98fcaa39116781c",
+"classlf_1_1refinement_1_1_mesh_hierarchy.html#a40f62ce5f838a648e584015fc712ab27",
+"classlf_1_1uscalfe_1_1_fe_lagrange_o2_tria.html#af20b5b6f8196a20c8d171e7a59cc0b8a",
+"classlf_1_1uscalfe_1_1_precomputed_scalar_reference_finite_element.html#a9a1f8c64192566f83994416a83fe43ac",
+"namespacelf_1_1fe.html#ac8af52a3a1637bb17984d69ce2371208",
+"structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950a58924a9eaaddc4eb5d934eba1674b60c",
+"structlf_1_1io_1_1_g_msh_file_v4_1_1_partitioned_entity.html#ad817d9c808cb1d5cfbaa23d828180875"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
