@@ -133,6 +133,9 @@ $(function(){initNavTree('quick_reference_mesh.html',''); initResizable(true); }
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
+    <a href="#autotoc_md204">Overview</a>
+  </li>
+  <li class="level1">
     <a href="#mesh_access">Mesh Access</a>
   </li>
   <li class="level1">
@@ -163,7 +166,9 @@ $(function(){initNavTree('quick_reference_mesh.html',''); initResizable(true); }
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__mesh"></a></p>
-<p>Mesh Information and Mesh Data Structures are discussed in detail in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> Subsection 2.7.2.</p>
+<dl class="section attention"><dt>Attention</dt><dd>Discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> Subsection 2.7.2. Please read before using quick reference.</dd></dl>
+<h1><a class="anchor" id="autotoc_md204"></a>
+Overview</h1>
 <p>Meshes in LehrFEM++ are generally managed through shared pointers. A simple test mesh can be generated using the following code snippet:</p>
 <div class="fragment"><div class="line"><span class="comment">// Generate a simple test mesh</span></div>
 <div class="line"><span class="keyword">const</span> std::shared_ptr&lt;const lf::mesh::Mesh&gt; mesh_ptr =</div>
@@ -273,6 +278,10 @@ Mesh Functions</h1>
 <h2><a class="anchor" id="femf"></a>
 Finite Element Mesh Functions</h2>
 <p>A special case of mesh functions are finite element mesh functions. They are used to represent the solution of a finite element problem on a mesh.</p>
+<ul>
+<li><a class="el" href="classlf_1_1fe_1_1_mesh_function_f_e.html" title="A MeshFunction representing an element from a ScalarFESpace (e.g. solution of BVP)">lf::fe::MeshFunctionFE</a></li>
+<li><a class="el" href="classlf_1_1fe_1_1_mesh_function_grad_f_e.html" title="A MeshFunction representing the gradient of a function from a scalar finite element space (e....">lf::fe::MeshFunctionGradFE</a></li>
+</ul>
 <h1><a class="anchor" id="mesh_creation"></a>
 Mesh Creation</h1>
 <p>The standard ways to create a Mesh object are:</p>
@@ -284,9 +293,10 @@ Mesh Creation</h1>
 </div><!-- fragment --></li>
 <li><p class="startli"><b>Reading a mesh from file</b>: see <a class="el" href="classlf_1_1io_1_1_gmsh_reader.html" title="Reads a Gmsh *.msh file into a mesh::MeshFactory and provides a link between mesh::Entity objects and...">lf::io::GmshReader</a>, and invoking <a class="el" href="classlf_1_1io_1_1_gmsh_reader.html#a724a4b18fbba112aad1578a36d433190" title="Get the mesh that was read by this reader.">lf::io::GmshReader::mesh()</a>. The following code snippet demonstrates how to read a mesh from a file:</p>
 <div class="fragment"><div class="line"><span class="comment">// Read a mesh from a file</span></div>
-<div class="line"><span class="keyword">auto</span> mesh_p = <a class="code hl_class" href="classlf_1_1io_1_1_gmsh_reader.html">lf::io::GmshReader</a>().<a class="code hl_function" href="classlf_1_1io_1_1_gmsh_reader.html#a724a4b18fbba112aad1578a36d433190">mesh</a>(<span class="stringliteral">&quot;path/to/mesh.msh&quot;</span>);</div>
+<div class="line"><span class="keyword">auto</span> mesh_factory = std::make_unique&lt;lf::mesh::hybrid2d::MeshFactory&gt;(2);</div>
+<div class="line"><span class="keyword">auto</span> gmsh_reader = <a class="code hl_class" href="classlf_1_1io_1_1_gmsh_reader.html">lf::io::GmshReader</a>(std::move(mesh_factory), <span class="stringliteral">&quot;path/to/mesh.msh&quot;</span>);</div>
+<div class="line"><span class="keyword">auto</span> mesh = gmsh_reader.mesh();</div>
 <div class="ttc" id="aclasslf_1_1io_1_1_gmsh_reader_html"><div class="ttname"><a href="classlf_1_1io_1_1_gmsh_reader.html">lf::io::GmshReader</a></div><div class="ttdoc">Reads a Gmsh *.msh file into a mesh::MeshFactory and provides a link between mesh::Entity objects and...</div><div class="ttdef"><b>Definition</b> <a href="gmsh__reader_8h_source.html#l00070">gmsh_reader.h:70</a></div></div>
-<div class="ttc" id="aclasslf_1_1io_1_1_gmsh_reader_html_a724a4b18fbba112aad1578a36d433190"><div class="ttname"><a href="classlf_1_1io_1_1_gmsh_reader.html#a724a4b18fbba112aad1578a36d433190">lf::io::GmshReader::mesh</a></div><div class="ttdeci">std::shared_ptr&lt; mesh::Mesh &gt; mesh()</div><div class="ttdoc">Get the mesh that was read by this reader.</div><div class="ttdef"><b>Definition</b> <a href="gmsh__reader_8h_source.html#l00079">gmsh_reader.h:79</a></div></div>
 </div><!-- fragment --></li>
 <li><b>Refining an existing mesh</b>, see <a class="el" href="classlf_1_1refinement_1_1_mesh_hierarchy.html" title="A hierarchy of nested 2D hybrid meshes created by refinement.">lf::refinement::MeshHierarchy</a> or the short example below.</li>
 </ol>

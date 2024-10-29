@@ -70,7 +70,7 @@ var searchData=
   ['compose_67',['Compose',['../namespacelf_1_1geometry.html#a31d1a568a5c4745cdcb2fbbaf837be16',1,'lf::geometry']]],
   ['concept_68',['concept',['../conceptlf_1_1mesh_1_1utils_1_1_mesh_function.html#autotoc_md126',1,'Classes modelling the MeshFunction concept'],['../conceptlf_1_1assemble_1_1_entity_matrix_provider.html#autotoc_md6',1,'Classes modelling this concept'],['../conceptlf_1_1assemble_1_1_entity_vector_provider.html#autotoc_md12',1,'Classes modelling this concept']]],
   ['conditions_69',['Quick Reference - Boundary Conditions',['../quick_reference_bc.html',1,'']]],
-  ['configuration_70',['Custom Logging Configuration',['../quick_reference_logging.html#autotoc_md190',1,'']]],
+  ['configuration_70',['Custom Logging Configuration',['../quick_reference_logging.html#autotoc_md200',1,'']]],
   ['conjugate_71',['conjugate',['../classlf_1_1mesh_1_1utils_1_1_mesh_function_unary.html#af8d24aeb0fcfa051c665c660b9b69e61',1,'lf::mesh::utils::MeshFunctionUnary::conjugate()'],['../classlf_1_1mesh_1_1utils_1_1_mesh_function_unary.html#af8d24aeb0fcfa051c665c660b9b69e61',1,'lf::mesh::utils::conjugate()']]],
   ['constant_20value_20on_20the_20boundary_72',['Constant value on the boundary',['../quick_reference_bc.html#constant_value',1,'']]],
   ['contains_73',['Contains',['../classlf_1_1mesh_1_1hybrid2d_1_1_mesh.html#ada32cf4fae024604cd3a97b84f737619',1,'lf::mesh::hybrid2d::Mesh::Contains()'],['../classlf_1_1mesh_1_1_mesh.html#a0c350e1883ef87fcdc36305f9e0b9a49',1,'lf::mesh::Mesh::Contains()']]],
@@ -93,6 +93,7 @@ var searchData=
   ['create_20a_20new_20cmake_20project_90',['2. Create a new CMake project',['../getting_started.html#autotoc_md164',1,'']]],
   ['creating_20a_20mesh_20object_91',['Creating a mesh object',['../classlf_1_1mesh_1_1_mesh.html#autotoc_md108',1,'']]],
   ['creation_92',['Mesh Creation',['../quick_reference_mesh.html#mesh_creation',1,'']]],
-  ['custom_20logging_20configuration_93',['Custom Logging Configuration',['../quick_reference_logging.html#autotoc_md190',1,'']]],
-  ['cutting_20edge_20version_20of_20lehrfem_94',['Use a cutting edge version of LehrFEM++',['../getting_started.html#autotoc_md167',1,'']]]
+  ['custom_20entity_20vector_20providers_93',['Custom Entity Vector Providers',['../quick_reference_emp.html#autotoc_md186',1,'']]],
+  ['custom_20logging_20configuration_94',['Custom Logging Configuration',['../quick_reference_logging.html#autotoc_md200',1,'']]],
+  ['cutting_20edge_20version_20of_20lehrfem_95',['Use a cutting edge version of LehrFEM++',['../getting_started.html#autotoc_md167',1,'']]]
 ];

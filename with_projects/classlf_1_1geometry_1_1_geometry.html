@@ -550,7 +550,7 @@ Related Symbols</h2></td></tr>
   g(\xi) := \sqrt{\mathrm{det}\left|D\Phi^T(\xi) D\Phi(\xi) \right|}
 \]
 </p>
-<p>More information also related to the use of lovcal quadrature rules is given in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> Paragraph 2.7.5.24. </p>
+<p>More information also related to the use of local quadrature rules is given in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> Paragraph 2.7.5.24. </p>
 
 <p>Implemented in <a class="el" href="classlf_1_1geometry_1_1_parallelogram.html#aa60bc5991e6b0099feb0cf06d2cded17">lf::geometry::Parallelogram</a>, <a class="el" href="classlf_1_1geometry_1_1_point.html#afd0be38b184b77037ea01e32b4825cac">lf::geometry::Point</a>, <a class="el" href="classlf_1_1geometry_1_1_quad_o1.html#a609ea63d96a153f91782680e842b6db1">lf::geometry::QuadO1</a>, <a class="el" href="classlf_1_1geometry_1_1_quad_o2.html#a3dc604f6554de4405b34eff8f5c0cbbf">lf::geometry::QuadO2</a>, <a class="el" href="classlf_1_1geometry_1_1_segment_o1.html#aa91b03a114fbbccff82694f7b423e2bc">lf::geometry::SegmentO1</a>, <a class="el" href="classlf_1_1geometry_1_1_segment_o2.html#a0c9b9c9e5f5b0a5ff337cca040e95884">lf::geometry::SegmentO2</a>, <a class="el" href="classlf_1_1geometry_1_1_tria_o1.html#a56ee644c44b1bba22e1282a1c3495d11">lf::geometry::TriaO1</a>, and <a class="el" href="classlf_1_1geometry_1_1_tria_o2.html#aa3e3dcff73b130b03ddab904d7f9c812">lf::geometry::TriaO2</a>.</p>
 
@@ -670,7 +670,7 @@ Related Symbols</h2></td></tr>
 <h3><a class="anchor" id="autotoc_md81"></a>
 Example for recovering a single transposed inverse Jacobian.</h3>
 <p>If both dimensions agree and have the value D, then the method returns the transposed of the inverse Jacobians of the transformation at the passed points. These are square DxD matrices.</p>
-<p>To retrieve the j-th inverse transposed Jacobian from the returned matrix, use the <code>block</code> methdod of <code>Eigen</code> (case <code>(D = <a class="el" href="#a3f937acbc212bbd6685ec89d9025a61c" title="Dimension of the domain of this mapping.">DimLocal()</a>) == <a class="el" href="#a7200354b3ea18b68c4112c3a4dd6ef07" title="Dimension of the image of this mapping.">DimGlobal()</a></code>) </p><div class="fragment"><div class="line"><a class="code hl_function" href="#a7cb2b572966d7492522acb1b127cbbd0">JacobianInverseGramian</a>(local).block(0,i*D,D,D)</div>
+<p>To retrieve the j-th inverse transposed Jacobian from the returned matrix, use the <code>block</code> methdod of <code>Eigen</code> (case <code>(D = <a class="el" href="#a3f937acbc212bbd6685ec89d9025a61c" title="Dimension of the domain of this mapping.">DimLocal()</a>) == <a class="el" href="#a7200354b3ea18b68c4112c3a4dd6ef07" title="Dimension of the image of this mapping.">DimGlobal()</a></code>) </p><div class="fragment"><div class="line"><a class="code hl_function" href="#a7cb2b572966d7492522acb1b127cbbd0">JacobianInverseGramian</a>(local).block(0,j*D,D,D)</div>
 <div class="ttc" id="aclasslf_1_1geometry_1_1_geometry_html_a7cb2b572966d7492522acb1b127cbbd0"><div class="ttname"><a href="#a7cb2b572966d7492522acb1b127cbbd0">lf::geometry::Geometry::JacobianInverseGramian</a></div><div class="ttdeci">virtual Eigen::MatrixXd JacobianInverseGramian(const Eigen::MatrixXd &amp;local) const =0</div><div class="ttdoc">Evaluate the Jacobian * Inverse Gramian ( ) simultaneously at numPoints.</div></div>
 </div><!-- fragment --> <div class="image">
 <img src="jiglfpp.png" alt=""/>

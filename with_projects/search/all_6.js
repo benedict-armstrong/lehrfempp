@@ -79,7 +79,7 @@ var searchData=
   ['computetangentials_76',['computeTangentials',['../namespaceprojects_1_1ipdg__stokes_1_1mesh.html#ad19e7f005bad72b6195565066561d261',1,'projects::ipdg_stokes::mesh']]],
   ['concept_77',['concept',['../conceptlf_1_1mesh_1_1utils_1_1_mesh_function.html#autotoc_md126',1,'Classes modelling the MeshFunction concept'],['../conceptlf_1_1assemble_1_1_entity_matrix_provider.html#autotoc_md6',1,'Classes modelling this concept'],['../conceptlf_1_1assemble_1_1_entity_vector_provider.html#autotoc_md12',1,'Classes modelling this concept']]],
   ['conditions_78',['Quick Reference - Boundary Conditions',['../quick_reference_bc.html',1,'']]],
-  ['configuration_79',['Custom Logging Configuration',['../quick_reference_logging.html#autotoc_md190',1,'']]],
+  ['configuration_79',['Custom Logging Configuration',['../quick_reference_logging.html#autotoc_md200',1,'']]],
   ['conforming_20discontinuous_20galerkin_20fem_20for_20the_20stokes_20problem_80',['Divergence Conforming Discontinuous Galerkin FEM for the Stokes Problem',['../md__2home_2runner_2work_2lehrfempp_2lehrfempp_2projects_2ipdg__stokes_2_r_e_a_d_m_e.html',1,'']]],
   ['conjugate_81',['conjugate',['../classlf_1_1mesh_1_1utils_1_1_mesh_function_unary.html#af8d24aeb0fcfa051c665c660b9b69e61',1,'lf::mesh::utils::MeshFunctionUnary::conjugate()'],['../classlf_1_1mesh_1_1utils_1_1_mesh_function_unary.html#af8d24aeb0fcfa051c665c660b9b69e61',1,'lf::mesh::utils::conjugate()']]],
   ['constant_20value_20on_20the_20boundary_82',['Constant value on the boundary',['../quick_reference_bc.html#constant_value',1,'']]],
@@ -106,7 +106,8 @@ var searchData=
   ['createoffsetfunction_103',['createOffsetFunction',['../namespaceprojects_1_1ipdg__stokes_1_1assemble.html#a53ba6dee4c528a4a5fcaa7e35f79482d',1,'projects::ipdg_stokes::assemble']]],
   ['creating_20a_20mesh_20object_104',['Creating a mesh object',['../classlf_1_1mesh_1_1_mesh.html#autotoc_md108',1,'']]],
   ['creation_105',['Mesh Creation',['../quick_reference_mesh.html#mesh_creation',1,'']]],
-  ['custom_20logging_20configuration_106',['Custom Logging Configuration',['../quick_reference_logging.html#autotoc_md190',1,'']]],
-  ['cutting_20edge_20version_20of_20lehrfem_107',['Use a cutting edge version of LehrFEM++',['../getting_started.html#autotoc_md167',1,'']]],
-  ['cylinders_108',['Nested Cylinders',['../md__2home_2runner_2work_2lehrfempp_2lehrfempp_2projects_2ipdg__stokes_2examples_2nested__cylinders_2_r_e_a_d_m_e.html',1,'']]]
+  ['custom_20entity_20vector_20providers_106',['Custom Entity Vector Providers',['../quick_reference_emp.html#autotoc_md186',1,'']]],
+  ['custom_20logging_20configuration_107',['Custom Logging Configuration',['../quick_reference_logging.html#autotoc_md200',1,'']]],
+  ['cutting_20edge_20version_20of_20lehrfem_108',['Use a cutting edge version of LehrFEM++',['../getting_started.html#autotoc_md167',1,'']]],
+  ['cylinders_109',['Nested Cylinders',['../md__2home_2runner_2work_2lehrfempp_2lehrfempp_2projects_2ipdg__stokes_2examples_2nested__cylinders_2_r_e_a_d_m_e.html',1,'']]]
 ];

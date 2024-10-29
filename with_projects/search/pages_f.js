@@ -8,5 +8,6 @@ var searchData=
   ['reference_20finite_20element_20spaces_5',['Quick Reference - Finite Element Spaces',['../quick_reference_fe_space.html',1,'']]],
   ['reference_20geometry_6',['Quick Reference - Geometry',['../quick_reference_geometry.html',1,'']]],
   ['reference_20logging_7',['Quick Reference - Logging',['../quick_reference_logging.html',1,'']]],
-  ['reference_20mesh_8',['Quick Reference - Mesh',['../quick_reference_mesh.html',1,'']]]
+  ['reference_20mesh_8',['Quick Reference - Mesh',['../quick_reference_mesh.html',1,'']]],
+  ['reference_20quadrature_9',['Quick Reference - Quadrature',['../quick_reference_quad.html',1,'']]]
 ];
