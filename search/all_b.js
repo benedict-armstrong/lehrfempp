@@ -1,7 +1,7 @@
 var searchData=
 [
   ['h_20s_20galerkin_0',['Cell-Oriented Assembly of R.h.s. Galerkin',['../group__assemble__vector__locally.html',1,'']]],
-  ['handler_1',['DOF Handler',['../quick_reference_dofs.html#autotoc_md179',1,'']]],
+  ['handler_1',['DOF Handler',['../quick_reference_dofs.html#autotoc_md180',1,'']]],
   ['handlers_20and_20indexing_2',['Quick Reference - Degrees of Freedom (DOF) Handlers and Indexing',['../quick_reference_dofs.html',1,'']]],
   ['has_5fgetmesh_5fimpl_3',['has_getMesh_impl',['../classlf_1_1refinement_1_1_mesh_function_transfer.html#af0131e750c442fbfe02f3698ce4c7c74',1,'lf::refinement::MeshFunctionTransfer::has_getMesh_impl(int)'],['../classlf_1_1refinement_1_1_mesh_function_transfer.html#a0ec40a413a79b9da5162f7f6ce86e684',1,'lf::refinement::MeshFunctionTransfer::has_getMesh_impl(...)']]],
   ['header_4',['header',['../classlf_1_1io_1_1_vtk_file.html#a7ae92c23f3477331c30068ec267f228c',1,'lf::io::VtkFile']]],

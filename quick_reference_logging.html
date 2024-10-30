@@ -133,25 +133,30 @@ $(function(){initNavTree('quick_reference_logging.html',''); initResizable(true)
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md199">Logging Levels</a>
+    <a href="#autotoc_md200">Overview</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md200">Custom Logging Configuration</a>
+    <a href="#autotoc_md201">Logging Levels</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md201">Logging in LehrFEM++</a>
+    <a href="#autotoc_md202">Custom Logging Configuration</a>
+  </li>
+  <li class="level1">
+    <a href="#autotoc_md203">Logging in LehrFEM++</a>
     <ul>
       <li class="level2">
-        <a href="#autotoc_md202">Eigen Matrix Logging</a>
+        <a href="#autotoc_md204">Eigen Matrix Logging</a>
       </li>
     </ul>
   </li>
   <li class="level1">
-    <a href="#autotoc_md203">Logging in LehrFEM++ Examples</a>
+    <a href="#autotoc_md205">Logging in LehrFEM++ Examples</a>
   </li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__logging"></a></p>
+<h1><a class="anchor" id="autotoc_md200"></a>
+Overview</h1>
 <p>LehrFem relies on the <a href="https://github.com/gabime/spdlog">spdlog</a> library for logging.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;lf/base/base.h&quot;</span></div>
 <div class="line"> </div>
@@ -170,7 +175,7 @@ $(function(){initNavTree('quick_reference_logging.html',''); initResizable(true)
 <div class="line">}</div>
 <div class="ttc" id="anamespacelf_1_1base_html_ac2da71a920917aa8d751c9ea83945eb8"><div class="ttname"><a href="namespacelf_1_1base.html#ac2da71a920917aa8d751c9ea83945eb8">lf::base::InitLogger</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; InitLogger(const std::string &amp;name)</div><div class="ttdoc">Create a spdlog logger, register it in the spdlog registry and initialize it with LehrFEM++ specific ...</div><div class="ttdef"><b>Definition</b> <a href="spdlog__utils_8cc_source.html#l00016">spdlog_utils.cc:16</a></div></div>
 </div><!-- fragment --><p>The <code>InitLogger</code> function creates a logger with the given name.</p>
-<h1><a class="anchor" id="autotoc_md199"></a>
+<h1><a class="anchor" id="autotoc_md201"></a>
 Logging Levels</h1>
 <p>Setting the logging level determines which messages are logged. Log messages with a level lower than the set level are ignored.</p>
 <p>The log levels in order of increasing severity are:</p>
@@ -184,13 +189,13 @@ Logging Levels</h1>
 </ul>
 <p>By default, the logging level is set to <code>spdlog::level::info</code>, which means that only messages with level above or equal to <code>info</code> are logged (<code>info</code>, <code>warn</code>, <code>err</code>, <code>critical</code>). The following example shows how to set the logging level to <code>trace</code>:</p>
 <div class="fragment"><div class="line">logger-&gt;set_level(spdlog::level::trace);</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md200"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md202"></a>
 Custom Logging Configuration</h1>
 <p>Spdlog can be customized further (color, files, etc.) and detailed information and more examples can be found in the <a href="https://github.com/gabime/spdlog">spdlog Github repo</a></p>
-<h1><a class="anchor" id="autotoc_md201"></a>
+<h1><a class="anchor" id="autotoc_md203"></a>
 Logging in LehrFEM++</h1>
 <p>Many classes in LehrFEM++ use the logging functionality. For example, the <code>Mesh</code> class logs information about the mesh when it is created. The following example shows how to create a mesh and log information about it:</p>
-<div class="fragment"></div><!-- fragment --><h2><a class="anchor" id="autotoc_md202"></a>
+<div class="fragment"></div><!-- fragment --><h2><a class="anchor" id="autotoc_md204"></a>
 Eigen Matrix Logging</h2>
 <p>Eigen matrices are pretty-printed when logged. The following example shows how to log an Eigen matrix:</p>
 <div class="fragment"><div class="line">Eigen::MatrixXd A(2, 2);</div>
@@ -202,7 +207,7 @@ Eigen Matrix Logging</h2>
 <div class="fragment"><div class="line">[Time &amp; Date] info] Matrix A =</div>
 <div class="line">                            [1, 2]</div>
 <div class="line">                            [3, 4]</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md203"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md205"></a>
 Logging in LehrFEM++ Examples</h1>
 <p>TODO: Add LehrFEM++ example that uses logging </p>
 </div></div><!-- contents -->

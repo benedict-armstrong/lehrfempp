@@ -31,7 +31,7 @@ var searchData=
   ['filter_28',['How to apply the tesselate filter',['../classlf_1_1io_1_1_vtk_writer.html#autotoc_md94',1,'']]],
   ['finite_20element_20functions_29',['Requirement: reproduction of local finite element functions',['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md79',1,'']]],
   ['finite_20element_20mesh_20functions_30',['Finite Element Mesh Functions',['../quick_reference_mesh.html#femf',1,'']]],
-  ['finite_20element_20spaces_31',['Finite Element Spaces',['../quick_reference_fe_space.html#autotoc_md196',1,'Finite Element Spaces'],['../quick_reference_fe_space.html',1,'Quick Reference - Finite Element Spaces'],['../quick_reference_fe_space.html#autotoc_md197',1,'Uniform Finite Element Spaces']]],
+  ['finite_20element_20spaces_31',['Finite Element Spaces',['../quick_reference_fe_space.html#autotoc_md197',1,'Finite Element Spaces'],['../quick_reference_fe_space.html',1,'Quick Reference - Finite Element Spaces'],['../quick_reference_fe_space.html#autotoc_md198',1,'Uniform Finite Element Spaces']]],
   ['finite_20elements_32',['finite elements',['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md74',1,'Example: Triangular Linear Lagrangian finite elements'],['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md75',1,'Example: Triangular Linear Lagrangian finite elements']]],
   ['fix_20it_33',['How to fix it',['../eigen_stacktrace_warning.html#autotoc_md158',1,'']]],
   ['fix_20the_20include_20order_34',['1. Fix the include order',['../eigen_stacktrace_warning.html#autotoc_md159',1,'']]],

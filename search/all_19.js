@@ -7,7 +7,7 @@ var searchData=
   ['variantvisitor_4',['VariantVisitor',['../class_variant_visitor.html',1,'VariantVisitor&lt; RESULT_TYPE, LAMBDA &gt;'],['../class_variant_visitor.html#a594a94286765d34e2c7c37b3b32fae63',1,'VariantVisitor::VariantVisitor()']]],
   ['vector_5',['Requirements for type VECTOR',['../classlf_1_1assemble_1_1_c_o_o_matrix.html#autotoc_md23',1,'']]],
   ['vector_20and_20resultvector_6',['Requirements for types VECTOR and RESULTVECTOR',['../classlf_1_1assemble_1_1_c_o_o_matrix.html#autotoc_md24',1,'']]],
-  ['vector_20providers_7',['Vector Providers',['../quick_reference_emp.html#autotoc_md194',1,'Built-in Entity Vector Providers'],['../quick_reference_emp.html#autotoc_md186',1,'Custom Entity Vector Providers']]],
+  ['vector_20providers_7',['Vector Providers',['../quick_reference_emp.html#autotoc_md195',1,'Built-in Entity Vector Providers'],['../quick_reference_emp.html#autotoc_md187',1,'Custom Entity Vector Providers']]],
   ['vector_20template_20argument_8',['Additional type requirements for VECTOR template argument',['../group__assemble__vector__locally.html#autotoc_md20',1,'']]],
   ['vectordata_9',['VectorData',['../classlf_1_1io_1_1_vtk_file_1_1_vector_data.html',1,'lf::io::VtkFile::VectorData&lt; T &gt;'],['../classlf_1_1io_1_1_vtk_file_1_1_vector_data.html#aa138f516c1d4213fdbd5d2e3c0bd628f',1,'lf::io::VtkFile::VectorData::VectorData()=default'],['../classlf_1_1io_1_1_vtk_file_1_1_vector_data.html#a8503ce42bf722d0485fd15ae68ac11ac',1,'lf::io::VtkFile::VectorData::VectorData(std::string name, std::vector&lt; Eigen::Matrix&lt; T, 3, 1 &gt; &gt; data)']]],
   ['version_20of_20lehrfem_10',['Use a cutting edge version of LehrFEM++',['../getting_started.html#autotoc_md167',1,'']]],

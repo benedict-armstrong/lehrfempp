@@ -44,7 +44,7 @@ var searchData=
   ['divergence_20conforming_20discontinuous_20galerkin_20fem_20for_20the_20stokes_20problem_41',['Divergence Conforming Discontinuous Galerkin FEM for the Stokes Problem',['../md__2home_2runner_2work_2lehrfempp_2lehrfempp_2projects_2ipdg__stokes_2_r_e_a_d_m_e.html',1,'']]],
   ['document_42',['Demonstration code [Lecture Document]',['../namespacelf_1_1geometry.html#autotoc_md80',1,'']]],
   ['dof_43',['dof',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md27',1,'Rules for numbering local shape functions (local dof)'],['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md26',1,'Rules for ordering global shape functions &lt;-&gt; degrees of freedom (dof)']]],
-  ['dof_20handler_44',['DOF Handler',['../quick_reference_dofs.html#autotoc_md179',1,'']]],
+  ['dof_20handler_44',['DOF Handler',['../quick_reference_dofs.html#autotoc_md180',1,'']]],
   ['dof_20handlers_20and_20indexing_45',['Quick Reference - Degrees of Freedom (DOF) Handlers and Indexing',['../quick_reference_dofs.html',1,'']]],
   ['dof_20index_20mapping_20for_20entities_20of_20higher_20co_20dimension_46',['Local-to-global dof index mapping for entities of higher co-dimension',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md28',1,'']]],
   ['dof_5fentities_5f_47',['dof_entities_',['../classlf_1_1assemble_1_1_uniform_f_e_dof_handler.html#adc853bedfff1a8b90d101831ee8c08de',1,'lf::assemble::UniformFEDofHandler::dof_entities_'],['../classlf_1_1assemble_1_1_dynamic_f_e_dof_handler.html#a02d927cb694a6ed032e45a73b5363242',1,'lf::assemble::DynamicFEDofHandler::dof_entities_']]],
