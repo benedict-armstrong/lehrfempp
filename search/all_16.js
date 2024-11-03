@@ -49,7 +49,7 @@ var searchData=
   ['so_20far_46',['elements read so far)',['../gmsh__file__v2_8cc.html#autotoc_md85',1,'']]],
   ['some_20terminology_47',['Some terminology',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md25',1,'']]],
   ['source_48',['How to include into LaTeX source',['../namespacelf_1_1io.html#autotoc_md100',1,'']]],
-  ['spaces_49',['Spaces',['../quick_reference_fe_space.html#autotoc_md197',1,'Finite Element Spaces'],['../quick_reference_fe_space.html',1,'Quick Reference - Finite Element Spaces'],['../quick_reference_fe_space.html#autotoc_md198',1,'Uniform Finite Element Spaces']]],
+  ['spaces_49',['Spaces',['../quick_reference_fe_space.html#autotoc_md189',1,'Finite Element Spaces'],['../quick_reference_fe_space.html',1,'Quick Reference - Finite Element Spaces'],['../quick_reference_fe_space.html#autotoc_md190',1,'Uniform Finite Element Spaces']]],
   ['special_20conventions_50',['Special Conventions',['../quick_reference_dofs.html#autotoc_md183',1,'']]],
   ['special_20named_20quadrature_20rules_51',['Special &quot;named&quot; quadrature rules',['../group__namedqr.html',1,'']]],
   ['squarednorm_52',['squaredNorm',['../classlf_1_1mesh_1_1utils_1_1_mesh_function_unary.html#a11cc8c1a49dc7324dc8af79c72da552c',1,'lf::mesh::utils::MeshFunctionUnary::squaredNorm()'],['../classlf_1_1mesh_1_1utils_1_1_mesh_function_unary.html#a11cc8c1a49dc7324dc8af79c72da552c',1,'lf::mesh::utils::squaredNorm()']]],

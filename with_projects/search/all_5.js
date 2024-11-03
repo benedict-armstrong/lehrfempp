@@ -19,6 +19,6 @@ var searchData=
   ['builder_16',['Mesh Builder',['../quick_reference_mesh.html#mesh_builder',1,'']]],
   ['buildsystemmatrixinoutflow_17',['buildSystemMatrixInOutFlow',['../namespaceprojects_1_1ipdg__stokes_1_1assemble.html#a898cf0f1c136c4f2b2fd5139c7d9791b',1,'projects::ipdg_stokes::assemble']]],
   ['buildsystemmatrixnoflow_18',['buildSystemMatrixNoFlow',['../namespaceprojects_1_1ipdg__stokes_1_1assemble.html#a8eca12b7f4979c15cf6a235163e6c0f0',1,'projects::ipdg_stokes::assemble']]],
-  ['built_20in_20entity_20matrix_20providers_19',['Built-in Entity Matrix Providers',['../quick_reference_emp.html#autotoc_md188',1,'']]],
-  ['built_20in_20entity_20vector_20providers_20',['Built-in Entity Vector Providers',['../quick_reference_emp.html#autotoc_md195',1,'']]]
+  ['built_20in_20entity_20matrix_20providers_19',['Built-in Entity Matrix Providers',['../quick_reference_emp.html#built_in_entity_matrix_providers',1,'']]],
+  ['built_20in_20entity_20vector_20providers_20',['Built-in Entity Vector Providers',['../quick_reference_emp.html#autotoc_md187',1,'']]]
 ];
