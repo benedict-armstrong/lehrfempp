@@ -135,7 +135,7 @@ $(function(){initNavTree('loggers.html',''); initResizable(true); });
 <li>You change the log level of a logger that is used by a routine (such as <code><a class="el" href="classlf_1_1mesh_1_1_mesh_factory.html#ad2a8c08ecd944f951ecd120ec3ea642a" title="Construct a mesh out of the specified nodes and elements.">mesh::MeshFactory::Build()</a></code>).</li>
 </ol>
 <hr  />
- <h3><a class="anchor" id="autotoc_md171"></a>
+ <h3><a class="anchor" id="autotoc_md174"></a>
 Case 1) <code>PrintInfo()</code> methods</h3>
 <p>There are a number of member/free <code>PrintInfo()</code> functions which accept</p><ul>
 <li>a <code>std::ostream</code> (such as <code>std::cout</code>),</li>
@@ -147,7 +147,7 @@ Case 1) <code>PrintInfo()</code> methods</h3>
 <div class="line">  <span class="comment">// print information about the mesh entities to std::cout :</span></div>
 <div class="line">  <a class="code hl_function" href="namespacelf_1_1mesh_1_1utils.html#a22b97ea016ca25fa330acee9d29d1556">mesh::utils::PrintInfo</a>(std::cout, *mesh, 11);</div>
 </div><!-- fragment --><hr  />
- <h3><a class="anchor" id="autotoc_md173"></a>
+ <h3><a class="anchor" id="autotoc_md176"></a>
 Case 2) Loggers</h3>
 <p>LehrFEM++ uses the excellent <a href="https://github.com/gabime/spdlog">spdlog</a> library to output additional (debug) information. spdlog introduces the class <code>spdlog::logger</code> with which LehrFEM++ logs data to one or more "sinks" (such as <code>std::cout</code> or a file). There are six log levels which are used as follows in LehrFEM++:</p>
 <table class="markdownTable">
@@ -176,7 +176,7 @@ Case 2) Loggers</h3>
 <li>For classes, these loggers are public static member functions of the corresponding class (e.g. <a class="el" href="classlf_1_1mesh_1_1hybrid2d_1_1_mesh.html#ae957db2dc393527ca7c7eacf988912e2">Mesh::Logger()</a>).</li>
 <li>For free functions, there is a corresponding function in the same namespace as the free function (e.g. <a class="el" href="group__assemble__matrix__locally.html#gaa44165efe2d3d73dd218bd6236577ed7" title="The logger that is used by AssembleMatrixLocally() to log additional information. (for logging levels...">lf::assemble::AssembleMatrixLogger()</a> for <a class="el" href="group__assemble__matrix__locally.html#ga39b4197203dd4e896bd7073fc033aca3">lf::assemble::AssembleMatrixLocally</a>)</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md174"></a>
+<h4><a class="anchor" id="autotoc_md177"></a>
 Change the log level</h4>
 <p>If you want to see <em>Debug</em> log message of <a class="el" href="group__assemble__matrix__locally.html#ga39b4197203dd4e896bd7073fc033aca3">AssembleMatrixLocally</a> you can just write </p><div class="fragment"><div class="line">  <a class="code hl_function" href="group__assemble__matrix__locally.html#gaa44165efe2d3d73dd218bd6236577ed7">lf::assemble::AssembleMatrixLogger</a>()-&gt;set_level(spdlog::level::debug);</div>
 </div><!-- fragment --><p>Or if you want to see all log messages (level <em>Trace</em> or higher) of the class <a class="el" href="classlf_1_1mesh_1_1hybrid2d_1_1_mesh.html">hybrid2d::Mesh</a>: </p><div class="fragment"><div class="line">  <a class="code hl_function" href="classlf_1_1mesh_1_1hybrid2d_1_1_mesh.html#ae957db2dc393527ca7c7eacf988912e2">lf::mesh::hybrid2d::Mesh::Logger</a>()-&gt;set_level(spdlog::level::trace);</div>
@@ -184,10 +184,10 @@ Change the log level</h4>
 <div class="line">    logger-&gt;set_level(spdlog::level::debug);</div>
 <div class="line">  });</div>
 </div><!-- fragment --><dl class="section attention"><dt>Attention</dt><dd>In Release mode, all log statements with level <em>Debug</em> or <em>Trace</em> are removed at compile time. If you want to see these log statements, you have to set the log level of the corresponding logger <em>and</em> define the preprocessor macro <a href="https://github.com/gabime/spdlog/wiki/0.-FAQ#how-to-remove-all-debug-statements-at-compile-time-">SPDLOG_ACTIVE_LEVEL</a>.</dd></dl>
-<h4><a class="anchor" id="autotoc_md175"></a>
+<h4><a class="anchor" id="autotoc_md178"></a>
 Example</h4>
 <p>The example <code>examples/loggers/mesh_hierarchy_demo.cc</code> shows how one can set the log levels of individual loggers via command-line and environment variables and some other advanced techniques.</p>
-<h3><a class="anchor" id="autotoc_md176"></a>
+<h3><a class="anchor" id="autotoc_md179"></a>
 Contributors:</h3>
 <p>Please check the <a href="https://github.com/craffael/lehrfempp/wiki/Contribute#3-logging--debug-output">contribution guide</a>. </p>
 </div></div><!-- contents -->

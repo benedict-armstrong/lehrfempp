@@ -1,7 +1,7 @@
 var searchData=
 [
   ['h_20s_20galerkin_0',['Cell-Oriented Assembly of R.h.s. Galerkin',['../group__assemble__vector__locally.html',1,'']]],
-  ['handler_1',['DOF Handler',['../quick_reference_dofs.html#autotoc_md180',1,'']]],
+  ['handler_1',['DOF Handler',['../quick_reference_dofs.html#autotoc_md183',1,'']]],
   ['handlers_20and_20indexing_2',['Quick Reference - Degrees of Freedom (DOF) Handlers and Indexing',['../quick_reference_dofs.html',1,'']]],
   ['has_5fgetmesh_5fimpl_3',['has_getMesh_impl',['../classlf_1_1refinement_1_1_mesh_function_transfer.html#af0131e750c442fbfe02f3698ce4c7c74',1,'lf::refinement::MeshFunctionTransfer::has_getMesh_impl(int)'],['../classlf_1_1refinement_1_1_mesh_function_transfer.html#a0ec40a413a79b9da5162f7f6ce86e684',1,'lf::refinement::MeshFunctionTransfer::has_getMesh_impl(...)']]],
   ['header_4',['header',['../classlf_1_1io_1_1_vtk_file.html#a7ae92c23f3477331c30068ec267f228c',1,'lf::io::VtkFile']]],
@@ -14,9 +14,9 @@ var searchData=
   ['higher_20co_20dimension_11',['Local-to-global dof index mapping for entities of higher co-dimension',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md28',1,'']]],
   ['higher_20order_20cells_12',['Higher order cells',['../classlf_1_1io_1_1_vtk_writer.html#autotoc_md92',1,'']]],
   ['how_20to_20apply_20the_20tesselate_20filter_13',['How to apply the tesselate filter',['../classlf_1_1io_1_1_vtk_writer.html#autotoc_md94',1,'']]],
-  ['how_20to_20fix_20it_14',['How to fix it',['../eigen_stacktrace_warning.html#autotoc_md158',1,'']]],
+  ['how_20to_20fix_20it_14',['How to fix it',['../eigen_stacktrace_warning.html#autotoc_md161',1,'']]],
   ['how_20to_20include_20into_20latex_20source_15',['How to include into LaTeX source',['../namespacelf_1_1io.html#autotoc_md100',1,'']]],
   ['how_20to_20view_20the_20output_20in_20paraview_16',['How to view the output in Paraview',['../classlf_1_1io_1_1_vtk_writer.html#autotoc_md91',1,'']]],
-  ['hunter_17',['2.2. If you use LehrFEM++ via hunter',['../eigen_stacktrace_warning.html#autotoc_md162',1,'']]],
+  ['hunter_17',['2.2. If you use LehrFEM++ via hunter',['../eigen_stacktrace_warning.html#autotoc_md165',1,'']]],
   ['hybrid2drefinementpattern_18',['Hybrid2DRefinementPattern',['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html',1,'lf::refinement::Hybrid2DRefinementPattern'],['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html#a086bfd11096f11697047361c3534e0b1',1,'lf::refinement::Hybrid2DRefinementPattern::Hybrid2DRefinementPattern(const Hybrid2DRefinementPattern &amp;)=default'],['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html#a36d65d80c268f5f79ea8a0e6869d5405',1,'lf::refinement::Hybrid2DRefinementPattern::Hybrid2DRefinementPattern(Hybrid2DRefinementPattern &amp;&amp;)=default'],['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html#acda75953e0cbb17b493be672d3d1079f',1,'lf::refinement::Hybrid2DRefinementPattern::Hybrid2DRefinementPattern(lf::base::RefEl ref_el)'],['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html#aa95f28e2d05f1578f270ad597e41252a',1,'lf::refinement::Hybrid2DRefinementPattern::Hybrid2DRefinementPattern(lf::base::RefEl ref_el, RefPat ref_pat)'],['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html#affcc370ddc040d304943ad27380879de',1,'lf::refinement::Hybrid2DRefinementPattern::Hybrid2DRefinementPattern(lf::base::RefEl ref_el, RefPat ref_pat, lf::base::sub_idx_t anchor)']]]
 ];

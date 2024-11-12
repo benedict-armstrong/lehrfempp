@@ -134,10 +134,10 @@ $(function(){initNavTree('group__entity__vector__provider.html',''); initResizab
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provides the local element vector for a mesh entity. </p>
-<h2><a class="anchor" id="autotoc_md148"></a>
+<h2><a class="anchor" id="autotoc_md151"></a>
 Description</h2>
 <p>An EntityVectorProvider is an object that provides a local element vector for a given mesh entity. EntityVectorProvider's are mostly used together with <code><a class="el" href="group__assemble__vector__locally.html#ga2a6379f1b9b83f9f9589a6d2379ae3dc" title="entity-local assembly of (right-hand-side) vectors from element vectors">lf::assemble::AssembleVectorLocally</a></code> to assemble a vector.</p>
-<h2><a class="anchor" id="autotoc_md149"></a>
+<h2><a class="anchor" id="autotoc_md152"></a>
 Requirements</h2>
 <p>The type <code>EVP</code> satisfies the Concept <code>EntityVectorProvider</code> if given</p><ul>
 <li><code>evp</code> an object of type <code>EVP</code></li>
@@ -154,7 +154,7 @@ Requirements</h2>
 <tr>
 <td><code>evp.Eval(e)</code> </td><td><code>Eigen::Matrix&lt;SCALAR, ROWS, 1&gt;</code> </td><td>Returns the local element vector for mesh entity <code>e</code>. Is only called if <code>evp.isActive(e)==true</code>. </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md150"></a>
+<h2><a class="anchor" id="autotoc_md153"></a>
 Usage scenarios</h2>
 <p>The concept of a EntityVectorProvider is widely used in the <code><a class="el" href="namespacelf_1_1assemble.html" title="D.o.f. index mapping and assembly facilities.">lf::assemble</a></code> and <code><a class="el" href="namespacelf_1_1uscalfe.html" title="Collects data structures and algorithms designed for scalar finite element methods primarily meant fo...">lf::uscalfe</a></code> modules:</p><ul>
 <li>The function <code><a class="el" href="group__assemble__vector__locally.html#ga2a6379f1b9b83f9f9589a6d2379ae3dc" title="entity-local assembly of (right-hand-side) vectors from element vectors">lf::assemble::AssembleVectorLocally()</a></code> accepts an <code>EntityVectorProvider</code> which in turn defines the global vector is assembled. </li>

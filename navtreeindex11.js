@@ -147,6 +147,7 @@ var NAVTREEINDEX11 =
 "quick_reference_geometry.html":[2,1],
 "quick_reference_logging.html":[2,2],
 "quick_reference_mesh.html":[2,0],
+"quick_reference_quad.html":[2,8],
 "structlf_1_1assemble_1_1_entity_matrix_provider_a_t.html":[3,0,0,3],
 "structlf_1_1assemble_1_1_entity_matrix_provider_a_t.html":[5,0,0,0,3],
 "structlf_1_1assemble_1_1_entity_matrix_provider_a_t.html#a0837f92d3f2a2e660b80c54a0c4c7be2":[3,0,0,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950a4682e0b6e5e07e175131cbf8e9dff198":[3,0,4,1,4,21],
 "structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950a4682e0b6e5e07e175131cbf8e9dff198":[5,0,0,4,0,4,21],
 "structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950a46942259a0e4eadbe7375190ece18b40":[3,0,4,1,4,2],
-"structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950a46942259a0e4eadbe7375190ece18b40":[5,0,0,4,0,4,2],
-"structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950a58924a9eaaddc4eb5d934eba1674b60c":[3,0,4,1,4,12]
+"structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950a46942259a0e4eadbe7375190ece18b40":[5,0,0,4,0,4,2]
 };

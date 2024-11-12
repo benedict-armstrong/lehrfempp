@@ -133,7 +133,7 @@ $(function(){initNavTree('quick_reference_emp.html',''); initResizable(true); })
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md186">Overview</a>
+    <a href="#autotoc_md189">Overview</a>
   </li>
   <li class="level1">
     <a href="#custom_entity_vector_providers">Custom Entity Vector Providers</a>
@@ -162,7 +162,7 @@ $(function(){initNavTree('quick_reference_emp.html',''); initResizable(true); })
     </ul>
   </li>
   <li class="level1">
-    <a href="#autotoc_md187">Built-in Entity Vector Providers</a>
+    <a href="#autotoc_md190">Built-in Entity Vector Providers</a>
     <ul>
       <li class="level2">
         <a href="#lfescalarloadelementvectorprovider">lf::fe::ScalarLoadElementVectorProvider</a>
@@ -182,7 +182,7 @@ $(function(){initNavTree('quick_reference_emp.html',''); initResizable(true); })
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__emp"></a></p>
 <dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> Remark 2.7.4.29. Please read before using quick reference.</dd></dl>
-<h1><a class="anchor" id="autotoc_md186"></a>
+<h1><a class="anchor" id="autotoc_md189"></a>
 Overview</h1>
 <p>LehrFEM++ provides some built-in <a class="el" href="conceptlf_1_1assemble_1_1_entity_matrix_provider.html" title="Provides the local element matrix for a mesh entity.">lf::assemble::EntityMatrixProvider</a> (EMPs) and entity <a class="el" href="conceptlf_1_1assemble_1_1_entity_vector_provider.html" title="Provides the local element vector for a mesh entity.">lf::assemble::EntityVectorProvider</a> (EVPs) for common PDEs. Users can also define custom EMPs and EVPs. EMPs/EVPs are used to compute local element matrices for finite element methods and are usually passed to the <code><a class="el" href="group__assemble__matrix__locally.html#ga39b4197203dd4e896bd7073fc033aca3" title="Assembly function for standard assembly of finite element matrices.">lf::assemble::AssembleMatrixLocally</a></code> / <code><a class="el" href="group__assemble__vector__locally.html#ga2a6379f1b9b83f9f9589a6d2379ae3dc" title="entity-local assembly of (right-hand-side) vectors from element vectors">lf::assemble::AssembleVectorLocally</a></code> functions (see also <a class="el" href="quick_reference_assembly.html#md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__assembly">Quick Reference - Assembly</a>).</p>
 <h1><a class="anchor" id="custom_entity_vector_providers"></a>
@@ -239,7 +239,7 @@ lf::uscalfe::MassEdgeMatrixProvider</h2>
 <p><a class="el" href="classlf_1_1uscalfe_1_1_mass_edge_matrix_provider.html" title="Quadrature-based computation of local mass matrix for an edge.">lf::uscalfe::MassEdgeMatrixProvider</a></p>
 <p>$$ (u,v) \mapsto \int\limits_e\gamma(x)u(x)\overline{v(x)}\,\mathrm{d}S(x)\;, $$</p>
 <p>where \(e\) is an edge of the mesh, and \(\gamma\) a scalar-valued coefficient function.</p>
-<h1><a class="anchor" id="autotoc_md187"></a>
+<h1><a class="anchor" id="autotoc_md190"></a>
 Built-in Entity Vector Providers</h1>
 <p>Entity Vector Providers (EVPs) in LehrFEM++ are used to compute local element vectors for finite element methods. Below is a table summarizing the key built-in EVPs in LehrFEM++.</p>
 <table class="markdownTable">

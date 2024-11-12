@@ -259,7 +259,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A hierarchy of nested 2D hybrid meshes created by refinement. </p>
 <p>This is the fundamental class for managing sequences of meshes that have been created by successive local or global refinement of an initial coarsest mesh. Objects of this class store comprehensive information about the relationship of the meshes in the sequence: parent-child relationships of mesh cells and local refinement patterns.</p>
-<h4><a class="anchor" id="autotoc_md136"></a>
+<h4><a class="anchor" id="autotoc_md139"></a>
 sample usage</h4>
 <div class="fragment"><div class="line">  <span class="comment">// Generate test mesh</span></div>
 <div class="line">  std::shared_ptr&lt;lf::mesh::Mesh&gt; mesh_p =</div>
@@ -1120,7 +1120,7 @@ template&lt;typename Marker &gt; </div>
 
 <p>Conduct local refinement of the mesh splitting all marked edges. </p>
 <p>This method creates a new mesh by selectively (locally) refining entities of the current finest mesh in the hierarchy. Refinement is controlled by the boolean vector edge_marked_ that indicates, which edges must be refined (= split) in the course of refinement.</p>
-<h3><a class="anchor" id="autotoc_md138"></a>
+<h3><a class="anchor" id="autotoc_md141"></a>
 Algorithm</h3>
 <ul>
 <li>First all marked edges are labelled as "to be split".</li>

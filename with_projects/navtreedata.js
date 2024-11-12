@@ -35,7 +35,8 @@ var NAVTREE =
       [ "DOFs", "quick_reference_dofs.html", null ],
       [ "ENTIY_MATRIX_PROVIDER", "quick_reference_emp.html", null ],
       [ "Assembly", "quick_reference_assembly.html", null ],
-      [ "Boundary Conditions", "quick_reference_bc.html", null ]
+      [ "Boundary Conditions", "quick_reference_bc.html", null ],
+      [ "Quadrature Rules", "quick_reference_quad.html", null ]
     ] ],
     [ "Namespaces", "namespaces.html", "namespaces" ],
     [ "Concepts", "concepts.html", "concepts" ],
@@ -73,8 +74,8 @@ var NAVTREEINDEX =
 "classprojects_1_1dpg_1_1_product_uniform_f_e_space_factory.html#af85f5c5278391e0cce0e423d578795dc",
 "conceptlf_1_1assemble_1_1_entity_vector_provider.html",
 "namespacelf_1_1refinement.html#a01c88173bf4f322bd9c8e945a4a9ce6e",
-"structlf_1_1io_1_1_g_msh_file_v2_1_1_element.html#aea9cd52e9e364827f73355f46d61bf8b",
-"structlf_1_1mesh_1_1utils_1_1_mesh_function_a_t.html#a278b465e33ed0276ad3ca1602e661db6"
+"structlf_1_1io_1_1_g_msh_file_v2_1_1_element.html#ada331202a041a6c7b1f2a0d42bf25758",
+"structlf_1_1mesh_1_1utils_1_1_mesh_function_a_t.html#a001098acf17d8c821ba853ca4f09e47f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -133,25 +133,25 @@ $(function(){initNavTree('quick_reference_dofs.html',''); initResizable(true); }
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md179">Overview</a>
+    <a href="#autotoc_md182">Overview</a>
     <ul>
       <li class="level2">
-        <a href="#autotoc_md180">DOF Handler</a>
+        <a href="#autotoc_md183">DOF Handler</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md181">Local to Global Index Mapping</a>
+        <a href="#autotoc_md184">Local to Global Index Mapping</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md182">Example: UniformFEDofHandler</a>
+        <a href="#autotoc_md185">Example: UniformFEDofHandler</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md183">Special Conventions</a>
+        <a href="#autotoc_md186">Special Conventions</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md184">Important Methods</a>
+        <a href="#autotoc_md187">Important Methods</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md185">Example Code</a>
+        <a href="#autotoc_md188">Example Code</a>
       </li>
     </ul>
   </li>
@@ -159,10 +159,10 @@ $(function(){initNavTree('quick_reference_dofs.html',''); initResizable(true); }
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__dofs"></a></p>
 <dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> section 2.8. Please read before using quick reference.</dd></dl>
-<h1><a class="anchor" id="autotoc_md179"></a>
+<h1><a class="anchor" id="autotoc_md182"></a>
 Overview</h1>
 <p>In finite element methods (FEM), handling degrees of freedom (DOFs) is critical for constructing systems of equations. DOF handlers or DOF mappers are responsible for assigning local basis functions to global basis functions, which allows for the assembly of global matrices and vectors from element contributions.</p>
-<h2><a class="anchor" id="autotoc_md180"></a>
+<h2><a class="anchor" id="autotoc_md183"></a>
 DOF Handler</h2>
 <p>A DOF handler manages the relationship between the finite element space and the underlying mesh by mapping local shape functions to global shape functions. In <b>LehrFEM++</b>, this is done through objects of the type <code><a class="el" href="classlf_1_1assemble_1_1_dof_handler.html" title="A general (interface) class for DOF handling, see Lecture Document Paragraph 2.7.4....">lf::assemble::DofHandler</a></code>.</p>
 <p>The key methods provided by the <code>DofHandler</code> interface are:</p><ul>
@@ -171,7 +171,7 @@ DOF Handler</h2>
 <li><code>GlobalDofIndices(const <a class="el" href="classlf_1_1mesh_1_1_entity.html" title="Interface class representing a topological entity in a cellular complex">lf::mesh::Entity</a> &amp;)</code>: Returns the global indices of DOFs associated with a given entity.</li>
 <li><code>NumInteriorDofs(const <a class="el" href="classlf_1_1mesh_1_1_entity.html" title="Interface class representing a topological entity in a cellular complex">lf::mesh::Entity</a> &amp;)</code>: Specifies how many DOFs are associated with an entity’s interior.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md181"></a>
+<h2><a class="anchor" id="autotoc_md184"></a>
 Local to Global Index Mapping</h2>
 <p>DOF handlers use index mapping to associate local shape functions on elements to global DOFs. The mapping follows a convention to ensure consistent assembly of the global system. The basic function is represented as:</p>
 <div class="fragment"><div class="line">locglobmap(K, i) = j</div>
@@ -191,7 +191,7 @@ Local to Global Index Mapping</h2>
 <li>Cells (Triangles or Quadrilaterals)</li>
 <li>DOFs associated with lower-dimensional entities (e.g., points and edges) are numbered first, followed by higher-dimensional ones (cells). Within each category, entities are numbered according to their intrinsic indexing as returned by the Index() function.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md182"></a>
+<h2><a class="anchor" id="autotoc_md185"></a>
 Example: UniformFEDofHandler</h2>
 <p>A commonly used DOF handler in LehrFEM++ is the <a class="el" href="classlf_1_1assemble_1_1_uniform_f_e_dof_handler.html" title="Dofhandler for uniform finite element spaces.">lf::assemble::UniformFEDofHandler</a>. It sets up local-to-global index mappings where the number of DOFs is constant for all entities of the same type:</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classlf_1_1assemble_1_1_uniform_f_e_dof_handler.html">lf::assemble::UniformFEDofHandler</a> dof_handler(</div>
@@ -211,17 +211,17 @@ Example: UniformFEDofHandler</h2>
 <li>Each triangle has 1 DOF.</li>
 <li>Each quadrilateral has 4 DOFs.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md183"></a>
+<h2><a class="anchor" id="autotoc_md186"></a>
 Special Conventions</h2>
 <p>In LehrFEM++, DOFs associated with lower-dimensional entities are numbered first. For example, DOFs on points (nodes) are numbered before those on edges. This is simply a convention to ensure consistent assembly and output.</p>
-<h2><a class="anchor" id="autotoc_md184"></a>
+<h2><a class="anchor" id="autotoc_md187"></a>
 Important Methods</h2>
 <p>Here are some common functions and their usage in DofHandler:</p>
 <ul>
 <li>DOF Information Extraction: The GlobalDofIndices() method can be used to extract global DOF indices covering any geometric entity. Similarly, NumLocalDofs() provides the count of DOFs on each entity.</li>
 <li>Interior DOFs: The InteriorGlobalDofIndices() function returns the indices of global shape functions associated with the interior of a given entity. This is particularly useful when dealing with higher-order elements where some DOFs are attached to edges or faces rather than vertices.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md185"></a>
+<h2><a class="anchor" id="autotoc_md188"></a>
 Example Code</h2>
 <p>An example of using a DofHandler to print information about local-to-global mappings in LehrFEM++:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> printDofInfo(<span class="keyword">const</span> <a class="code hl_class" href="classlf_1_1assemble_1_1_dof_handler.html">lf::assemble::DofHandler</a> &amp;dofh) {</div>

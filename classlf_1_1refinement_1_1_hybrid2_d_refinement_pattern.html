@@ -486,10 +486,10 @@ for a cell entity</h3>
 For a segment entity</h3>
 <p>The shape of children with relative co-dimension 0 is given by lattice intervals. Children with relative co-dimension 1 are interior points and their location is given by single lattice points.</p>
 <dl class="section return"><dt>Returns</dt><dd>vector of <em>integer matrices</em> containing the <b>lattice coordinates</b> of the verticess of the child polygons in their columns. The size of the matrices is dxP, where d is the intrinsic dimension of the entity, and P stands for the number of vertices of a particular child entity. The length of the returned vector must agree with the value returned by <code><a class="el" href="#a696e58ea79e135afaf4dfd3b2756c713" title="provide number of child entities of a given co-dimension to be created by refinement">NumChildren()</a></code> The integer entries of the matrices must be non-negative and the column sums must be &lt;= the lattice constant.   </dd></dl>
-<h3><a class="anchor" id="autotoc_md132"></a>
+<h3><a class="anchor" id="autotoc_md135"></a>
 Case of a point entity (dimension 0)</h3>
 <p>The method always returns an single "matrix" of size 0xP, where P=1 for <code>rp_copy</code>, and P=0 for <code>rp_nil</code>.</p>
-<h3><a class="anchor" id="autotoc_md133"></a>
+<h3><a class="anchor" id="autotoc_md136"></a>
 Case of a segment entity (dimension 1)</h3>
 <ul>
 <li>codim = 0, request information about child segments. The method returns a Q-vector of 1xP integer matrices:<ul>
@@ -501,7 +501,7 @@ Case of a segment entity (dimension 1)</h3>
 <li>codim = 1: provide information about new <em>interior</em> points created during refinement. The method returns an empty vector unless <code>rp_split</code> is the refinement pattern, In this case a 1x1 matrix <code>[N/2]</code> is returned.</li>
 </ul>
 <p>Here, <code>N</code> denotes the lattice constant, corresponding to the float value 1.0 in reference coordinates</p>
-<h3><a class="anchor" id="autotoc_md134"></a>
+<h3><a class="anchor" id="autotoc_md137"></a>
 Case of triangular cell entity (dimension 2)</h3>
 <p>The method returns a Q-vector of 2xP integer matrices.</p>
 <ul>
@@ -570,7 +570,7 @@ Case of triangular cell entity (dimension 2)</h3>
 <li>codim=1: return information about (new) <em>interior</em> child edges</li>
 <li>codim=0: tell about new <em>interior</em> child nodes Only for the refinement pattern <code>rp_barycentric</code> a new interior node is created (Q=1), Q=0 in all other cases.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md135"></a>
+<h3><a class="anchor" id="autotoc_md138"></a>
 Case of quadrilateral cell (dimension 2)</h3>
 <p>A Q-vector of 2xP integer matrices with lattice coordinates in their columns is returned.</p>
 <ul>

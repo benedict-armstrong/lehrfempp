@@ -133,7 +133,7 @@ $(function(){initNavTree('quick_reference_geometry.html',''); initResizable(true
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md191">Overview</a>
+    <a href="#autotoc_md194">Overview</a>
   </li>
   <li class="level1">
     <a href="#geometry_interface">Geometry Interface</a>
@@ -167,7 +167,7 @@ $(function(){initNavTree('quick_reference_geometry.html',''); initResizable(true
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__geometry"></a></p>
 <dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> section 2.8. Please read before using quick reference.</dd></dl>
-<h1><a class="anchor" id="autotoc_md191"></a>
+<h1><a class="anchor" id="autotoc_md194"></a>
 Overview</h1>
 <p>LehrFEM++ provides an Interface for geometry data: <a class="el" href="classlf_1_1geometry_1_1_geometry.html" title="Interface class for shape information on a mesh cell in the spirit of parametric finite element metho...">lf::geometry::Geometry</a>. Geometry data for entities is stored as a mapping \( \Phi_K(\hat{x}) \) from the reference element (unit triangle, square, unit segment) to any general element. \( \Phi_K^{*}(\hat{x}) \) represents the inverse mapping from the general element to the reference element.</p>
 <p>For any one element it is enough to store the mapping \( \Phi_K(\hat{x}) \) from the reference element and the type of the <a class="el" href="classlf_1_1base_1_1_ref_el.html">reference Element</a>.</p>
@@ -228,7 +228,7 @@ Geometry Methods</h1>
 <div class="line"><span class="keywordtype">bool</span> is_affine = geometry-&gt;IsAffine();</div>
 </div><!-- fragment --><h1><a class="anchor" id="transformations"></a>
 Transformations and Mappings</h1>
-<p>This part is discussed in detail in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> section 2.8.</p>
+<p>This part is discussed in detail in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> section 2.8. Usage of the following methods is discussed in the <a class="el" href="quick_reference_assembly.html#md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__assembly">Assembly Quick Reference</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>The following methods accept a matrix of points in the local coordinate system as input. The points are stored in a matrix where each column represents a point. The number of rows corresponds to the dimension of the local coordinate system.</dd></dl>
 <h2><a class="anchor" id="global"></a>
 Global</h2>

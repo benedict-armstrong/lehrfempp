@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['macro_0',['2. Tell LehrFEM++ to not override the &lt;tt&gt;eigen_assert&lt;/tt&gt; macro',['../eigen_stacktrace_warning.html#autotoc_md160',1,'']]],
+  ['macro_0',['2. Tell LehrFEM++ to not override the &lt;tt&gt;eigen_assert&lt;/tt&gt; macro',['../eigen_stacktrace_warning.html#autotoc_md163',1,'']]],
   ['make_5fallcodimmeshdataset_1',['make_AllCodimMeshDataSet',['../namespacelf_1_1mesh_1_1utils.html#aec2be1ef36b1866fa53521c2edd2ffe0',1,'lf::mesh::utils::make_AllCodimMeshDataSet(const std::shared_ptr&lt; const lf::mesh::Mesh &gt; &amp;mesh)'],['../namespacelf_1_1mesh_1_1utils.html#a9414541f3b705c7540684e2417f01932',1,'lf::mesh::utils::make_AllCodimMeshDataSet(const std::shared_ptr&lt; const lf::mesh::Mesh &gt; &amp;mesh, T init_value)']]],
   ['make_5fcodimmeshdataset_2',['make_CodimMeshDataSet',['../namespacelf_1_1mesh_1_1utils.html#a58ae420f660193e5069da78c91969518',1,'lf::mesh::utils::make_CodimMeshDataSet(const std::shared_ptr&lt; const lf::mesh::Mesh &gt; &amp;mesh, base::dim_t codim)'],['../namespacelf_1_1mesh_1_1utils.html#a25c0f88cd809491aa1f0a41caa9a79fa',1,'lf::mesh::utils::make_CodimMeshDataSet(const std::shared_ptr&lt; const Mesh &gt; &amp;mesh, base::dim_t codim, T init)']]],
   ['make_5fquadqr_5fedgemidpointrule_3',['make_QuadQR_EdgeMidpointRule',['../group__namedqr.html#ga812d4c6189e05a1f0086d9ea019d83df',1,'lf::quad']]],
@@ -19,7 +19,7 @@ var searchData=
   ['makecomplexlagrangeo1fespace_16',['MakeComplexLagrangeO1FeSpace',['../namespacelf_1_1fe_1_1test__utils.html#a6afb9bf0ea5e735e39c316029a731d02',1,'lf::fe::test_utils']]],
   ['makedense_17',['makeDense',['../classlf_1_1assemble_1_1_c_o_o_matrix.html#a212b7c9e981590d92130db2a28022e44',1,'lf::assemble::COOMatrix']]],
   ['makesparse_18',['makeSparse',['../classlf_1_1assemble_1_1_c_o_o_matrix.html#a6210dc48222a4485777a5170198cd5e0',1,'lf::assemble::COOMatrix']]],
-  ['mapping_19',['Local to Global Index Mapping',['../quick_reference_dofs.html#autotoc_md181',1,'']]],
+  ['mapping_19',['Local to Global Index Mapping',['../quick_reference_dofs.html#autotoc_md184',1,'']]],
   ['mapping_20for_20entities_20of_20higher_20co_20dimension_20',['Local-to-global dof index mapping for entities of higher co-dimension',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md28',1,'']]],
   ['mappings_21',['Transformations and Mappings',['../quick_reference_geometry.html#transformations',1,'']]],
   ['markedges_22',['MarkEdges',['../classlf_1_1refinement_1_1_mesh_hierarchy.html#aa4608cfc81660a615e4a23c1476b7a7d',1,'lf::refinement::MeshHierarchy']]],
@@ -66,8 +66,8 @@ var searchData=
   ['meshpartitions_63',['MeshPartitions',['../structlf_1_1io_1_1_g_msh_file_v2_1_1_element.html#a3d794e0f6fe497e2057f5ff87d734842',1,'lf::io::GMshFileV2::Element']]],
   ['message_20with_20linefeedformatter_3a_64',['Multiline log message with LineFeedFormatter:',['../classlf_1_1base_1_1_line_feed_formatter.html#autotoc_md51',1,'']]],
   ['message_20with_20normal_20pattern_20formatter_3a_65',['Multiline log message with normal pattern formatter:',['../classlf_1_1base_1_1_line_feed_formatter.html#autotoc_md50',1,'']]],
-  ['methods_66',['Methods',['../quick_reference_geometry.html#geometry_methods',1,'Geometry Methods'],['../quick_reference_dofs.html#autotoc_md184',1,'Important Methods']]],
-  ['methods_67',['Case 1) &lt;tt&gt;PrintInfo()&lt;/tt&gt; methods',['../loggers.html#autotoc_md171',1,'']]],
+  ['methods_66',['Methods',['../quick_reference_geometry.html#geometry_methods',1,'Geometry Methods'],['../quick_reference_dofs.html#autotoc_md187',1,'Important Methods']]],
+  ['methods_67',['Case 1) &lt;tt&gt;PrintInfo()&lt;/tt&gt; methods',['../loggers.html#autotoc_md174',1,'']]],
   ['mf_5f_68',['mf_',['../classlf_1_1mesh_1_1utils_1_1_mesh_function_unary.html#a92e42a4f5e56b6ae3efff289bc6a9b75',1,'lf::mesh::utils::MeshFunctionUnary::mf_'],['../classlf_1_1refinement_1_1_mesh_function_transfer.html#aa2c15969f24f9453e9a590d096fd8cda',1,'lf::refinement::MeshFunctionTransfer::mf_']]],
   ['mf_5ft_69',['mf_t',['../classlf_1_1refinement_1_1_mesh_function_transfer.html#ad102f99375c5069d180b065b423b00ac',1,'lf::refinement::MeshFunctionTransfer']]],
   ['mh_5f_70',['mh_',['../classlf_1_1refinement_1_1_mesh_function_transfer.html#a902336845d32be0ceb70025751077acc',1,'lf::refinement::MeshFunctionTransfer']]],
@@ -78,7 +78,7 @@ var searchData=
   ['modelling_20the_20meshfunction_20concept_75',['Classes modelling the MeshFunction concept',['../conceptlf_1_1mesh_1_1utils_1_1_mesh_function.html#autotoc_md126',1,'']]],
   ['modelling_20this_20concept_76',['modelling this concept',['../conceptlf_1_1assemble_1_1_entity_matrix_provider.html#autotoc_md6',1,'Classes modelling this concept'],['../conceptlf_1_1assemble_1_1_entity_vector_provider.html#autotoc_md12',1,'Classes modelling this concept']]],
   ['modules_77',['Modules',['../modules_.html',1,'']]],
-  ['modules_3a_78',['General remarks about modules:',['../modules_.html#autotoc_md177',1,'']]],
+  ['modules_3a_78',['General remarks about modules:',['../modules_.html#autotoc_md180',1,'']]],
   ['moment_20based_20degrees_20of_20freedom_79',['Moment-based degrees of freedom',['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md78',1,'']]],
   ['multiline_20log_20message_20with_20linefeedformatter_3a_80',['Multiline log message with LineFeedFormatter:',['../classlf_1_1base_1_1_line_feed_formatter.html#autotoc_md51',1,'']]],
   ['multiline_20log_20message_20with_20normal_20pattern_20formatter_3a_81',['Multiline log message with normal pattern formatter:',['../classlf_1_1base_1_1_line_feed_formatter.html#autotoc_md50',1,'']]]

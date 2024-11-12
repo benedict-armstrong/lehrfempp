@@ -35,7 +35,8 @@ var NAVTREE =
       [ "DOFs", "quick_reference_dofs.html", null ],
       [ "ENTIY_MATRIX_PROVIDER", "quick_reference_emp.html", null ],
       [ "Assembly", "quick_reference_assembly.html", null ],
-      [ "Boundary Conditions", "quick_reference_bc.html", null ]
+      [ "Boundary Conditions", "quick_reference_bc.html", null ],
+      [ "Quadrature Rules", "quick_reference_quad.html", null ]
     ] ],
     [ "Namespaces", "namespaces.html", "namespaces" ],
     [ "Concepts", "concepts.html", "concepts" ],

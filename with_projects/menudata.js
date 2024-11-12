@@ -33,7 +33,8 @@ var menudata={children:[
 {text:"DOFs",url:"quick_reference_dofs.html"},
 {text:"ENTIY_MATRIX_PROVIDER",url:"quick_reference_emp.html"},
 {text:"Assembly",url:"quick_reference_assembly.html"},
-{text:"Boundary Conditions",url:"quick_reference_bc.html"}]},
+{text:"Boundary Conditions",url:"quick_reference_bc.html"},
+{text:"Quadrature Rules",url:"quick_reference_quad.html"}]},
 {text:"Namespaces",url:"namespaces.html"},
 {text:"Concepts",url:"concepts.html"},
 {text:"Classes",url:"annotated.html",children:[
