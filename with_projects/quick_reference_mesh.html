@@ -343,7 +343,7 @@ Mesh Refinement</h2>
 <div class="line">std::shared_ptr&lt;lf::mesh::Mesh&gt; mesh_level_3 = mesh_seq_p-&gt;getMesh(3);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// We can refine a mesh further by calling</span></div>
-<div class="line">multi_mesh_p-&gt;RefineRegular();</div>
+<div class="line">mesh_seq_p-&gt;RefineRegular();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Access the mesh at level 4</span></div>
 <div class="line">std::shared_ptr&lt;lf::mesh::Mesh&gt; mesh_level_4 = mesh_seq_p-&gt;getMesh(4);</div>
@@ -354,6 +354,13 @@ Mesh Builder</h2>
 <div class="fragment"><div class="line"><span class="comment">// builder for a hybrid mesh in a world of dimension 2</span></div>
 <div class="line">std::shared_ptr&lt;lf::mesh::hybrid2d::MeshFactory&gt; mesh_factory =</div>
 <div class="line">    std::make_shared&lt;lf::mesh::hybrid2d::MeshFactory&gt;(2);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Add points (needs to be done before adding entities)</span></div>
+<div class="line">mesh_factory-&gt;AddPoint(Eigen::Vector2d{0, 0});    <span class="comment">// (0)</span></div>
+<div class="line">mesh_factory-&gt;AddPoint(Eigen::Vector2d{1, 0});    <span class="comment">// (1)</span></div>
+<div class="line">mesh_factory-&gt;AddPoint(Eigen::Vector2d{1, 1});    <span class="comment">// (2)</span></div>
+<div class="line">mesh_factory-&gt;AddPoint(Eigen::Vector2d{0, 1});    <span class="comment">// (3)</span></div>
+<div class="line">mesh_factory-&gt;AddPoint(Eigen::Vector2d{0.5, 1});  <span class="comment">// (4)</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Add a triangle</span></div>
 <div class="line"><span class="comment">// First set the coordinates of its nodes:</span></div>
