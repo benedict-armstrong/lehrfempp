@@ -133,7 +133,7 @@ $(function(){initNavTree('quick_reference_emp.html',''); initResizable(true); })
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md189">Overview</a>
+    <a href="#autotoc_md193">Overview</a>
   </li>
   <li class="level1">
     <a href="#custom_entity_vector_providers">Custom Entity Vector Providers</a>
@@ -162,7 +162,7 @@ $(function(){initNavTree('quick_reference_emp.html',''); initResizable(true); })
     </ul>
   </li>
   <li class="level1">
-    <a href="#autotoc_md190">Built-in Entity Vector Providers</a>
+    <a href="#autotoc_md194">Built-in Entity Vector Providers</a>
     <ul>
       <li class="level2">
         <a href="#lfescalarloadelementvectorprovider">lf::fe::ScalarLoadElementVectorProvider</a>
@@ -181,14 +181,31 @@ $(function(){initNavTree('quick_reference_emp.html',''); initResizable(true); })
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__emp"></a></p>
-<dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> Remark 2.7.4.29. Please read before using quick reference.</dd></dl>
-<h1><a class="anchor" id="autotoc_md189"></a>
+<dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=229">Lecture Document Remark 2.7.4.29</a>. Please read before using quick reference.</dd></dl>
+<h1><a class="anchor" id="autotoc_md193"></a>
 Overview</h1>
-<p>LehrFEM++ provides some built-in <a class="el" href="conceptlf_1_1assemble_1_1_entity_matrix_provider.html" title="Provides the local element matrix for a mesh entity.">lf::assemble::EntityMatrixProvider</a> (EMPs) and entity <a class="el" href="conceptlf_1_1assemble_1_1_entity_vector_provider.html" title="Provides the local element vector for a mesh entity.">lf::assemble::EntityVectorProvider</a> (EVPs) for common PDEs. Users can also define custom EMPs and EVPs. EMPs/EVPs are used to compute local element matrices for finite element methods and are usually passed to the <code><a class="el" href="group__assemble__matrix__locally.html#ga39b4197203dd4e896bd7073fc033aca3" title="Assembly function for standard assembly of finite element matrices.">lf::assemble::AssembleMatrixLocally</a></code> / <code><a class="el" href="group__assemble__vector__locally.html#ga2a6379f1b9b83f9f9589a6d2379ae3dc" title="entity-local assembly of (right-hand-side) vectors from element vectors">lf::assemble::AssembleVectorLocally</a></code> functions (see also <a class="el" href="quick_reference_assembly.html#md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__assembly">Quick Reference - Assembly</a>).</p>
+<p>LehrFEM++ provides some built-in <a class="el" href="conceptlf_1_1assemble_1_1_entity_matrix_provider.html" title="Provides the local element matrix for a mesh entity.">lf::assemble::EntityMatrixProvider</a> (EMPs) and entity <a class="el" href="conceptlf_1_1assemble_1_1_entity_vector_provider.html" title="Provides the local element vector for a mesh entity.">lf::assemble::EntityVectorProvider</a> (EVPs) for common PDEs. Users can also define custom EMPs and EVPs. EMPs/EVPs are used to compute local element matrices for finite element methods and are usually passed to the <code><a class="el" href="group__assemble__matrix__locally.html#ga39b4197203dd4e896bd7073fc033aca3" title="Assembly function for standard assembly of finite element matrices.">lf::assemble::AssembleMatrixLocally</a></code> / <code><a class="el" href="group__assemble__vector__locally.html#ga2a6379f1b9b83f9f9589a6d2379ae3dc" title="entity-local assembly of (right-hand-side) vectors from element vectors">lf::assemble::AssembleVectorLocally</a></code> functions (see also <a class="el" href="quick_reference_assembly.html">Quick Reference - Assembly</a>).</p>
 <h1><a class="anchor" id="custom_entity_vector_providers"></a>
 Custom Entity Vector Providers</h1>
-<div class="fragment"><div class="line"><span class="comment">// Example implementation of a custom EntityVectorProvider</span></div>
-<div class="line">...</div>
+<p>A custom entity matrix provider has to implement the <code><a class="el" href="conceptlf_1_1assemble_1_1_entity_matrix_provider.html" title="Provides the local element matrix for a mesh entity.">lf::assemble::EntityMatrixProvider</a></code> concept. The following snippets offer minimal definitions for EMPs and EVPs:</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span>ElemMatProvider {</div>
+<div class="line"> <span class="keyword">public</span>:</div>
+<div class="line">  <span class="comment">// Constructor can be used to pass data required for local computations</span></div>
+<div class="line">  ElemMatProvider() = <span class="keywordflow">default</span>;</div>
+<div class="line">  <span class="comment">// Select cells taken into account during cell-oriented assembly</span></div>
+<div class="line">  <span class="keywordtype">bool</span> isActive(<span class="keyword">const</span> <a class="code hl_class" href="classlf_1_1mesh_1_1_entity.html">lf::mesh::Entity</a>&amp; cell);</div>
+<div class="line">  <span class="comment">// Compute element matrix for a cell, here a fixed-size matrix</span></div>
+<div class="line">  Eigen::Matrix&lt;double, 3, 3&gt; Eval(<span class="keyword">const</span> <a class="code hl_class" href="classlf_1_1mesh_1_1_entity.html">lf::mesh::Entity</a>&amp; cell);</div>
+<div class="line">};</div>
+</div><!-- fragment --><div class="fragment"><div class="line"><span class="keyword">class </span>ElemVecProvider {</div>
+<div class="line"> <span class="keyword">public</span>:</div>
+<div class="line">  <span class="comment">// Constructor can be used to pass data required for local computations</span></div>
+<div class="line">  ElemVecProvider() = <span class="keywordflow">default</span>;</div>
+<div class="line">  <span class="comment">// Select cells taken into account during cell-oriented assembly</span></div>
+<div class="line">  <span class="keywordtype">bool</span> isActive(<span class="keyword">const</span> <a class="code hl_class" href="classlf_1_1mesh_1_1_entity.html">lf::mesh::Entity</a>&amp; cell);</div>
+<div class="line">  <span class="comment">// Compute element vector for a cell</span></div>
+<div class="line">  Eigen::Vector3d Eval(<span class="keyword">const</span> <a class="code hl_class" href="classlf_1_1mesh_1_1_entity.html">lf::mesh::Entity</a>&amp; cell);</div>
+<div class="line">};</div>
 </div><!-- fragment --><h1><a class="anchor" id="built_in_entity_matrix_providers"></a>
 Built-in Entity Matrix Providers</h1>
 <p>Entity Matrix Providers (EMPs) in LehrFEM++ are used to compute local element matrices for finite element methods. Below is a table summarizing the key built-in EMPs in LehrFEM++.</p>
@@ -239,7 +256,7 @@ lf::uscalfe::MassEdgeMatrixProvider</h2>
 <p><a class="el" href="classlf_1_1uscalfe_1_1_mass_edge_matrix_provider.html" title="Quadrature-based computation of local mass matrix for an edge.">lf::uscalfe::MassEdgeMatrixProvider</a></p>
 <p>$$ (u,v) \mapsto \int\limits_e\gamma(x)u(x)\overline{v(x)}\,\mathrm{d}S(x)\;, $$</p>
 <p>where \(e\) is an edge of the mesh, and \(\gamma\) a scalar-valued coefficient function.</p>
-<h1><a class="anchor" id="autotoc_md190"></a>
+<h1><a class="anchor" id="autotoc_md194"></a>
 Built-in Entity Vector Providers</h1>
 <p>Entity Vector Providers (EVPs) in LehrFEM++ are used to compute local element vectors for finite element methods. Below is a table summarizing the key built-in EVPs in LehrFEM++.</p>
 <table class="markdownTable">

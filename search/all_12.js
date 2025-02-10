@@ -6,7 +6,7 @@ var searchData=
   ['of_20a_20segment_20entity_20dimension_201_3',['Case of a segment entity (dimension 1)',['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html#autotoc_md136',1,'']]],
   ['of_20freedom_4',['Moment-based degrees of freedom',['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md78',1,'']]],
   ['of_20freedom_20dof_5',['Rules for ordering global shape functions &lt;-&gt; degrees of freedom (dof)',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md26',1,'']]],
-  ['of_20freedom_20dof_20handlers_20and_20indexing_6',['Quick Reference - Degrees of Freedom (DOF) Handlers and Indexing',['../quick_reference_dofs.html',1,'']]],
+  ['of_20freedom_20dof_20handlers_20and_20indexing_6',['Quick Reference - Degrees of Freedom (DOF) Handlers and Indexing',['../quick_reference_dofh.html',1,'']]],
   ['of_20galerkin_20matrices_7',['Cell-Oriented Assembly of Galerkin Matrices',['../group__assemble__matrix__locally.html',1,'']]],
   ['of_20higher_20co_20dimension_8',['Local-to-global dof index mapping for entities of higher co-dimension',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md28',1,'']]],
   ['of_20lehrfem_9',['Use a cutting edge version of LehrFEM++',['../getting_started.html#autotoc_md170',1,'']]],
@@ -57,5 +57,5 @@ var searchData=
   ['output_3a_54',['output:',['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md73',1,'Level of output:'],['../classlf_1_1uscalfe_1_1_uniform_scalar_f_e_space.html#autotoc_md150',1,'Level of output:']]],
   ['output_5f_55',['output_',['../classlf_1_1base_1_1_auto_timer.html#a06e1e2ed21cfa2680ba58ac9d021aa38',1,'lf::base::AutoTimer']]],
   ['override_20the_20tt_20eigen_5fassert_20tt_20macro_56',['2. Tell LehrFEM++ to not override the &lt;tt&gt;eigen_assert&lt;/tt&gt; macro',['../eigen_stacktrace_warning.html#autotoc_md163',1,'']]],
-  ['overview_57',['Overview',['../quick_reference_bc.html#autotoc_md181',1,'Overview'],['../quick_reference_dofs.html#autotoc_md182',1,'Overview'],['../quick_reference_emp.html#autotoc_md189',1,'Overview'],['../quick_reference_fe_space.html#autotoc_md191',1,'Overview'],['../quick_reference_geometry.html#autotoc_md194',1,'Overview'],['../quick_reference_logging.html#autotoc_md195',1,'Overview'],['../quick_reference_mesh.html#autotoc_md196',1,'Overview'],['../quick_reference_quad.html#autotoc_md197',1,'Overview']]]
+  ['overview_57',['Overview',['../quick_reference_assembly.html#autotoc_md181',1,'Overview'],['../quick_reference_bc.html#autotoc_md184',1,'Overview'],['../quick_reference_dofh.html#autotoc_md185',1,'Overview'],['../quick_reference_emp.html#autotoc_md193',1,'Overview'],['../quick_reference_fe_space.html#autotoc_md195',1,'Overview'],['../quick_reference_geometry.html#autotoc_md197',1,'Overview'],['../quick_reference_logging.html#autotoc_md198',1,'Overview'],['../quick_reference_mesh.html#autotoc_md199',1,'Overview'],['../quick_reference_quad.html#autotoc_md200',1,'Overview']]]
 ];

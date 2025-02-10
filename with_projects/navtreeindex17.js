@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structlf_1_1mesh_1_1utils_1_1_mesh_function_a_t.html#a001098acf17d8c821ba853ca4f09e47f":[5,0,1,5,1,3,3],
 "structlf_1_1mesh_1_1utils_1_1_mesh_function_a_t.html#a278b465e33ed0276ad3ca1602e661db6":[3,1,5,2,3,4],
 "structlf_1_1mesh_1_1utils_1_1_mesh_function_a_t.html#a278b465e33ed0276ad3ca1602e661db6":[5,0,1,5,1,3,4],
 "structlf_1_1mesh_1_1utils_1_1_mesh_function_a_t.html#a3ed0c1f9ee6f7739388915331fd5aa09":[3,1,5,2,3,1],
@@ -53,6 +54,5 @@ var NAVTREEINDEX17 =
 "structlf_1_1refinement_1_1_point_child_info.html#a2f342ebcb5d6e0ad1abde37b9f1d715b":[3,1,7,7,2],
 "structlf_1_1refinement_1_1_point_child_info.html#a2f342ebcb5d6e0ad1abde37b9f1d715b":[5,0,1,7,7,2],
 "structlf_1_1refinement_1_1_point_child_info.html#ae410374c88972a0984aef8a37569db0f":[3,1,7,7,1],
-"structlf_1_1refinement_1_1_point_child_info.html#ae410374c88972a0984aef8a37569db0f":[5,0,1,7,7,1],
-"usergroup0.html":[2]
+"structlf_1_1refinement_1_1_point_child_info.html#ae410374c88972a0984aef8a37569db0f":[5,0,1,7,7,1]
 };

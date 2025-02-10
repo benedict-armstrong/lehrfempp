@@ -27,12 +27,12 @@ var NAVTREE =
   [ "LehrFEM++", "index.html", [
     [ "Welcome to LehrFEM++", "index.html", null ],
     [ "Getting Started", "getting_started.html", null ],
-    [ "Quick Reference", "usergroup0.html", [
+    [ "Quick Reference", "quick_reference_index.html", [
       [ "Mesh", "quick_reference_mesh.html", null ],
       [ "Geometry", "quick_reference_geometry.html", null ],
       [ "Logging", "quick_reference_logging.html", null ],
       [ "Finite Element Spaces", "quick_reference_fe_space.html", null ],
-      [ "DOFs", "quick_reference_dofs.html", null ],
+      [ "DOFHandlers", "quick_reference_dofh.html", null ],
       [ "ENTIY_MATRIX_PROVIDER", "quick_reference_emp.html", null ],
       [ "Assembly", "quick_reference_assembly.html", null ],
       [ "Boundary Conditions", "quick_reference_bc.html", null ],
