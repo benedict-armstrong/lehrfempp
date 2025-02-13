@@ -161,7 +161,7 @@ $(function(){initNavTree('quick_reference_dofh.html',''); initResizable(true); }
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__dofh"></a></p>
-<dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#section.2.8">Lecture Document Section 2.8</a>. Please read before using quick reference.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#section.2.8" title="Parametric Finite Element Methods">Lecture Document Section 2.8</a>. Please read before using quick reference.</dd></dl>
 <h1><a class="anchor" id="autotoc_md185"></a>
 Overview</h1>
 <p>Local computations are essential for efficient finite element methods (FEM). LehrFEM++ uses a local indexing scheme to map local shape functions to global degrees of freedom (DOFs). In <b>LehrFEM++</b>, this is done through objects of the type <code><a class="el" href="classlf_1_1assemble_1_1_dof_handler.html" title="A general (interface) class for DOF handling, see Lecture Document Paragraph 2.7.4....">lf::assemble::DofHandler</a></code>. This quick reference provides an overview of DOF handlers and indexing conventions in <b>LehrFEM++</b>. The <a class="el" href="quick_reference_assembly.html">assembly quick reference</a> page provides more information on (local) assembly using DOF handlers.</p>
@@ -173,17 +173,17 @@ Local to Global Index Mapping</h1>
 <li>Edges</li>
 <li>Cells (Triangles or Quadrilaterals)</li>
 </ol>
-<p>DOFs associated with lower-dimensional entities (e.g., points and edges) are numbered first, followed by higher-dimensional ones (cells). Within each category, entities are numbered according to their intrinsic indexing as returned by the Index() function. this is also illustrated in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=222">Lecture Document Figure 140</a> and <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=222">Lecture Document Figure 141</a>.</p>
+<p>DOFs associated with lower-dimensional entities (e.g., points and edges) are numbered first, followed by higher-dimensional ones (cells). Within each category, entities are numbered according to their intrinsic indexing as returned by the Index() function. this is also illustrated in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#plotcnt.140" title="Assembly: Index Mappings">Lecture Document Figure 140</a> and <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#plotcnt.141" title="Assembly: Index Mappings">Lecture Document Figure 141</a>.</p>
 <h1><a class="anchor" id="autotoc_md187"></a>
 DOF Handlers in LehrFEM++</h1>
 <p>LehrFEM++ provides two implementations of DOF handlers:</p>
 <ol type="1">
-<li><code><a class="el" href="classlf_1_1assemble_1_1_dynamic_f_e_dof_handler.html" title="Dof handler allowing variable local dof layouts.">lf::assemble::DynamicFEDofHandler</a></code>: Allows for a variable number of local DOFs for each entity (e.g. for hp-FEM, see <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=224">Lecture Document Paragraph 2.7.4.16</a>)</li>
+<li><code><a class="el" href="classlf_1_1assemble_1_1_dynamic_f_e_dof_handler.html" title="Dof handler allowing variable local dof layouts.">lf::assemble::DynamicFEDofHandler</a></code>: Allows for a variable number of local DOFs for each entity (e.g. for hp-FEM, see <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=224" title="Assembly: Index Mappings">Lecture Document Paragraph 2.7.4.16</a>)</li>
 <li><code><a class="el" href="classlf_1_1assemble_1_1_uniform_f_e_dof_handler.html" title="Dofhandler for uniform finite element spaces.">lf::assemble::UniformFEDofHandler</a></code>: Assigns a the same number of DOFs to each entity of a given type (uniform FE space).</li>
 </ol>
 <h2><a class="anchor" id="autotoc_md188"></a>
 DynamicFEDofHandler</h2>
-<p>The following code shows how a DynamicFEDofHandler can be initialized. More detail can also be found in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=224">Lecture Document Paragraph 2.7.4.16</a>.</p>
+<p>The following code shows how a DynamicFEDofHandler can be initialized. More detail can also be found in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=224" title="Assembly: Index Mappings">Lecture Document Paragraph 2.7.4.16</a>.</p>
 <div class="fragment"><div class="line"><span class="keyword">const</span> std::shared_ptr&lt;const lf::mesh::Mesh&gt; mesh_p =</div>
 <div class="line">      <a class="code hl_function" href="namespacelf_1_1mesh_1_1test__utils.html#a4a99c0d4db0495121ff8ad0e63f889cb">lf::mesh::test_utils::GenerateHybrid2DTestMesh</a>(1);</div>
 <div class="line"> </div>

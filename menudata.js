@@ -28,7 +28,6 @@ var menudata={children:[
 {text:"Quick Reference",url:"quick_reference_index.html",children:[
 {text:"Mesh",url:"quick_reference_mesh.html"},
 {text:"Geometry",url:"quick_reference_geometry.html"},
-{text:"Logging",url:"quick_reference_logging.html"},
 {text:"Finite Element Spaces",url:"quick_reference_fe_space.html"},
 {text:"DOFHandlers",url:"quick_reference_dofh.html"},
 {text:"ENTIY_MATRIX_PROVIDER",url:"quick_reference_emp.html"},

@@ -30,7 +30,6 @@ var NAVTREE =
     [ "Quick Reference", "quick_reference_index.html", [
       [ "Mesh", "quick_reference_mesh.html", null ],
       [ "Geometry", "quick_reference_geometry.html", null ],
-      [ "Logging", "quick_reference_logging.html", null ],
       [ "Finite Element Spaces", "quick_reference_fe_space.html", null ],
       [ "DOFHandlers", "quick_reference_dofh.html", null ],
       [ "ENTIY_MATRIX_PROVIDER", "quick_reference_emp.html", null ],
@@ -74,8 +73,8 @@ var NAVTREEINDEX =
 "classprojects_1_1dpg_1_1_product_uniform_f_e_space_factory.html#af85f5c5278391e0cce0e423d578795dc",
 "conceptlf_1_1assemble_1_1_entity_vector_provider.html",
 "namespacelf_1_1refinement.html#a1455c9eda57af2531db1e65d3b6951a1",
-"structlf_1_1io_1_1_g_msh_file_v2_1_1_element.html#ada331202a041a6c7b1f2a0d42bf25758",
-"structlf_1_1mesh_1_1utils_1_1_mesh_function_a_t.html#a001098acf17d8c821ba853ca4f09e47f"
+"structlf_1_1io_1_1_g_msh_file_v2_1_1_element.html#aea9cd52e9e364827f73355f46d61bf8b",
+"structlf_1_1mesh_1_1utils_1_1_mesh_function_a_t.html#a278b465e33ed0276ad3ca1602e661db6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
