@@ -168,5 +168,6 @@ var annotated_dup =
       ] ]
     ] ],
     [ "ProblemSolution", "struct_problem_solution.html", "struct_problem_solution" ],
+    [ "StrangSplit", "class_strang_split.html", "class_strang_split" ],
     [ "VariantVisitor", "class_variant_visitor.html", "class_variant_visitor" ]
 ];

@@ -66,8 +66,6 @@ var hierarchy =
       [ "lf::mesh::utils::AllCodimMeshDataSet< T >", "classlf_1_1mesh_1_1utils_1_1_all_codim_mesh_data_set.html", null ],
       [ "lf::mesh::utils::CodimMeshDataSet< T >", "classlf_1_1mesh_1_1utils_1_1_codim_mesh_data_set.html", null ]
     ] ],
-    [ "lf::mesh::utils::MeshDataSet< bool >", "classlf_1_1mesh_1_1utils_1_1_mesh_data_set.html", null ],
-    [ "lf::mesh::utils::MeshDataSet< Eigen::Vector2d >", "classlf_1_1mesh_1_1utils_1_1_mesh_data_set.html", null ],
     [ "lf::mesh::utils::MeshDataSet< std::variant< std::monostate, lf::fe::FePoint< SCALAR >, lf::fe::FeHierarchicSegment< SCALAR >, lf::fe::FeHierarchicTria< SCALAR >, lf::fe::FeHierarchicQuad< SCALAR > > >", "classlf_1_1mesh_1_1utils_1_1_mesh_data_set.html", [
       [ "lf::mesh::utils::AllCodimMeshDataSet< std::variant< std::monostate, lf::fe::FePoint< SCALAR >, lf::fe::FeHierarchicSegment< SCALAR >, lf::fe::FeHierarchicTria< SCALAR >, lf::fe::FeHierarchicQuad< SCALAR > > >", "classlf_1_1mesh_1_1utils_1_1_all_codim_mesh_data_set.html", null ]
     ] ],
@@ -153,6 +151,7 @@ var hierarchy =
       [ "lf::fe::test_utils::ComplexScalarReferenceFiniteElement< SCALAR >", "classlf_1_1fe_1_1test__utils_1_1_complex_scalar_reference_finite_element.html", null ]
     ] ],
     [ "FisherKPP::StrangSplit", "class_fisher_k_p_p_1_1_strang_split.html", null ],
+    [ "StrangSplit", "class_strang_split.html", null ],
     [ "lf::mesh::utils::StructuredMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_structured_mesh_builder.html", [
       [ "lf::mesh::utils::TPQuadMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_t_p_quad_mesh_builder.html", null ],
       [ "lf::mesh::utils::TPTriagMeshBuilder", "classlf_1_1mesh_1_1utils_1_1_t_p_triag_mesh_builder.html", null ],

@@ -8,6 +8,10 @@ var namespacelf_1_1refinement =
     [ "MeshHierarchy", "classlf_1_1refinement_1_1_mesh_hierarchy.html", "classlf_1_1refinement_1_1_mesh_hierarchy" ],
     [ "ParentInfo", "structlf_1_1refinement_1_1_parent_info.html", "structlf_1_1refinement_1_1_parent_info" ],
     [ "PointChildInfo", "structlf_1_1refinement_1_1_point_child_info.html", "structlf_1_1refinement_1_1_point_child_info" ],
+    [ "dim_t", "namespacelf_1_1refinement.html#ae3a29f90c063bb1bebe232ce17a155e6", null ],
+    [ "glb_idx_t", "namespacelf_1_1refinement.html#afbd502418cb1765710483dda14ee0658", null ],
+    [ "size_type", "namespacelf_1_1refinement.html#ab3b24f59c5ab0cb8154dca499837561e", null ],
+    [ "sub_idx_t", "namespacelf_1_1refinement.html#ae32f2c419b5b9811929f0b2a6c8f6694", null ],
     [ "RefPat", "namespacelf_1_1refinement.html#aad00cb5a8084400b931b01984d2cdc5d", [
       [ "rp_nil", "namespacelf_1_1refinement.html#aad00cb5a8084400b931b01984d2cdc5dac6513b67a4ed3792584ff7c2e70142db", null ],
       [ "rp_copy", "namespacelf_1_1refinement.html#aad00cb5a8084400b931b01984d2cdc5daf758aedf6fd554c7805371670af9d0fd", null ],
@@ -27,5 +31,9 @@ var namespacelf_1_1refinement =
     [ "operator<<", "namespacelf_1_1refinement.html#a01c88173bf4f322bd9c8e945a4a9ce6e", null ],
     [ "WriteMatlab", "namespacelf_1_1refinement.html#a2f737f7f56615d885f58295b4739fbb3", null ],
     [ "WriteMatlabLevel", "namespacelf_1_1refinement.html#ae981a71229dced030a36aafd5f1d529f", null ],
+    [ "EntityCenterPositionSelector< POSPRED >::kedge_center_", "namespacelf_1_1refinement.html#a4d4ce8c57b9a039706908ab300181a2d", null ],
+    [ "EntityCenterPositionSelector< POSPRED >::kpoint_center_", "namespacelf_1_1refinement.html#a800c221f0e9ef20df34ffe228da7acd4", null ],
+    [ "EntityCenterPositionSelector< POSPRED >::kquad_center_", "namespacelf_1_1refinement.html#a58093a4dbcd7270e86319d918e864aa9", null ],
+    [ "EntityCenterPositionSelector< POSPRED >::ktria_center_", "namespacelf_1_1refinement.html#a621bd1f69ec4454e36ab93e8c25398e4", null ],
     [ "idx_nil", "namespacelf_1_1refinement.html#a631a263685583096b4ec9a06e086da33", null ]
 ];

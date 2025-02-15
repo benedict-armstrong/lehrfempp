@@ -33,7 +33,7 @@ var namespaceprojects_1_1dpg =
     [ "glb_idx_t", "namespaceprojects_1_1dpg.html#a24a406460fd90864c208b4790caa2e6f", null ],
     [ "ldof_idx_t", "namespaceprojects_1_1dpg.html#a329447635a2a0d12e3ac8ed3defe8c9b", null ],
     [ "quad_rule_collection_t", "namespaceprojects_1_1dpg.html#a8ffefb0dd8af58fbaa82b8f59c2da5f7", null ],
-    [ "size_type", "namespaceprojects_1_1dpg.html#ae0d6f1a906d9fb8153684f97ba3af1f2", null ],
+    [ "size_type", "namespaceprojects_1_1dpg.html#ad63fc43c87e1e7f91986f818662985e5", null ],
     [ "sub_idx_t", "namespaceprojects_1_1dpg.html#a88211ebe46aed4f43379180ada60fa33", null ],
     [ "BoundaryQuadRule", "namespaceprojects_1_1dpg.html#a22267e725c5737a5ee251851266ecbfe", null ],
     [ "ConvectionElementMatrixProvider", "namespaceprojects_1_1dpg.html#a9cd3e0d3372a3a5a9f68d446eaddbcf0", null ],

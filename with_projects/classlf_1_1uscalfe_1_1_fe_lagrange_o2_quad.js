@@ -15,6 +15,6 @@ var classlf_1_1uscalfe_1_1_fe_lagrange_o2_quad =
     [ "operator=", "classlf_1_1uscalfe_1_1_fe_lagrange_o2_quad.html#a60eb2ea528a03a326c867665b1dcbbfa", null ],
     [ "operator=", "classlf_1_1uscalfe_1_1_fe_lagrange_o2_quad.html#a0d3f004817ba4d947510269335d25521", null ],
     [ "RefEl", "classlf_1_1uscalfe_1_1_fe_lagrange_o2_quad.html#ace2cd43be17649eded8c09e7cdf62465", null ],
-    [ "krsf_segment_", "classlf_1_1uscalfe_1_1_fe_lagrange_o2_quad.html#a347499a778344ec3006b65aa7ab89060", null ],
-    [ "ksegment_to_quad_mapping_", "classlf_1_1uscalfe_1_1_fe_lagrange_o2_quad.html#aef75d6e3e17257e9f26d380d10056e43", null ]
+    [ "krsf_segment_", "classlf_1_1uscalfe_1_1_fe_lagrange_o2_quad.html#a8e260dc5c81b20c48067ce05d5aacd8e", null ],
+    [ "ksegment_to_quad_mapping_", "classlf_1_1uscalfe_1_1_fe_lagrange_o2_quad.html#af3c3b9144c82bf30d40ed96a20912a2a", null ]
 ];

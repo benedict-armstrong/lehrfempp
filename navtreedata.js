@@ -68,10 +68,10 @@ var NAVTREEINDEX =
 "classlf_1_1refinement_1_1_mesh_hierarchy.html#a40f62ce5f838a648e584015fc712ab27",
 "classlf_1_1uscalfe_1_1_fe_lagrange_o2_tria.html#af20b5b6f8196a20c8d171e7a59cc0b8a",
 "classlf_1_1uscalfe_1_1_precomputed_scalar_reference_finite_element.html#a9a1f8c64192566f83994416a83fe43ac",
-"namespacelf_1_1fe.html#ac8af52a3a1637bb17984d69ce2371208",
-"structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950a58924a9eaaddc4eb5d934eba1674b60c",
-"structlf_1_1io_1_1_g_msh_file_v4_1_1_partitioned_entity.html#ad817d9c808cb1d5cfbaa23d828180875"
+"namespacelf_1_1fe.html#ac187776d6bf8841ef397328538c6730b",
+"structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950",
+"structlf_1_1io_1_1_g_msh_file_v4_1_1_node_block.html#a36d638ff17ef0569b5be27cf24b3cd08"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
