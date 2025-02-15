@@ -81,8 +81,8 @@ var searchData=
   ['rp_5fthreeedge_78',['rp_threeedge',['../namespacelf_1_1refinement.html#aad00cb5a8084400b931b01984d2cdc5daf003e2c1bfb07df00ebe6136e26e2af0',1,'lf::refinement']]],
   ['rp_5ftrisect_79',['rp_trisect',['../namespacelf_1_1refinement.html#aad00cb5a8084400b931b01984d2cdc5da86c7d80e9f636c68feffed426cf04a60',1,'lf::refinement']]],
   ['rp_5ftrisect_5fleft_80',['rp_trisect_left',['../namespacelf_1_1refinement.html#aad00cb5a8084400b931b01984d2cdc5da8b16ad12dc10ff824d113777e68aa770',1,'lf::refinement']]],
-  ['rule_81',['Using a Quadrature Rule',['../quick_reference_quad.html#autotoc_md202',1,'']]],
-  ['rules_82',['Working with Quadrature Rules',['../quick_reference_quad.html#autotoc_md201',1,'']]],
+  ['rule_81',['Using a Quadrature Rule',['../quick_reference_quad.html#autotoc_md203',1,'']]],
+  ['rules_82',['Working with Quadrature Rules',['../quick_reference_quad.html#autotoc_md202',1,'']]],
   ['rules_83',['Special &quot;named&quot; quadrature rules',['../group__namedqr.html',1,'']]],
   ['rules_20for_20numbering_20local_20shape_20functions_20local_20dof_84',['Rules for numbering local shape functions (local dof)',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md27',1,'']]],
   ['rules_20for_20ordering_20global_20shape_20functions_20degrees_20of_20freedom_20dof_85',['Rules for ordering global shape functions &lt;-&gt; degrees of freedom (dof)',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md26',1,'']]]

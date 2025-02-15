@@ -6,7 +6,7 @@ var searchData=
   ['a_20new_20cmake_20project_3',['2. Create a new CMake project',['../getting_started.html#autotoc_md167',1,'']]],
   ['a_20point_20entity_20dimension_200_4',['Case of a point entity (dimension 0)',['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html#autotoc_md135',1,'']]],
   ['a_20program_5',['3. Write a program',['../getting_started.html#autotoc_md168',1,'']]],
-  ['a_20quadrature_20rule_6',['Using a Quadrature Rule',['../quick_reference_quad.html#autotoc_md202',1,'']]],
+  ['a_20quadrature_20rule_6',['Using a Quadrature Rule',['../quick_reference_quad.html#autotoc_md203',1,'']]],
   ['a_20segment_20entity_7',['For a segment entity',['../classlf_1_1geometry_1_1_refinement_pattern.html#autotoc_md84',1,'']]],
   ['a_20segment_20entity_20dimension_201_8',['Case of a segment entity (dimension 1)',['../classlf_1_1refinement_1_1_hybrid2_d_refinement_pattern.html#autotoc_md136',1,'']]],
   ['a_20single_20transposed_20inverse_20jacobian_9',['Example for recovering a single transposed inverse Jacobian.',['../classlf_1_1geometry_1_1_tria_o2.html#autotoc_md81',1,'']]],

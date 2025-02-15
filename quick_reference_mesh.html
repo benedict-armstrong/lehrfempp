@@ -134,7 +134,7 @@ $(function(){initNavTree('quick_reference_mesh.html',''); initResizable(true); }
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md199">Overview</a>
+    <a href="#autotoc_md200">Overview</a>
   </li>
   <li class="level1">
     <a href="#mesh_access">Mesh Access</a>
@@ -168,7 +168,7 @@ $(function(){initNavTree('quick_reference_mesh.html',''); initResizable(true); }
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__mesh"></a></p>
 <dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#subsection.2.7.2" title="Mesh Information and Mesh Data Structures">Lecture Document Subsection 2.7.2</a>. Please read before using quick reference.</dd></dl>
-<h1><a class="anchor" id="autotoc_md199"></a>
+<h1><a class="anchor" id="autotoc_md200"></a>
 Overview</h1>
 <p>Meshes in LehrFEM++ are generally managed through shared pointers. A simple test mesh can be generated using the following code snippet:</p>
 <div class="fragment"><div class="line"><span class="comment">// Generate a simple test mesh</span></div>
@@ -233,7 +233,7 @@ Entities</h1>
 <div class="line">std::vector&lt;const lf::mesh::Entity*&gt; sub_entities_vec{</div>
 <div class="line">    entity-&gt;<a class="code hl_function" href="classlf_1_1mesh_1_1_entity.html#a23b6ce2f785146482606c9bc73f4f09f">SubEntities</a>(1).begin(), entity-&gt;<a class="code hl_function" href="classlf_1_1mesh_1_1_entity.html#a23b6ce2f785146482606c9bc73f4f09f">SubEntities</a>(1).end()};</div>
 <div class="ttc" id="aclasslf_1_1mesh_1_1_entity_html_a23b6ce2f785146482606c9bc73f4f09f"><div class="ttname"><a href="classlf_1_1mesh_1_1_entity.html#a23b6ce2f785146482606c9bc73f4f09f">lf::mesh::Entity::SubEntities</a></div><div class="ttdeci">virtual std::span&lt; const Entity *const &gt; SubEntities(unsigned rel_codim) const =0</div><div class="ttdoc">Return all sub entities of this entity that have the given codimension (w.r.t. this entity!...</div></div>
-</div><!-- fragment --><p>A slightly more nuanced concept is the relative orientation of sub-entities of the next higher co-dimension. A detailed explanation can be found in the <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> Remark 2.7.2.15.</p>
+</div><!-- fragment --><p>A slightly more nuanced concept is the relative orientation of sub-entities of the next higher co-dimension. A detailed explanation can be found in the <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=210" title="\lfpp Mesh: Topology Layer">Lecture Document Remark 2.7.2.15</a>.</p>
 <div class="fragment"><div class="line"><span class="comment">// return span of relative orientations of sub-entities of the next higher co-dimension.</span></div>
 <div class="line">std::span&lt;const lf::mesh::Orientation&gt; orientations =</div>
 <div class="line">      entity-&gt;<a class="code hl_function" href="classlf_1_1mesh_1_1_entity.html#a603ca86bf701aa3b1984ecfb06586f3a">RelativeOrientations</a>();</div>
@@ -277,7 +277,7 @@ Mesh Data Sets</h1>
 <p>The interface is defined in the lf::mesh::MeshDataSet class. More details can be found in the documentation of the lf::mesh::MeshDataSet class.</p>
 <h1><a class="anchor" id="mesh_functions"></a>
 Mesh Functions</h1>
-<p>Mesh functions are wrappers around a functor that can be evaluated on the entire mesh. The interface is defined in <a class="el" href="conceptlf_1_1mesh_1_1utils_1_1_mesh_function.html" title="A MeshFunction is a function object that can be evaluated at any point on the mesh.">lf::mesh::utils::MeshFunction</a>. A more detailed definition can be found in the <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> supplement 2.8.3.32.</p>
+<p>Mesh functions are wrappers around a functor that can be evaluated on the entire mesh. The interface is defined in <a class="el" href="conceptlf_1_1mesh_1_1utils_1_1_mesh_function.html" title="A MeshFunction is a function object that can be evaluated at any point on the mesh.">lf::mesh::utils::MeshFunction</a>. A more detailed definition can be found in the <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#equation.2.8.32" title="Transformation Techniques">Lecture Document supplement 2.8.3.32</a>.</p>
 <p>The most general representative of a mesh function is <a class="el" href="classlf_1_1mesh_1_1utils_1_1_mesh_function_global.html" title="MeshFunction wrapper for a simple function of physical coordinates.">lf::mesh::utils::MeshFunctionGlobal</a>. It takes a functor that can be evaluated on the entire mesh. The functor must provide an operator() a point within the entity reference Element and returns a value. Lambda functions are a common way to define such functors.</p>
 <p>For efficiency reasons the evaluation points are passed to mesh functions as the columns of a \(d \times n \) - matrix (where \(d\) agrees with the local dimension of the entity and \(n\) is the number of points). This allows for the evaluation of multiple points at once. The following code snippet demonstrates how to define a mesh function that evaluates the function</p>
 <p class="formulaDsp">
@@ -336,7 +336,7 @@ Mesh Creation</h1>
 <h2><a class="anchor" id="mesh_refinement"></a>
 Mesh Refinement</h2>
 <p>LehrFEM++ provides a number of mesh refinement tools included in the <a class="el" href="namespacelf_1_1refinement.html" title="tools for regular or local refinement of 2D hybrid meshes">lf::refinement</a> namespace.</p>
-<p>Mesh refinement using LehrFEM++ is covered in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> Subsection 3.1.4 and heavily used in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf">Lecture Document</a> Chapter 3.</p>
+<p>Mesh refinement using LehrFEM++ is covered in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#subsection.3.1.4" title="Refinement">Lecture Document Subsection 3.1.4</a> and heavily used in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#chapter.3" title="FEM: Convergence and Accuracy">Lecture Document Chapter 3</a>.</p>
 <div class="fragment"><div class="line">std::shared_ptr&lt;lf::mesh::Mesh&gt; mesh_p = <a class="code hl_function" href="namespacelf_1_1mesh_1_1test__utils.html#a4a99c0d4db0495121ff8ad0e63f889cb">lf::mesh::test_utils::GenerateHybrid2DTestMesh</a>(0);</div>
 <div class="line"><span class="comment">// Generate mesh hierarchy by uniform refinement with 6 levels</span></div>
 <div class="line"> </div>

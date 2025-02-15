@@ -45,9 +45,9 @@ var searchData=
   ['order_42',['1. Fix the include order',['../eigen_stacktrace_warning.html#autotoc_md162',1,'']]],
   ['order_20cells_43',['Higher order cells',['../classlf_1_1io_1_1_vtk_writer.html#autotoc_md92',1,'']]],
   ['order_5f_44',['order_',['../classlf_1_1io_1_1_vtk_writer.html#abc7b542645a7202b3ce5fde3df48bd95',1,'lf::io::VtkWriter']]],
-  ['ordering_20global_20shape_20functions_45',['Rules for ordering global shape functions.',['../classprojects_1_1dpg_1_1_product_uniform_f_e_dof_handler.html#autotoc_md210',1,'']]],
+  ['ordering_20global_20shape_20functions_45',['Rules for ordering global shape functions.',['../classprojects_1_1dpg_1_1_product_uniform_f_e_dof_handler.html#autotoc_md211',1,'']]],
   ['ordering_20global_20shape_20functions_20degrees_20of_20freedom_20dof_46',['Rules for ordering global shape functions &lt;-&gt; degrees of freedom (dof)',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md26',1,'']]],
-  ['ordering_20local_20shape_20functions_47',['Rules for ordering local shape functions.',['../classprojects_1_1dpg_1_1_product_uniform_f_e_dof_handler.html#autotoc_md211',1,'']]],
+  ['ordering_20local_20shape_20functions_47',['Rules for ordering local shape functions.',['../classprojects_1_1dpg_1_1_product_uniform_f_e_dof_handler.html#autotoc_md212',1,'']]],
   ['orientation_48',['Orientation',['../namespacelf_1_1mesh.html#afeb5ab2fc27eb4779bca84a297f4c781',1,'lf::mesh']]],
   ['orientation_49',['orientation',['../classlf_1_1base_1_1_ref_el.html#autotoc_md42',1,'Node numbering with (2D) node coordinates and segment orientation'],['../classlf_1_1base_1_1_ref_el.html#autotoc_md41',1,'Node numbering with (2D) node coordinates and segment orientation.']]],
   ['oriented_20assembly_20of_20galerkin_20matrices_50',['Cell-Oriented Assembly of Galerkin Matrices',['../group__assemble__matrix__locally.html',1,'']]],
@@ -62,5 +62,5 @@ var searchData=
   ['output_3a_59',['output:',['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md73',1,'Level of output:'],['../classlf_1_1uscalfe_1_1_uniform_scalar_f_e_space.html#autotoc_md150',1,'Level of output:']]],
   ['output_5f_60',['output_',['../classlf_1_1base_1_1_auto_timer.html#a06e1e2ed21cfa2680ba58ac9d021aa38',1,'lf::base::AutoTimer']]],
   ['override_20the_20tt_20eigen_5fassert_20tt_20macro_61',['2. Tell LehrFEM++ to not override the &lt;tt&gt;eigen_assert&lt;/tt&gt; macro',['../eigen_stacktrace_warning.html#autotoc_md163',1,'']]],
-  ['overview_62',['Overview',['../quick_reference_assembly.html#autotoc_md181',1,'Overview'],['../quick_reference_bc.html#autotoc_md184',1,'Overview'],['../quick_reference_dofh.html#autotoc_md185',1,'Overview'],['../quick_reference_emp.html#autotoc_md193',1,'Overview'],['../quick_reference_fe_space.html#autotoc_md195',1,'Overview'],['../quick_reference_geometry.html#autotoc_md197',1,'Overview'],['../quick_reference_logging.html#autotoc_md198',1,'Overview'],['../quick_reference_mesh.html#autotoc_md199',1,'Overview'],['../quick_reference_quad.html#autotoc_md200',1,'Overview']]]
+  ['overview_62',['Overview',['../quick_reference_assembly.html#autotoc_md181',1,'Overview'],['../quick_reference_bc.html#autotoc_md184',1,'Overview'],['../quick_reference_dofh.html#autotoc_md185',1,'Overview'],['../quick_reference_emp.html#autotoc_md193',1,'Overview'],['../quick_reference_fe_space.html#autotoc_md196',1,'Overview'],['../quick_reference_geometry.html#autotoc_md198',1,'Overview'],['../quick_reference_logging.html#autotoc_md199',1,'Overview'],['../quick_reference_mesh.html#autotoc_md200',1,'Overview'],['../quick_reference_quad.html#autotoc_md201',1,'Overview']]]
 ];

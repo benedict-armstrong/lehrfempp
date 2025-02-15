@@ -20,6 +20,6 @@ var searchData=
   ['use_20case_17',['Use case',['../classlf_1_1fe_1_1_mesh_function_f_e.html#autotoc_md69',1,'Use case'],['../classlf_1_1mesh_1_1_mesh.html#autotoc_md109',1,'Use case'],['../classlf_1_1mesh_1_1utils_1_1_mesh_function_global.html#autotoc_md120',1,'Use case'],['../classlf_1_1quad_1_1_quad_rule.html#autotoc_md133',1,'Use case']]],
   ['use_20lehrfem_20via_20hunter_18',['2.2. If you use LehrFEM++ via hunter',['../eigen_stacktrace_warning.html#autotoc_md165',1,'']]],
   ['user_19',['user',['../structlf_1_1base_1_1_timer_1_1cpu__times.html#a78a4717fb68118d0fa5e5826df86289e',1,'lf::base::Timer::cpu_times']]],
-  ['using_20a_20quadrature_20rule_20',['Using a Quadrature Rule',['../quick_reference_quad.html#autotoc_md202',1,'']]],
+  ['using_20a_20quadrature_20rule_20',['Using a Quadrature Rule',['../quick_reference_quad.html#autotoc_md203',1,'']]],
   ['utility_20functions_21',['Utility Functions',['../quick_reference_geometry.html#geometry_utility',1,'']]]
 ];
