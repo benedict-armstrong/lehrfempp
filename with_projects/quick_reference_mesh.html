@@ -43,6 +43,7 @@ MathJax.Hub.Config({
 <script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
   <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
   <!-- Doxygen Awesome Paragraph Link Extension-->
   <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
   <script type="text/javascript">
@@ -134,7 +135,7 @@ $(function(){initNavTree('quick_reference_mesh.html',''); initResizable(true); }
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md200">Overview</a>
+    <a href="#autotoc_md199">Overview</a>
   </li>
   <li class="level1">
     <a href="#mesh_access">Mesh Access</a>
@@ -167,8 +168,9 @@ $(function(){initNavTree('quick_reference_mesh.html',''); initResizable(true); }
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__mesh"></a></p>
-<dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#subsection.2.7.2" title="Mesh Information and Mesh Data Structures">Lecture Document Subsection 2.7.2</a>. Please read before using quick reference.</dd></dl>
-<h1><a class="anchor" id="autotoc_md200"></a>
+<p><a href="https://github.com/benedict-armstrong/lehrfempp/blob/master/doc/doxygen/pages/quick_reference_mesh.md" class="github_edit" title="Edit page on GitHub" target="_blank">Edit on GitHub</a></p>
+<dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#subsection.2.7.2" title="Mesh Information and Mesh Data Structures">Lecture Document Subsection 2.7.2</a>. Please read this section before using the quick reference.</dd></dl>
+<h1><a class="anchor" id="autotoc_md199"></a>
 Overview</h1>
 <p>Meshes in LehrFEM++ are generally managed through shared pointers. A simple test mesh can be generated using the following code snippet:</p>
 <div class="fragment"><div class="line"><span class="comment">// Generate a simple test mesh</span></div>
@@ -245,7 +247,7 @@ Entities</h1>
 <div class="ttc" id="aclasslf_1_1mesh_1_1_entity_html_a603ca86bf701aa3b1984ecfb06586f3a"><div class="ttname"><a href="classlf_1_1mesh_1_1_entity.html#a603ca86bf701aa3b1984ecfb06586f3a">lf::mesh::Entity::RelativeOrientations</a></div><div class="ttdeci">virtual std::span&lt; const Orientation &gt; RelativeOrientations() const =0</div><div class="ttdoc">return span of relative orientations of sub-entities of the next higher co-dimension.</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="mesh_data_sets"></a>
 Mesh Data Sets</h1>
-<p>Mesh data sets are used to store data with entities of the mesh. A common use cases are:</p>
+<p>Mesh data sets are used to store data with entities of the mesh. A fe common use cases are:</p>
 <ul>
 <li>Flags that mark boundary entities.</li>
 <li>Material parameters for mesh elements (codim=0)</li>

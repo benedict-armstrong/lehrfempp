@@ -43,6 +43,7 @@ MathJax.Hub.Config({
 <script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
   <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
   <!-- Doxygen Awesome Paragraph Link Extension-->
   <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
   <script type="text/javascript">
@@ -162,29 +163,30 @@ $(function(){initNavTree('quick_reference_dofh.html',''); initResizable(true); }
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__dofh"></a></p>
-<dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#section.2.8" title="Parametric Finite Element Methods">Lecture Document Section 2.8</a>. Please read before using quick reference.</dd></dl>
+<p><a href="https://github.com/benedict-armstrong/lehrfempp/blob/master/doc/doxygen/pages/quick_reference_dofh.md" class="github_edit" title="Edit page on GitHub" target="_blank">Edit on GitHub</a></p>
+<dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#section.2.8" title="Parametric Finite Element Methods">Lecture Document Section 2.8</a>. Please read this section before using the quick reference. </dd></dl>
 <h1><a class="anchor" id="autotoc_md185"></a>
 Overview</h1>
 <p>Local computations are essential for efficient finite element methods (FEM). LehrFEM++ uses a local indexing scheme to map local shape functions to global degrees of freedom (DOFs). In <b>LehrFEM++</b>, this is done through objects of the type <code><a class="el" href="classlf_1_1assemble_1_1_dof_handler.html" title="A general (interface) class for DOF handling, see Lecture Document Paragraph 2.7.4....">lf::assemble::DofHandler</a></code>. This quick reference provides an overview of DOF handlers and indexing conventions in <b>LehrFEM++</b>. The <a class="el" href="quick_reference_assembly.html">assembly quick reference</a> page provides more information on (local) assembly using DOF handlers.</p>
 <h1><a class="anchor" id="autotoc_md186"></a>
 Local to Global Index Mapping</h1>
-<p>The local shape functions of every cell (co-dimension-0 entity) are arranged according to increasing dimension of the geometric entities they are associated with:</p>
+<p>The local shape functions of every cell (co-dimension-0 entity) are arranged according to the increasing dimension of the geometric entities they are associated with:</p>
 <ol type="1">
 <li>Points (Vertices)</li>
 <li>Edges</li>
 <li>Cells (Triangles or Quadrilaterals)</li>
 </ol>
-<p>DOFs associated with lower-dimensional entities (e.g., points and edges) are numbered first, followed by higher-dimensional ones (cells). Within each category, entities are numbered according to their intrinsic indexing as returned by the Index() function. this is also illustrated in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#plotcnt.140" title="Assembly: Index Mappings">Lecture Document Figure 140</a> and <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#plotcnt.141" title="Assembly: Index Mappings">Lecture Document Figure 141</a>.</p>
+<p>DOFs associated with lower-dimensional entities (e.g., points and edges) are numbered first, followed by higher-dimensional ones (cells). Within each category, entities are numbered according to their intrinsic indexing as returned by the <code>Index()</code> function. This is also illustrated in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#plotcnt.140" title="Assembly: Index Mappings">Lecture Document Figure 140</a> and <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#plotcnt.141" title="Assembly: Index Mappings">Lecture Document Figure 141</a>.</p>
 <h1><a class="anchor" id="autotoc_md187"></a>
 DOF Handlers in LehrFEM++</h1>
 <p>LehrFEM++ provides two implementations of DOF handlers:</p>
 <ol type="1">
 <li><code><a class="el" href="classlf_1_1assemble_1_1_dynamic_f_e_dof_handler.html" title="Dof handler allowing variable local dof layouts.">lf::assemble::DynamicFEDofHandler</a></code>: Allows for a variable number of local DOFs for each entity (e.g. for hp-FEM, see <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=224" title="Assembly: Index Mappings">Lecture Document Paragraph 2.7.4.16</a>)</li>
-<li><code><a class="el" href="classlf_1_1assemble_1_1_uniform_f_e_dof_handler.html" title="Dofhandler for uniform finite element spaces.">lf::assemble::UniformFEDofHandler</a></code>: Assigns a the same number of DOFs to each entity of a given type (uniform FE space).</li>
+<li><code><a class="el" href="classlf_1_1assemble_1_1_uniform_f_e_dof_handler.html" title="Dofhandler for uniform finite element spaces.">lf::assemble::UniformFEDofHandler</a></code>: Assigns the same number of DOFs to each entity of a given type (uniform FE space).</li>
 </ol>
 <h2><a class="anchor" id="autotoc_md188"></a>
 DynamicFEDofHandler</h2>
-<p>The following code shows how a DynamicFEDofHandler can be initialized. More detail can also be found in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=224" title="Assembly: Index Mappings">Lecture Document Paragraph 2.7.4.16</a>.</p>
+<p>A <code>DynamicFEDofHandler</code> can be initialized with a function that returns the number of DOFs associated with a given entity.</p>
 <div class="fragment"><div class="line"><span class="keyword">const</span> std::shared_ptr&lt;const lf::mesh::Mesh&gt; mesh_p =</div>
 <div class="line">      <a class="code hl_function" href="namespacelf_1_1mesh_1_1test__utils.html#a4a99c0d4db0495121ff8ad0e63f889cb">lf::mesh::test_utils::GenerateHybrid2DTestMesh</a>(1);</div>
 <div class="line"> </div>
@@ -214,26 +216,23 @@ UniformFEDofHandler</h2>
 <div class="ttc" id="aclasslf_1_1base_1_1_ref_el_html_ab4167c45a6c22d9b8dd49218d4aedc51"><div class="ttname"><a href="classlf_1_1base_1_1_ref_el.html#ab4167c45a6c22d9b8dd49218d4aedc51">lf::base::RefEl::kPoint</a></div><div class="ttdeci">static constexpr RefEl kPoint()</div><div class="ttdoc">Returns the (0-dimensional) reference point.</div><div class="ttdef"><b>Definition</b> <a href="ref__el_8h_source.html#l00144">ref_el.h:144</a></div></div>
 <div class="ttc" id="aclasslf_1_1base_1_1_ref_el_html_ac6542f1b3d68028bc0bd8d9a223b35ff"><div class="ttname"><a href="classlf_1_1base_1_1_ref_el.html#ac6542f1b3d68028bc0bd8d9a223b35ff">lf::base::RefEl::kTria</a></div><div class="ttdeci">static constexpr RefEl kTria()</div><div class="ttdoc">Returns the reference triangle.</div><div class="ttdef"><b>Definition</b> <a href="ref__el_8h_source.html#l00161">ref_el.h:161</a></div></div>
 <div class="ttc" id="aclasslf_1_1base_1_1_ref_el_html_ae28ad009a99541ecd2ab24999aebcf63"><div class="ttname"><a href="classlf_1_1base_1_1_ref_el.html#ae28ad009a99541ecd2ab24999aebcf63">lf::base::RefEl::kQuad</a></div><div class="ttdeci">static constexpr RefEl kQuad()</div><div class="ttdoc">Returns the reference quadrilateral.</div><div class="ttdef"><b>Definition</b> <a href="ref__el_8h_source.html#l00169">ref_el.h:169</a></div></div>
-</div><!-- fragment --><p> For this example (2nd order Lagrange FE space):</p>
+</div><!-- fragment --><p>For example, in a second-order Lagrange FE space (as shown in the code above):</p>
 <ul>
 <li>Each point carries 1 DOF.</li>
-<li>Each edge carries 1 DOFs.</li>
-<li>Each triangle has 0 DOF.</li>
-<li>Each quadrilateral has 1 DOFs.</li>
+<li>Each edge carries 1 DOF.</li>
+<li>Each triangle has 0 DOFs.</li>
+<li>Each quadrilateral has 1 DOF.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md190"></a>
 Global Indexing convention</h1>
 <p>LehrFEM++ follows the convention of numbering <b>global</b> DOFs according to the following rule:</p>
 <ol type="1">
-<li><p class="startli">D.o.f. associated with lower-dimensional entities are numbered first:</p>
-<p class="formulaDsp">
+<li>DOFs associated with lower-dimensional entities are numbered first:   <p class="formulaDsp">
 \[    \text{POINT} \rightarrow \text{SEGMENT} \rightarrow \text{TRIA/QUAD}
 \]
 </p>
 </li>
-</ol>
-<ol type="1">
-<li>The indices of d.o.f. belonging to entities of the same co-dimension increase with increasing entity indices as returned by the <code>Index()</code> function.</li>
+<li>The indices of DOFs belonging to entities of the same co-dimension increase with increasing entity indices as returned by the <code>Index()</code> function.</li>
 </ol>
 <h1><a class="anchor" id="autotoc_md191"></a>
 Key Methods</h1>
@@ -242,7 +241,7 @@ Key Methods</h1>
 <li><p class="startli"><code>NumDofs()</code>: Returns the total number of global DOFs. See also <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=222" title="Assembly: Index Mappings">Lecture Document Paragraph 2.7.4.13</a>.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">unsigned</span> num_dofs = dofh.NumDofs();</div>
 </div><!-- fragment --></li>
-<li><p class="startli"><code>NumLocalDofs(const <a class="el" href="classlf_1_1mesh_1_1_entity.html" title="Interface class representing a topological entity in a cellular complex">lf::mesh::Entity</a> &amp;)</code>: Provides the number of DOFs associated with a particular geometric entity. See also <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=222" title="Assembly: Index Mappings">Lecture Document Paragraph 2.7.4.13</a>.</p>
+<li><p class="startli"><code>NumLocalDofs(const <a class="el" href="classlf_1_1mesh_1_1_entity.html" title="Interface class representing a topological entity in a cellular complex">lf::mesh::Entity</a> &amp;)</code>: Returns the number of DOFs associated with a particular geometric entity. See also <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=222" title="Assembly: Index Mappings">Lecture Document Paragraph 2.7.4.13</a>.</p>
 <div class="fragment"><div class="line"><span class="keyword">const</span> <a class="code hl_class" href="classlf_1_1mesh_1_1_entity.html">lf::mesh::Entity</a>* e = mesh_p-&gt;EntityByIndex(0, 0);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">unsigned</span> num_local_dofs = dofh.NumLocalDofs(*e);</div>

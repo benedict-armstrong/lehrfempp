@@ -55,7 +55,7 @@ var searchData=
   ['linearfelocalloadvectorlogger_52',['LinearFeLocalLoadVectorLogger',['../namespacelf_1_1uscalfe.html#ad85256733bb8bd8f7f0432ccc75a7ba6',1,'lf::uscalfe']]],
   ['linefeedformatter_53',['LineFeedFormatter',['../classlf_1_1base_1_1_line_feed_formatter.html',1,'lf::base::LineFeedFormatter'],['../classlf_1_1base_1_1_line_feed_formatter.html#a655f928c294beeeb1c8b29bf897be45d',1,'lf::base::LineFeedFormatter::LineFeedFormatter(std::unique_ptr&lt; spdlog::formatter &gt; wrapped_formatter)'],['../classlf_1_1base_1_1_line_feed_formatter.html#a27fa696f3cd1aab5bcabc724fb72f1c5',1,'lf::base::LineFeedFormatter::LineFeedFormatter(const LineFeedFormatter &amp;)=delete'],['../classlf_1_1base_1_1_line_feed_formatter.html#a3d6b91029866590ab538c2e9fbf3b64d',1,'lf::base::LineFeedFormatter::LineFeedFormatter(LineFeedFormatter &amp;&amp;)=default']]],
   ['linefeedformatter_3a_54',['Multiline log message with LineFeedFormatter:',['../classlf_1_1base_1_1_line_feed_formatter.html#autotoc_md51',1,'']]],
-  ['load_20vector_55',['Right hand side (RHS)/load vector',['../quick_reference_assembly.html#autotoc_md183',1,'']]],
+  ['load_20vector_55',['Right-Hand Side (RHS)/Load Vector',['../quick_reference_assembly.html#autotoc_md183',1,'']]],
   ['local_20dof_56',['Rules for numbering local shape functions (local dof)',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md27',1,'']]],
   ['local_20finite_20element_20functions_57',['Requirement: reproduction of local finite element functions',['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md79',1,'']]],
   ['local_20shape_20functions_20local_20dof_58',['Rules for numbering local shape functions (local dof)',['../classlf_1_1assemble_1_1_dof_handler.html#autotoc_md27',1,'']]],

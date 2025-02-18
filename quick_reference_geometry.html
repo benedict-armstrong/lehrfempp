@@ -43,6 +43,7 @@ MathJax.Hub.Config({
 <script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
   <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
   <!-- Doxygen Awesome Paragraph Link Extension-->
   <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
   <script type="text/javascript">
@@ -134,7 +135,7 @@ $(function(){initNavTree('quick_reference_geometry.html',''); initResizable(true
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md198">Overview</a>
+    <a href="#autotoc_md197">Overview</a>
   </li>
   <li class="level1">
     <a href="#geometry_interface">Geometry Interface</a>
@@ -167,16 +168,17 @@ $(function(){initNavTree('quick_reference_geometry.html',''); initResizable(true
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2quick__reference__geometry"></a></p>
-<dl class="section attention"><dt>Attention</dt><dd>The contents of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#section.2.8" title="Parametric Finite Element Methods">Lecture Document Section 2.8</a>. Please read before using quick reference.</dd></dl>
-<h1><a class="anchor" id="autotoc_md198"></a>
+<p><a href="https://github.com/benedict-armstrong/lehrfempp/blob/master/doc/doxygen/pages/quick_reference_geometry.md" class="github_edit" title="Edit page on GitHub" target="_blank">Edit on GitHub</a></p>
+<dl class="section attention"><dt>Attention</dt><dd>The content of this page is discussed in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#section.2.8" title="Parametric Finite Element Methods">Lecture Document Section 2.8</a>. Please read before using quick reference.</dd></dl>
+<h1><a class="anchor" id="autotoc_md197"></a>
 Overview</h1>
-<p>LehrFEM++ provides an Interface for geometry data: <a class="el" href="classlf_1_1geometry_1_1_geometry.html" title="Interface class for shape information on a mesh cell in the spirit of parametric finite element metho...">lf::geometry::Geometry</a>. Geometry data for entities is stored as a mapping \( \Phi_K(\hat{x}) \) from the reference element (unit triangle, square, unit segment) to any general element. \( \Phi_K^{*}(\hat{x}) \) represents the inverse mapping from the general element to the reference element.</p>
-<p>For any one element it is enough to store the mapping \( \Phi_K(\hat{x}) \) from the reference element and the type of the <a class="el" href="classlf_1_1base_1_1_ref_el.html">reference Element</a>.</p>
+<p>LehrFEM++ provides an interface for geometry data: <code><a class="el" href="classlf_1_1geometry_1_1_geometry.html" title="Interface class for shape information on a mesh cell in the spirit of parametric finite element metho...">lf::geometry::Geometry</a></code>. Geometry data for entities is stored as a mapping \( \Phi_K(\hat{x}) \) from the reference element (unit triangle, square, unit segment) to any general element. \( \Phi_K^{*}(\hat{x}) \) represents the inverse mapping from the general element to the reference element.</p>
+<p>For any one element, it is enough to store the mapping \( \Phi_K(\hat{x}) \) from the reference element and the type of the <a class="el" href="classlf_1_1base_1_1_ref_el.html">reference element</a>.</p>
 <div class="image">
 <img src="parametric_fe_geometry.gif" alt=""/>
 <div class="caption">
 (Affine) Geometry Mapping for Triangles</div></div>
-    <p>Much more details and mathematical background can be found in the <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#section.2.8" title="Parametric Finite Element Methods">Lecture Document Section 2.8</a>.</p>
+    <p>More details and mathematical background can be found in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#section.2.8" title="Parametric Finite Element Methods">Lecture Document Section 2.8</a>.</p>
 <h1><a class="anchor" id="geometry_interface"></a>
 Geometry Interface</h1>
 <p>To get the geometry of an entity:</p>
@@ -189,7 +191,7 @@ Geometry Interface</h1>
 <div class="ttc" id="aclasslf_1_1mesh_1_1_entity_html"><div class="ttname"><a href="classlf_1_1mesh_1_1_entity.html">lf::mesh::Entity</a></div><div class="ttdoc">Interface class representing a topological entity in a cellular complex</div><div class="ttdef"><b>Definition</b> <a href="entity_8h_source.html#l00042">entity.h:42</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="geometry_utility"></a>
 Utility Functions</h2>
-<p>A number of convenience functions are provided by the Geometry class.</p>
+<p>A number of convenience functions are provided by the <code>Geometry</code> class.</p>
 <div class="fragment"><div class="line"><span class="keyword">const</span> <a class="code hl_class" href="classlf_1_1geometry_1_1_geometry.html">lf::geometry::Geometry</a>* geometry = entity-&gt;<a class="code hl_function" href="classlf_1_1geometry_1_1_geometry.html#aef96b35acf0c2e57d67e206947c79123">Geometry</a>();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Get the volume of an entity (for edges length, for triangles area, etc.)</span></div>
@@ -201,7 +203,7 @@ Utility Functions</h2>
 <div class="line">Eigen::MatrixXd corners = <a class="code hl_function" href="namespacelf_1_1geometry.html#a0b9a831a5d58f9e19e9fa3524b343288">lf::geometry::Corners</a>(*geometry);</div>
 <div class="ttc" id="anamespacelf_1_1geometry_html_a0b9a831a5d58f9e19e9fa3524b343288"><div class="ttname"><a href="namespacelf_1_1geometry.html#a0b9a831a5d58f9e19e9fa3524b343288">lf::geometry::Corners</a></div><div class="ttdeci">Eigen::MatrixXd Corners(const Geometry &amp;geo)</div><div class="ttdoc">The corners of a shape with piecewise smooth boundary.</div><div class="ttdef"><b>Definition</b> <a href="geometry__interface_8h_source.html#l00261">geometry_interface.h:261</a></div></div>
 <div class="ttc" id="anamespacelf_1_1geometry_html_a3660bbd0bab263bd5e76a7f1509e4d47"><div class="ttname"><a href="namespacelf_1_1geometry.html#a3660bbd0bab263bd5e76a7f1509e4d47">lf::geometry::Volume</a></div><div class="ttdeci">double Volume(const Geometry &amp;geo)</div><div class="ttdoc">Compute the (approximate) volume (area) of a shape.</div><div class="ttdef"><b>Definition</b> <a href="geometry__interface_8cc_source.html#l00011">geometry_interface.cc:11</a></div></div>
-</div><!-- fragment --><p>In addition we can test for some properties of the geometry:</p>
+</div><!-- fragment --><p>In addition, we can test for some properties of the geometry:</p>
 <div class="fragment"><div class="line"><span class="comment">// Test if geometry is a non-degenerate bilinear quadrilateral (corners matrix with 4 cols)</span></div>
 <div class="line"><span class="keywordtype">bool</span> is_not_deg = <a class="code hl_function" href="namespacelf_1_1geometry.html#a4f03abce279f48a0f82eb1b9f4b8715f">lf::geometry::assertNonDegenerateQuad</a>(corners);</div>
 <div class="line"> </div>
@@ -211,7 +213,7 @@ Utility Functions</h2>
 <div class="ttc" id="anamespacelf_1_1geometry_html_a4f03abce279f48a0f82eb1b9f4b8715f"><div class="ttname"><a href="namespacelf_1_1geometry.html#a4f03abce279f48a0f82eb1b9f4b8715f">lf::geometry::assertNonDegenerateQuad</a></div><div class="ttdeci">bool assertNonDegenerateQuad(const Eigen::Matrix&lt; double, Eigen::Dynamic, 4 &gt; &amp;coords, double tol)</div><div class="ttdoc">Asserting a non-degenerate bilinear quadrilateral.</div><div class="ttdef"><b>Definition</b> <a href="quad__o1_8cc_source.html#l00012">quad_o1.cc:12</a></div></div>
 </div><!-- fragment --><h1><a class="anchor" id="geometry_methods"></a>
 Geometry Methods</h1>
-<p>Objects implementing the <a class="el" href="classlf_1_1geometry_1_1_geometry.html" title="Interface class for shape information on a mesh cell in the spirit of parametric finite element metho...">lf::geometry::Geometry</a> interface provide the following methods:</p>
+<p>Objects implementing the <code><a class="el" href="classlf_1_1geometry_1_1_geometry.html" title="Interface class for shape information on a mesh cell in the spirit of parametric finite element metho...">lf::geometry::Geometry</a></code> interface provide the following methods:</p>
 <div class="fragment"><div class="line"><span class="comment">// Dimension of the local coordinate system</span></div>
 <div class="line"><span class="keywordtype">unsigned</span> dim_local = geometry-&gt;<a class="code hl_function" href="classlf_1_1geometry_1_1_geometry.html#a3f937acbc212bbd6685ec89d9025a61c">DimLocal</a>(); </div>
 <div class="line"> </div>
@@ -234,7 +236,7 @@ Transformations and Mappings</h1>
 <dl class="section note"><dt>Note</dt><dd>The following methods accept a matrix of points in the local coordinate system as input. The points are stored in a matrix where each column represents a point. The number of rows corresponds to the dimension of the local coordinate system.</dd></dl>
 <h2><a class="anchor" id="global"></a>
 Global</h2>
-<p>The <a class="el" href="classlf_1_1geometry_1_1_geometry.html" title="Interface class for shape information on a mesh cell in the spirit of parametric finite element metho...">lf::geometry::Geometry</a> class provides the <code><a class="el" href="classlf_1_1geometry_1_1_geometry.html#a34b0bc0a54ff1de82e2a5cbc52c506a5" title="Map a number of points in local coordinates into the global coordinate system.">lf::geometry::Geometry::Global</a></code> method to map points from local to global coordinates. In LehrFEM++ <code>local</code> points generally refer to point on the reference element.</p>
+<p>The <code><a class="el" href="classlf_1_1geometry_1_1_geometry.html" title="Interface class for shape information on a mesh cell in the spirit of parametric finite element metho...">lf::geometry::Geometry</a></code> class provides the <code><a class="el" href="classlf_1_1geometry_1_1_geometry.html#a34b0bc0a54ff1de82e2a5cbc52c506a5" title="Map a number of points in local coordinates into the global coordinate system.">lf::geometry::Geometry::Global</a></code> method to map points from local to global coordinates. In LehrFEM++, <code>local</code> points generally refer to points on the reference element.</p>
 <div class="fragment"><div class="line"><span class="comment">// Define two point on the reference element (local).</span></div>
 <div class="line">Eigen::MatrixXd local_points(2, 2);</div>
 <div class="line">local_points &lt;&lt; 0.1, 0.5,</div>
@@ -258,10 +260,10 @@ IntegrationElement</h2>
 <div class="fragment"><div class="line"><span class="comment">// Compute the integration element for each point in points</span></div>
 <div class="line">Eigen::VectorXd integration_element = geometry-&gt;<a class="code hl_function" href="classlf_1_1geometry_1_1_geometry.html#a80112cf5cfa9314cb44e61756299607d">IntegrationElement</a>(local_points);</div>
 <div class="ttc" id="aclasslf_1_1geometry_1_1_geometry_html_a80112cf5cfa9314cb44e61756299607d"><div class="ttname"><a href="classlf_1_1geometry_1_1_geometry.html#a80112cf5cfa9314cb44e61756299607d">lf::geometry::Geometry::IntegrationElement</a></div><div class="ttdeci">virtual Eigen::VectorXd IntegrationElement(const Eigen::MatrixXd &amp;local) const =0</div><div class="ttdoc">The integration element (factor appearing in integral transformation formula, see below) at number of...</div></div>
-</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The following two methods return a matrix for each evaluated point. For efficiency reasons the returned matrices are horizontally stacked. The number of rows corresponds to the dimension of the global coordinate system.</dd></dl>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The following two methods return a matrix for each evaluated point. For efficiency reasons, the returned matrices are horizontally stacked. The number of rows corresponds to the dimension of the global coordinate system.</dd></dl>
 <h2><a class="anchor" id="jacobian"></a>
 Jacobian</h2>
-<p>The method <code><a class="el" href="classlf_1_1geometry_1_1_geometry.html#ac665d163a4692af4a1dc7cc54e98315f" title="Evaluate the jacobian of the mapping simultaneously at numPoints points.">lf::geometry::Geometry::Jacobian</a></code> computes the Jacobian matrix \( D\Phi(\hat{x}) \) for each point in <code>points</code></p>
+<p>The method <code><a class="el" href="classlf_1_1geometry_1_1_geometry.html#ac665d163a4692af4a1dc7cc54e98315f" title="Evaluate the jacobian of the mapping simultaneously at numPoints points.">lf::geometry::Geometry::Jacobian</a></code> computes the Jacobian matrix \( D\Phi(\hat{x}) \) for each point in <code>points</code>.</p>
 <div class="fragment"><div class="line"><span class="comment">// Compute the Jacobian matrix for each point in points</span></div>
 <div class="line">Eigen::MatrixXd jacobian = geometry-&gt;<a class="code hl_function" href="classlf_1_1geometry_1_1_geometry.html#ac665d163a4692af4a1dc7cc54e98315f">Jacobian</a>(local_points);</div>
 <div class="ttc" id="aclasslf_1_1geometry_1_1_geometry_html_ac665d163a4692af4a1dc7cc54e98315f"><div class="ttname"><a href="classlf_1_1geometry_1_1_geometry.html#ac665d163a4692af4a1dc7cc54e98315f">lf::geometry::Geometry::Jacobian</a></div><div class="ttdeci">virtual Eigen::MatrixXd Jacobian(const Eigen::MatrixXd &amp;local) const =0</div><div class="ttdoc">Evaluate the jacobian of the mapping simultaneously at numPoints points.</div></div>
@@ -270,17 +272,17 @@ Jacobian</h2>
 <div class="line"><span class="keywordtype">unsigned</span> dim_local = geometry-&gt;<a class="code hl_function" href="classlf_1_1geometry_1_1_geometry.html#a3f937acbc212bbd6685ec89d9025a61c">DimLocal</a>();</div>
 <div class="line"><span class="comment">// Access the Jacobian matrix for the n-th point (starting at 0)</span></div>
 <div class="line">Eigen::MatrixXd jacobian_n = jacobian.block(0, n * dim_local, dim_global, dim_local);</div>
-</div><!-- fragment --><p>If <code>dim_local == dim_global == 2</code> and we pass three point for evaluation <a class="el" href="classlf_1_1geometry_1_1_geometry.html#ac665d163a4692af4a1dc7cc54e98315f">Geometry::Jacobian</a> returns a \( 2 \times 6 \) matrix:</p>
+</div><!-- fragment --><p>If <code>dim_local == dim_global == 2</code> and we pass three points for evaluation, <a class="el" href="classlf_1_1geometry_1_1_geometry.html#ac665d163a4692af4a1dc7cc54e98315f">Geometry::Jacobian</a> returns a \( 2 \times 6 \) matrix:</p>
 <div class="image">
 <img src="jacobian_block_access.gif" alt=""/>
 <div class="caption">
 Block matrix returned by Geometry::Jacobian</div></div>
-    <p>To access the Jacobi for the second point we can use <a href="https://eigen.tuxfamily.org/dox/group__TutorialBlockOperations.html">Eigen block access</a>:</p>
+    <p>To access the Jacobian for the second point, we can use <a href="https://eigen.tuxfamily.org/dox/group__TutorialBlockOperations.html">Eigen block access</a>:</p>
 <div class="fragment"><div class="line"><span class="comment">// Access 2x2 Jacobian matrix starting at row 0 and column 2</span></div>
 <div class="line">Eigen::MatrixXd jacobian_2 = jacobian.block(0, 2, 2, 2);</div>
 </div><!-- fragment --><h2><a class="anchor" id="jacobian_inverse_gramian"></a>
 JacobianInverseGramian</h2>
-<p>The method <code><a class="el" href="classlf_1_1geometry_1_1_geometry.html#a7cb2b572966d7492522acb1b127cbbd0" title="Evaluate the Jacobian * Inverse Gramian ( ) simultaneously at numPoints.">lf::geometry::Geometry::JacobianInverseGramian</a></code> computes the inverse of the JacobianInverseGramian matrix for each point in <code>points</code>. Details can be found in the <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=270" title="Transformation Techniques">Lecture Document Paragraph 2.8.3.14</a> and the <a class="el" href="classlf_1_1geometry_1_1_geometry.html#a7cb2b572966d7492522acb1b127cbbd0">method docs</a>. Similarly to <a class="el" href="classlf_1_1geometry_1_1_geometry.html#ac665d163a4692af4a1dc7cc54e98315f">Geometry::Jacobian</a> it also returns a horizontally stacked matrix. Individual matrices can be accessed using <code>Eigen</code> block.</p>
+<p>The method <code><a class="el" href="classlf_1_1geometry_1_1_geometry.html#a7cb2b572966d7492522acb1b127cbbd0" title="Evaluate the Jacobian * Inverse Gramian ( ) simultaneously at numPoints.">lf::geometry::Geometry::JacobianInverseGramian</a></code> computes the inverse of the JacobianInverseGramian matrix for each point in <code>points</code>. Details can be found in <a href="https://www.sam.math.ethz.ch/~grsam/NUMPDEFL/NUMPDE.pdf#page=270" title="Transformation Techniques">Lecture Document Paragraph 2.8.3.14</a> and the <a class="el" href="classlf_1_1geometry_1_1_geometry.html#a7cb2b572966d7492522acb1b127cbbd0">method docs</a>. Similarly to <a class="el" href="classlf_1_1geometry_1_1_geometry.html#ac665d163a4692af4a1dc7cc54e98315f">Geometry::Jacobian</a>, it also returns a horizontally stacked matrix. Individual matrices can be accessed using <code>Eigen</code> block.</p>
 <div class="fragment"><div class="line"><span class="comment">// Compute the inverse of the Jacobian matrix for each point in points</span></div>
 <div class="line">Eigen::MatrixXd jacobian_inv = geometry-&gt;<a class="code hl_function" href="classlf_1_1geometry_1_1_geometry.html#a7cb2b572966d7492522acb1b127cbbd0">JacobianInverseGramian</a>(local_points);</div>
 <div class="line"> </div>

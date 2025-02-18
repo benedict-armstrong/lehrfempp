@@ -43,6 +43,7 @@ MathJax.Hub.Config({
 <script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
   <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
   <!-- Doxygen Awesome Paragraph Link Extension-->
   <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
   <script type="text/javascript">
@@ -131,7 +132,8 @@ $(function(){initNavTree('modules_.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Modules</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>LehrFEM++ is organized in modules that provide specific functionality that you can import in your code. In LehrFEM++ there is a strict 1:1 relation between modules and namespaces, folder structure, cmake targets, tests, include files and libraries which is best illustrated with an example. Consider the module with the name <code><a class="el" href="namespacelf_1_1mesh_1_1hybrid2d.html" title="A namespace for managing 2D hybrid meshes using pointers to store sub-entity relations.">lf.mesh.hybrid2d</a></code></p><ul>
+<div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2modules"></a></p>
+<p>LehrFEM++ is organized in modules that provide specific functionality that you can import in your code. In LehrFEM++ there is a strict 1:1 relation between modules and namespaces, folder structure, cmake targets, tests, include files and libraries which is best illustrated with an example. Consider the module with the name <code><a class="el" href="namespacelf_1_1mesh_1_1hybrid2d.html" title="A namespace for managing 2D hybrid meshes using pointers to store sub-entity relations.">lf.mesh.hybrid2d</a></code></p><ul>
 <li>which consists of all C++ constructs in the <em>namespace</em> <code><a class="el" href="namespacelf_1_1mesh_1_1hybrid2d.html" title="A namespace for managing 2D hybrid meshes using pointers to store sub-entity relations.">lf::mesh::hybrid2d</a></code>,</li>
 <li>whose source/header files all lie in the folder <code>lib/lf/mesh/hybrid2d</code></li>
 <li>which is built by the CMake target <code><a class="el" href="namespacelf_1_1mesh_1_1hybrid2d.html" title="A namespace for managing 2D hybrid meshes using pointers to store sub-entity relations.">lf.mesh.hybrid2d</a></code></li>
@@ -143,8 +145,8 @@ $(function(){initNavTree('modules_.html',''); initResizable(true); });
 <li>The cmake target <code><a class="el" href="namespacelf_1_1mesh_1_1hybrid2d.html" title="A namespace for managing 2D hybrid meshes using pointers to store sub-entity relations.">lf.mesh.hybrid2d</a></code> depends on the <code><a class="el" href="namespacelf_1_1mesh.html" title="Defines a set of interface classes that define a mesh manager and provides mesh-related tools that bu...">lf.mesh</a></code> cmake target (see the file <code>lib/lf/mesh/hybrid2d/CMakeLists.txt</code>). Since the <code><a class="el" href="namespacelf_1_1mesh.html" title="Defines a set of interface classes that define a mesh manager and provides mesh-related tools that bu...">lf.mesh</a></code> depends on <code><a class="el" href="namespacelf_1_1base.html" title="Contains basic functionality that is used by other parts of LehrFEM++.">lf.base</a></code> and <code><a class="el" href="namespacelf_1_1geometry.html" title="Defines the Geometry interface and provides a number of classes that implement this interface + addit...">lf.geometry</a></code> it is not necessary to specify these dependecies also.</li>
 <li>The header files in the folder <code>lib/lf/mesh/hybrid2d</code> include the <em>module include files</em> <code><a class="el" href="base_8h_source.html">lib/lf/base/base.h</a></code> and <code>lib/lf/mesh/mesh.h</code> (as necessary)</li>
 </ul>
-<h5><a class="anchor" id="autotoc_md180"></a>
-General remarks about modules:</h5>
+<h2><a class="anchor" id="autotoc_md180"></a>
+General remarks about modules:</h2>
 <ul>
 <li>The modules in LehrFEM++ are all libraries, the only exception being test modules and example modules (which are executables)</li>
 <li>Don't try to include individual header files from other modules directly. Instead include the <em>module header file</em> (e.g. <code><a class="el" href="hybrid2d_8h_source.html">lib/lf/mesh/hybrid2d/hybrid2d.h</a></code>) which will include all necessary header files for that module.</li>

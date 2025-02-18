@@ -6,7 +6,7 @@ var searchData=
   ['variables_3',['Mesh object variables',['../classlf_1_1mesh_1_1_mesh.html#autotoc_md107',1,'']]],
   ['variantvisitor_4',['VariantVisitor',['../class_variant_visitor.html',1,'VariantVisitor&lt; RESULT_TYPE, LAMBDA &gt;'],['../class_variant_visitor.html#a594a94286765d34e2c7c37b3b32fae63',1,'VariantVisitor::VariantVisitor()']]],
   ['vector_5',['Requirements for type VECTOR',['../classlf_1_1assemble_1_1_c_o_o_matrix.html#autotoc_md23',1,'']]],
-  ['vector_6',['Right hand side (RHS)/load vector',['../quick_reference_assembly.html#autotoc_md183',1,'']]],
+  ['vector_6',['Right-Hand Side (RHS)/Load Vector',['../quick_reference_assembly.html#autotoc_md183',1,'']]],
   ['vector_20and_20resultvector_7',['Requirements for types VECTOR and RESULTVECTOR',['../classlf_1_1assemble_1_1_c_o_o_matrix.html#autotoc_md24',1,'']]],
   ['vector_20providers_8',['Vector Providers',['../quick_reference_emp.html#autotoc_md194',1,'Built-in Entity Vector Providers'],['../quick_reference_emp.html#custom_entity_vector_providers',1,'Custom Entity Vector Providers']]],
   ['vector_20template_20argument_9',['Additional type requirements for VECTOR template argument',['../group__assemble__vector__locally.html#autotoc_md20',1,'']]],

@@ -43,6 +43,7 @@ MathJax.Hub.Config({
 <script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
   <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
   <!-- Doxygen Awesome Paragraph Link Extension-->
   <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
   <script type="text/javascript">
@@ -156,7 +157,7 @@ How to fix it</h2>
 <div class="line">/home/raffael/lehrfempp/lib/<a class="code hl_namespace" href="namespacelf.html">lf</a>/base/lf_assert.h:82:2: warning: <span class="stringliteral">&quot;Eigen has been included before LehrFEM++ and LF_REDIRECT_ASSERTS=On in cmake. Not all Eigen Asserts may print a stacktrace!&quot;</span> [-W#warnings]</div>
 <div class="line"><span class="preprocessor">#warning \</span></div>
 <div class="line"><span class="preprocessor"> ^</span></div>
-<div class="ttc" id="anamespacelf_html"><div class="ttname"><a href="namespacelf.html">lf</a></div><div class="ttdef"><b>Definition</b> <a href="assemble_8h_source.html#l00031">assemble.h:31</a></div></div>
+<div class="ttc" id="anamespacelf_html"><div class="ttname"><a href="namespacelf.html">lf</a></div><div class="ttdef"><b>Definition</b> <a href="assemble_8h_source.html#l00034">assemble.h:34</a></div></div>
 </div><!-- fragment --><p>You can then follow the include hierarchy from the beginning (<code><a class="el" href="gmsh__file__v4__binary_8cc_source.html">gmsh_file_v4_binary.cc</a></code>) until you reach <code><a class="el" href="lf__assert_8h_source.html">lf_assert.h</a></code>. At every step you should check if any Eigen header is <code>#include</code>d before a LehrFEM++ header.</p>
 <h3><a class="anchor" id="autotoc_md163"></a>
 2. Tell LehrFEM++ to not override the <code>eigen_assert</code> macro</h3>

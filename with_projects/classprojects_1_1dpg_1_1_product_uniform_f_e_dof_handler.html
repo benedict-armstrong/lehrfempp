@@ -43,6 +43,7 @@ MathJax.Hub.Config({
 <script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
   <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
   <!-- Doxygen Awesome Paragraph Link Extension-->
   <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
   <script type="text/javascript">
@@ -246,7 +247,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dofhandler for uniform finite element spaces that discretizes a cartesian/product space. </p>
 <p>This class for indices of global shape functions is suitable for situations where the FE-space is based on a Cartesian Product function space and where every geometric entity of a particular type has exactly the same number of shape functions.</p>
-<h3><a class="anchor" id="autotoc_md210"></a>
+<h3><a class="anchor" id="autotoc_md209"></a>
 Additional terminology:</h3>
 <ul>
 <li>We use the term "product space" or "cartesian space" for function spaces \( U \) that have the following structure  <p class="formulaDsp">
@@ -257,14 +258,14 @@ Additional terminology:</h3>
 <li>A function in such a space represents several variables  \( u = (u_0,
 \dots u_{n-1}) \). We usually use the term component to refer to such a variable. Each component \( u_i \) is associated to a unique component index \( i \in \{ 0,\dots n-1 \} \) representing its position</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md211"></a>
+<h3><a class="anchor" id="autotoc_md210"></a>
 Rules for ordering global shape functions.</h3>
 <p>The following rules are used to order global shape functions in such a product space:</p>
 <ul>
 <li>Dofs belonging to components of smaller component index are arranged before dofs belonging to components of larger component index.</li>
 <li>Within each component the ususal rules for ordering global shape functions specified in <a class="el" href="classlf_1_1assemble_1_1_dof_handler.html" title="A general (interface) class for DOF handling, see Lecture Document Paragraph 2.7.4....">lf::assemble::DofHandler</a> apply.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md212"></a>
+<h3><a class="anchor" id="autotoc_md211"></a>
 Rules for ordering local shape functions.</h3>
 <ul>
 <li>Dofs belonging to components of smaller component index are arranged before dofs associated to components of larger component index.</li>
