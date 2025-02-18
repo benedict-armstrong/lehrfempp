@@ -132,39 +132,41 @@ $(function(){initNavTree('archetypes.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Archetypes</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>For every concept defined in LehrFEM++, we provide an archetype class that models the corresponding concept in the most minimal way possible without providing extra functionality. It can be used to test whether other classes/functions which require a parameter to model a certain concept, only rely on the functionality which has been defined in the concept.</p>
-<p>Lets consider an example to understand what we mean by this. Suppose we have a concept <code>Animal</code>: </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> A&gt;</div>
-<div class="line"><span class="keyword">concept </span>Animal = <span class="keyword">requires</span>(A a) {</div>
+<div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2archetypes"></a></p>
+<p><a href="https://github.com/benedict-armstrong/lehrfempp/blob/master/doc/doxygen/pages/archetypes.md" class="github_edit" title="Edit page on GitHub" target="_blank">Edit on GitHub</a></p>
+<p>For every concept defined in LehrFEM++, we provide an archetype class that models the corresponding concept in the most minimal way possible without providing extra functionality. It can be used to test whether other classes/functions which require a parameter to model a certain concept, only rely on the functionality which has been defined in the concept.</p>
+<p>Lets consider an example to understand what we mean by this. Suppose we have a concept <code>Animal</code>: </p><div class="fragment"><div class="line">template&lt;class A&gt;</div>
+<div class="line">concept Animal = requires(A a) {</div>
 <div class="line">   { a.MakeSound() } -&gt; std::same_as&lt;void&gt;;</div>
 <div class="line">   { a.Eat() } -&gt; std::same_as&lt;void&gt;;</div>
 <div class="line">};</div>
-</div><!-- fragment --><p>Then we provide an archetype class <code>AnimalAT</code> that models the concept <code>Animal</code>: </p><div class="fragment"><div class="line"><span class="keyword">struct </span>AnimalAT {</div>
-<div class="line">    <span class="keywordtype">void</span> MakeSound()<span class="keyword"> const </span>{}</div>
-<div class="line">    <span class="keywordtype">void</span> Eat()<span class="keyword"> const </span>{}</div>
+</div><!-- fragment --><p>Then we provide an archetype class <code>AnimalAT</code> that models the concept <code>Animal</code>: </p><div class="fragment"><div class="line">struct AnimalAT {</div>
+<div class="line">    void MakeSound() const {}</div>
+<div class="line">    void Eat() const {}</div>
 <div class="line">};</div>
-</div><!-- fragment --><p>We can check whether <code>AnimalAT</code> actually models the concept <code>Animal</code> by using the <code>static_assert</code> macro: </p><div class="fragment"><div class="line"><span class="keyword">static_assert</span>(Animal&lt;AnimalAT&gt;);</div>
+</div><!-- fragment --><p>We can check whether <code>AnimalAT</code> actually models the concept <code>Animal</code> by using the <code>static_assert</code> macro: </p><div class="fragment"><div class="line">static_assert(Animal&lt;AnimalAT&gt;);</div>
 </div><!-- fragment --><p>The archetype class <code>AnimalAT</code> is useful in a number of ways: </p><ul>
 <li>
 Archetypes can document the methods of a concept. For example, the archetype <code>AnimalAT</code> documents that the concept <code>Animal</code> requires the methods <code>MakeSound()</code> and <code>Eat()</code>. Additionally we can put doxygen comments in front of <code>MakeSound()</code> and <code>Eat()</code> to document their intended functionality. </li>
 <li>
-If another function template requires a type that models the concept <code>Animal</code>, we can check with the archetype, that the function template only requires the functionality provided by the concept <code>Animal</code>. For example, assume that we have written the following errorneous function: <div class="fragment"><div class="line"><span class="keywordtype">void</span> Feed(Animal <span class="keyword">auto</span>&amp; a) {</div>
+If another function template requires a type that models the concept <code>Animal</code>, we can check with the archetype, that the function template only requires the functionality provided by the concept <code>Animal</code>. For example, assume that we have written the following errorneous function: <div class="fragment"><div class="line">void Feed(Animal auto&amp; a) {</div>
 <div class="line">  a.Eat();</div>
 <div class="line">  a.Drink();</div>
 <div class="line">}</div>
-</div><!-- fragment --> Using the archetype <code>AnimalAT</code>, we can check that the function <code>Feed</code> really only requires the functionality provided by the concept <code>Animal</code>. For this we explicitly instantiate the function <code>Feed()</code> (without actually calling it) <div class="fragment"><div class="line"><span class="keyword">template</span> <span class="keywordtype">void</span> Feed(AnimalAT&amp;);</div>
-</div><!-- fragment --> We then get the following compiler error: <div class="fragment"><div class="line">error: <span class="stringliteral">&#39;struct AnimalAT&#39;</span> has no member named <span class="stringliteral">&#39;Drink&#39;</span></div>
+</div><!-- fragment --> Using the archetype <code>AnimalAT</code>, we can check that the function <code>Feed</code> really only requires the functionality provided by the concept <code>Animal</code>. For this we explicitly instantiate the function <code>Feed()</code> (without actually calling it) <div class="fragment"><div class="line">template void Feed(AnimalAT&amp;);</div>
+</div><!-- fragment --> We then get the following compiler error: <div class="fragment"><div class="line">error: &#39;struct AnimalAT&#39; has no member named &#39;Drink&#39;</div>
 </div><!-- fragment --> </li>
 <li>
-We can use Archetypes to deduce types of other classes which require types modelling the concept. For example, assume we have the following class: <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;Animal A&gt;</div>
-<div class="line"><span class="keyword">class </span>Owner {</div>
-<div class="line">  <span class="keyword">using </span>gender_t = ...;</div>
-<div class="line">  gender_t Gender() <span class="keyword">const</span>;</div>
+We can use Archetypes to deduce types of other classes which require types modelling the concept. For example, assume we have the following class: <div class="fragment"><div class="line">template&lt;Animal A&gt;</div>
+<div class="line">class Owner {</div>
+<div class="line">  using gender_t = ...;</div>
+<div class="line">  gender_t Gender() const;</div>
 <div class="line">}</div>
-</div><!-- fragment --> If we want to get the type <code>gender_t</code> we could just write: <div class="fragment"><div class="line"><span class="keyword">using </span>gender_t = <span class="keyword">typename</span> Owner&lt;AnimalAT&gt;::gender_t;</div>
+</div><!-- fragment --> If we want to get the type <code>gender_t</code> we could just write: <div class="fragment"><div class="line">using gender_t = typename Owner&lt;AnimalAT&gt;::gender_t;</div>
 </div><!-- fragment --> </li>
 <li>
-We can use Archetypes to define more complex concepts. For example: <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> Z&gt;</div>
-<div class="line"><span class="keyword">concept </span>Zoo = <span class="keyword">requires</span>(Z z, AnimalAT a) {</div>
+We can use Archetypes to define more complex concepts. For example: <div class="fragment"><div class="line">template&lt;class Z&gt;</div>
+<div class="line">concept Zoo = requires(Z z, AnimalAT a) {</div>
 <div class="line">  { z.Add(a)}} -&gt; std::same_as&lt;void&gt;;</div>
 <div class="line">  };</div>
 </div><!-- fragment --> </li>

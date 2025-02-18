@@ -27,7 +27,7 @@ var searchData=
   ['reference_20quadrature_24',['Quick Reference - Quadrature',['../quick_reference_quad.html',1,'']]],
   ['reference_20shape_20functions_25',['reference shape functions',['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md72',1,'Example for numbering of reference shape functions'],['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md71',1,'Numbering &lt;em&gt;convention&lt;/em&gt; for reference shape functions']]],
   ['referencefiniteelement_26',['ReferenceFiniteElement',['../classprojects_1_1dpg_1_1_product_uniform_f_e_space_factory.html#af85f5c5278391e0cce0e423d578795dc',1,'projects::dpg::ProductUniformFESpaceFactory']]],
-  ['references_3a_27',['Quick References:',['../index.html#autotoc_md172',1,'']]],
+  ['references_27',['Quick References',['../index.html#autotoc_md172',1,'']]],
   ['refinemarked_28',['RefineMarked',['../classlf_1_1refinement_1_1_mesh_hierarchy.html#a693d5d31b5aaf0b9e077d890f3062022',1,'lf::refinement::MeshHierarchy']]],
   ['refinement_29',['Mesh Refinement',['../quick_reference_mesh.html#mesh_refinement',1,'']]],
   ['refinement_5fedges_5f_30',['refinement_edges_',['../classlf_1_1refinement_1_1_mesh_hierarchy.html#a7e2e8359fa3b2a011cf700d0672e6144',1,'lf::refinement::MeshHierarchy']]],

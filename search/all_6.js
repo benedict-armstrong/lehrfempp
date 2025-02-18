@@ -72,7 +72,7 @@ var searchData=
   ['conjugate_69',['conjugate',['../classlf_1_1mesh_1_1utils_1_1_mesh_function_unary.html#af8d24aeb0fcfa051c665c660b9b69e61',1,'lf::mesh::utils::MeshFunctionUnary::conjugate()'],['../classlf_1_1mesh_1_1utils_1_1_mesh_function_unary.html#af8d24aeb0fcfa051c665c660b9b69e61',1,'lf::mesh::utils::conjugate()'],['../namespacelf_1_1fe.html#af8d24aeb0fcfa051c665c660b9b69e61',1,'lf::fe::conjugate()'],['../namespacelf_1_1uscalfe.html#af8d24aeb0fcfa051c665c660b9b69e61',1,'lf::uscalfe::conjugate()']]],
   ['constant_20value_20on_20the_20boundary_70',['Constant value on the boundary',['../quick_reference_bc.html#constant_value',1,'']]],
   ['contains_71',['Contains',['../classlf_1_1mesh_1_1hybrid2d_1_1_mesh.html#ada32cf4fae024604cd3a97b84f737619',1,'lf::mesh::hybrid2d::Mesh::Contains()'],['../classlf_1_1mesh_1_1_mesh.html#a0c350e1883ef87fcdc36305f9e0b9a49',1,'lf::mesh::Mesh::Contains()']]],
-  ['content_3a_72',['Content:',['../index.html#autotoc_md171',1,'']]],
+  ['content_72',['Content',['../index.html#autotoc_md171',1,'']]],
   ['contributors_3a_73',['Contributors:',['../loggers.html#autotoc_md179',1,'']]],
   ['control_20flags_3a_74',['Output control flags:',['../namespacelf_1_1io.html#autotoc_md97',1,'']]],
   ['convention_75',['Global Indexing convention',['../quick_reference_dofh.html#autotoc_md190',1,'']]],

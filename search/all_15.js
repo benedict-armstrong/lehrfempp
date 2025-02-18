@@ -25,7 +25,7 @@ var searchData=
   ['reference_20pages_22',['Quick Reference Pages',['../quick_reference_index.html',1,'']]],
   ['reference_20quadrature_23',['Quick Reference - Quadrature',['../quick_reference_quad.html',1,'']]],
   ['reference_20shape_20functions_24',['reference shape functions',['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md72',1,'Example for numbering of reference shape functions'],['../classlf_1_1fe_1_1_scalar_reference_finite_element.html#autotoc_md71',1,'Numbering &lt;em&gt;convention&lt;/em&gt; for reference shape functions']]],
-  ['references_3a_25',['Quick References:',['../index.html#autotoc_md172',1,'']]],
+  ['references_25',['Quick References',['../index.html#autotoc_md172',1,'']]],
   ['refinemarked_26',['RefineMarked',['../classlf_1_1refinement_1_1_mesh_hierarchy.html#a693d5d31b5aaf0b9e077d890f3062022',1,'lf::refinement::MeshHierarchy']]],
   ['refinement_27',['Mesh Refinement',['../quick_reference_mesh.html#mesh_refinement',1,'']]],
   ['refinement_5fedges_5f_28',['refinement_edges_',['../classlf_1_1refinement_1_1_mesh_hierarchy.html#a7e2e8359fa3b2a011cf700d0672e6144',1,'lf::refinement::MeshHierarchy']]],

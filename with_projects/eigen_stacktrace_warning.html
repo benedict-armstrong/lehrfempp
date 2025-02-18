@@ -132,41 +132,42 @@ $(function(){initNavTree('eigen_stacktrace_warning.html',''); initResizable(true
   <div class="headertitle"><div class="title">Eigen included before LehrFEM++</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>You are here because you encountered the following warning during compilation: </p><div class="fragment"><div class="line">warning: <span class="stringliteral">&quot;Eigen has been included before LehrFEM++ and LF_REDIRECT_ASSERTS=On in cmake. Not all Eigen Asserts may print a stacktrace!&quot;</span> [-W#warnings]</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md160"></a>
-What's the problem</h2>
+<div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2lehrfempp_2lehrfempp_2doc_2doxygen_2pages_2eigen__stacktrace__warning"></a></p>
+<p><a href="https://github.com/benedict-armstrong/lehrfempp/blob/master/doc/doxygen/pages/eigen_stacktrace_warning.md" class="github_edit" title="Edit page on GitHub" target="_blank">Edit on GitHub</a></p>
+<p>You are here because you encountered the following warning during compilation: </p><div class="fragment"><div class="line">warning: &quot;Eigen has been included before LehrFEM++ and LF_REDIRECT_ASSERTS=On in cmake. Not all Eigen Asserts may print a stacktrace!&quot; [-W#warnings]</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md160"></a>
+What's the problem</h1>
 <p>LehrFEM++ normally tries to give you a stacktrace when an <code>eigen_assert</code> is failing. For this LehrFEM++ must <a href="https://eigen.tuxfamily.org/dox/TopicAssertions.html">redefine the <code>eigen_assert</code> macro</a> so that it calls a LehrFEM's <code>LF_ASSERT_MSG()</code> macro.</p>
 <p><b>This works only, if you include LehrFEM++ headers before any eigen headers.</b></p>
 <p>Otherwise, you may get get the warning from above.</p>
-<h2><a class="anchor" id="autotoc_md161"></a>
-How to fix it</h2>
+<h1><a class="anchor" id="autotoc_md161"></a>
+How to fix it</h1>
 <p>You have three options:</p><ol type="1">
 <li>Fix the include order and make sure LehrFEM++ is included before Eigen.</li>
 <li>Tell LehrFEM++ to not override the <code>eigen_assert</code> macro. You will not get a stacktrace when an eigen assert fails.</li>
 <li>Ignore the warning.</li>
 </ol>
-<h3><a class="anchor" id="autotoc_md162"></a>
-1. Fix the include order</h3>
-<p>When the warning is emitted by the compiler, it will usually also tell you how <code><a class="el" href="lf__assert_8h_source.html">lf_assert.h</a></code> has been included. An Example Error message produced by clang: </p><div class="fragment"><div class="line">In file included from /home/raffael/lehrfempp/lib/<a class="code hl_namespace" href="namespacelf.html">lf</a>/io/gmsh_file_v4_binary.cc:11:</div>
-<div class="line">In file included from /home/raffael/lehrfempp/lib/<a class="code hl_namespace" href="namespacelf.html">lf</a>/io/gmsh_file_v4_detail.h:42:</div>
-<div class="line">In file included from /home/raffael/lehrfempp/lib/<a class="code hl_namespace" href="namespacelf.html">lf</a>/io/gmsh_file_v4.h:13:</div>
-<div class="line">In file included from /home/raffael/lehrfempp/lib/<a class="code hl_namespace" href="namespacelf.html">lf</a>/mesh/mesh.h:22:</div>
-<div class="line">In file included from /home/raffael/lehrfempp/lib/<a class="code hl_namespace" href="namespacelf.html">lf</a>/mesh/entity.h:4:</div>
-<div class="line">In file included from /home/raffael/lehrfempp/lib/<a class="code hl_namespace" href="namespacelf.html">lf</a>/base/base.h:48:</div>
-<div class="line">In file included from /home/raffael/lehrfempp/lib/<a class="code hl_namespace" href="namespacelf.html">lf</a>/base/eigen_tools.h:12:</div>
-<div class="line">/home/raffael/lehrfempp/lib/<a class="code hl_namespace" href="namespacelf.html">lf</a>/base/lf_assert.h:82:2: warning: <span class="stringliteral">&quot;Eigen has been included before LehrFEM++ and LF_REDIRECT_ASSERTS=On in cmake. Not all Eigen Asserts may print a stacktrace!&quot;</span> [-W#warnings]</div>
-<div class="line"><span class="preprocessor">#warning \</span></div>
-<div class="line"><span class="preprocessor"> ^</span></div>
-<div class="ttc" id="anamespacelf_html"><div class="ttname"><a href="namespacelf.html">lf</a></div><div class="ttdef"><b>Definition</b> <a href="assemble_8h_source.html#l00034">assemble.h:34</a></div></div>
+<h2><a class="anchor" id="autotoc_md162"></a>
+1. Fix the include order</h2>
+<p>When the warning is emitted by the compiler, it will usually also tell you how <code><a class="el" href="lf__assert_8h_source.html">lf_assert.h</a></code> has been included. An Example Error message produced by clang: </p><div class="fragment"><div class="line">In file included from /home/raffael/lehrfempp/lib/lf/io/gmsh_file_v4_binary.cc:11:</div>
+<div class="line">In file included from /home/raffael/lehrfempp/lib/lf/io/gmsh_file_v4_detail.h:42:</div>
+<div class="line">In file included from /home/raffael/lehrfempp/lib/lf/io/gmsh_file_v4.h:13:</div>
+<div class="line">In file included from /home/raffael/lehrfempp/lib/lf/mesh/mesh.h:22:</div>
+<div class="line">In file included from /home/raffael/lehrfempp/lib/lf/mesh/entity.h:4:</div>
+<div class="line">In file included from /home/raffael/lehrfempp/lib/lf/base/base.h:48:</div>
+<div class="line">In file included from /home/raffael/lehrfempp/lib/lf/base/eigen_tools.h:12:</div>
+<div class="line">/home/raffael/lehrfempp/lib/lf/base/lf_assert.h:82:2: warning: &quot;Eigen has been included before LehrFEM++ and LF_REDIRECT_ASSERTS=On in cmake. Not all Eigen Asserts may print a stacktrace!&quot; [-W#warnings]</div>
+<div class="line">#warning \</div>
+<div class="line"> ^</div>
 </div><!-- fragment --><p>You can then follow the include hierarchy from the beginning (<code><a class="el" href="gmsh__file__v4__binary_8cc_source.html">gmsh_file_v4_binary.cc</a></code>) until you reach <code><a class="el" href="lf__assert_8h_source.html">lf_assert.h</a></code>. At every step you should check if any Eigen header is <code>#include</code>d before a LehrFEM++ header.</p>
-<h3><a class="anchor" id="autotoc_md163"></a>
-2. Tell LehrFEM++ to not override the <code>eigen_assert</code> macro</h3>
+<h2><a class="anchor" id="autotoc_md163"></a>
+2. Tell LehrFEM++ to not override the <code>eigen_assert</code> macro</h2>
 <p>LehrFEM++ has the cmake option <code>LF_REDIRECT_ASSERTS</code> which is by default enabled. You can disable this option and thereby tell LehrFEM++ to not redirect eigen and boost asserts to <code>LF_ASSERT_MSG</code>.</p>
-<h4><a class="anchor" id="autotoc_md164"></a>
-2.1. If you compile LehrFEM++ directly</h4>
+<h3><a class="anchor" id="autotoc_md164"></a>
+2.1. If you compile LehrFEM++ directly</h3>
 <p>You can just issue the following command in your cmake build directory: </p><div class="fragment"><div class="line">cmake -D LF_REDIRECT_ASSERTS=Off .</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md165"></a>
-2.2. If you use LehrFEM++ via hunter</h3>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md165"></a>
+2.2. If you use LehrFEM++ via hunter</h2>
 <ol type="1">
 <li>Create the file <code>cmake/Hunter/config.cmake</code> in your repository.</li>
 <li>Put the following command into it: <div class="fragment"><div class="line">hunter_config(lehrfempp CMAKE_ARGS LF_REDIRECT_ASSERTS=Off)</div>

@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "LehrFEM++", "index.html", [
-    [ "Welcome to LehrFEM++", "index.html", null ],
+    [ "Welcome to LehrFEM++", "index.html", "index" ],
     [ "Getting Started", "getting_started.html", null ],
     [ "Quick Reference", "quick_reference_index.html", [
       [ "Mesh", "quick_reference_mesh.html", null ],
@@ -72,9 +72,9 @@ var NAVTREEINDEX =
 "classprojects_1_1dpg_1_1_prescribed_sign_provider.html#a8baa9547de69bdd49814755e78a79fa9",
 "classprojects_1_1dpg_1_1_product_uniform_f_e_space_factory.html#a85f046c8d69f9b43c5b5d3c5ff21102a",
 "classprojects_1_1ipdg__stokes_1_1mesh_1_1_annulus_triag_mesh_builder.html#a8eff6df6e16b6987a165ab69b70fbbe3",
-"namespacelf_1_1mesh_1_1test__utils.html#a072d22b9c951c9d7734051aca3834c4a",
-"structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950a35b56141f7417c206ec3e9bb43144311",
-"structlf_1_1io_1_1_g_msh_file_v4_1_1_partitioned_entity.html#a1c835534d971f285e5205e5f792d8547"
+"namespacelf_1_1mesh_1_1test__utils.html",
+"structlf_1_1io_1_1_g_msh_file_v2.html#a9b78156c10202163ce6d0cbd49eb1950a33b92097cf19cedff9c977ebf387e19c",
+"structlf_1_1io_1_1_g_msh_file_v4_1_1_partitioned_entity.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

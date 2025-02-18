@@ -34,5 +34,5 @@ var searchData=
   ['quick_20reference_20mesh_31',['Quick Reference - Mesh',['../quick_reference_mesh.html',1,'']]],
   ['quick_20reference_20pages_32',['Quick Reference Pages',['../quick_reference_index.html',1,'']]],
   ['quick_20reference_20quadrature_33',['Quick Reference - Quadrature',['../quick_reference_quad.html',1,'']]],
-  ['quick_20references_3a_34',['Quick References:',['../index.html#autotoc_md172',1,'']]]
+  ['quick_20references_34',['Quick References',['../index.html#autotoc_md172',1,'']]]
 ];
